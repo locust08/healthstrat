@@ -1,0 +1,32 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  const htmlFiles = fs
+    .readdirSync(process.cwd())
+    .filter((file) => file.endsWith('.html'))
+    .sort();
+
+  return htmlFiles.map((file) => ({
+    params: {
+      slug: file === 'index.html' ? undefined : file.replace(/\.html$/, ''),
+    },
+    props: {
+      file,
+    },
+  }));
+}
+
+const { file } = Astro.props;
+const pagePath = path.join(process.cwd(), file);
+
+let html = fs.readFileSync(pagePath, 'utf-8');
+
+html = html
+  .replaceAll('href="assets/', 'href="/assets/')
+  .replaceAll('src="assets/', 'src="/assets/')
+  .replaceAll('data-src="assets/', 'data-src="/assets/');
+---
+
+<Fragment set:html={html} />

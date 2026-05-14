@@ -1,0 +1,114 @@
+/*--------------------------------------------------------------
+  12. Iconbox
+----------------------------------------------------------------*/
+.cs_iconbox.cs_style_1 {
+  position: relative;
+  padding-bottom: 25px;
+  &::before {
+    content: '';
+    height: 2px;
+    width: 47px;
+    background-color: var(--accent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .cs_iconbox_icon {
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+    margin-bottom: 22px;
+  }
+  .cs_iconbox_title {
+    margin-bottom: 15px;
+  }
+}
+.cs_iconbox.cs_style_2 {
+  .cs_iconbox_icon {
+    margin-bottom: 17px;
+  }
+  .cs_iconbox_title {
+    margin-bottom: 10px;
+  }
+}
+.cs_iconbox.cs_style_3 {
+  border-radius: 20px;
+  border: 1px solid #18333b;
+  display: flex;
+  padding: 40px 38px;
+  transition: all 0.3s ease;
+  @media (max-width: 1400px) {
+    padding: 30px;
+  }
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
+  .cs_iconbox_icon {
+    flex: none;
+    width: 100px;
+    padding-right: 30px;
+    @media (max-width: 400px) {
+      padding-right: 0;
+      width: initial;
+      margin-bottom: 15px;
+    }
+  }
+  .cs_iconbox_title {
+    margin-bottom: 10px;
+  }
+  &:hover {
+    border-color: #e1e7e8;
+    background-color: #e1e7e8;
+  }
+}
+.cs_iconbox.cs_style_4 {
+  .cs_iconbox_icon {
+    height: 60px;
+    width: 60px;
+    background-color: #f9f3eb;
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 22px;
+  }
+  .cs_iconbox_title {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .cs_iconbox_subtitle {
+    margin-bottom: 18px;
+  }
+}
+.cs_iconbox.cs_style_5 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  .cs_iconbox_icon {
+    flex: none;
+    height: 71px;
+    width: 71px;
+    border-radius: 15px 0 0 0;
+    box-shadow: 4px 4px 0px 0px rgba(255, 255, 255, 0.15);
+  }
+}
+.cs_iconbox.cs_style_6 {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  .cs_iconbox_icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    flex: none;
+  }
+  .cs_iconbox_title {
+    margin-bottom: 15px;
+  }
+}
+.cs_iconbox.cs_style_7 {
+  .cs_iconbox_icon {
+    margin-bottom: 16px;
+  }
+  .cs_iconbox_title {
+    margin-bottom: 10px;
+  }
+}

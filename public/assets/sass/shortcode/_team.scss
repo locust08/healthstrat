@@ -1,0 +1,104 @@
+/*--------------------------------------------------------------
+  19. Team
+----------------------------------------------------------------*/
+.cs_team.cs_style_1 {
+  height: 770px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 100px 0;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(24, 51, 59, 0.05) 0%,
+      #18333b 100%
+    );
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  @media (max-width: 991px) {
+    height: 600px;
+    padding: 60px 0;
+    br {
+      display: none;
+    }
+  }
+}
+.cs_team.cs_style_2,
+.cs_team.cs_style_3 {
+  .cs_team_member_social {
+    display: flex;
+    gap: 20px;
+    a {
+      display: flex;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .cs_team_member_designation {
+    border-bottom: 1px solid;
+    padding-bottom: 9px;
+    margin-bottom: 9px;
+  }
+  .cs_team_member_name {
+    margin-bottom: 12px;
+  }
+}
+.cs_team.cs_style_2 {
+  .cs_team_member_thumb {
+    border-radius: 50px 50px 0 0;
+  }
+  .cs_team_info {
+    padding-top: 28px;
+    @media (max-width: 991px) {
+      padding-top: 20px;
+    }
+  }
+  .cs_team_member_designation {
+    border-color: var(--ternary);
+  }
+}
+.cs_team.cs_style_3 {
+  position: relative;
+  .cs_team_member_thumb {
+    width: 100%;
+  }
+  .cs_team_info {
+    padding: 35px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    background: linear-gradient(180deg, rgba(24, 51, 59, 0) 0%, #18333b 100%);
+    display: flex;
+    align-items: flex-end;
+    opacity: 0;
+    @media (max-width: 991px) {
+      padding: 25px 20px;
+    }
+  }
+  .cs_team_member_name {
+    color: #fff;
+  }
+  .cs_team_member_designation {
+    color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  &:hover {
+    .cs_team_info {
+      opacity: 1;
+    }
+  }
+}

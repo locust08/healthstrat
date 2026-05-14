@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+  11. Banner
+----------------------------------------------------------------*/
+.cs_banner.cs_style_1 {
+  min-height: 650px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 143px 0;
+  @media (max-width: 991px) {
+    padding: 80px 0;
+    min-height: 500px;
+  }
+  @media (max-width: 991px) {
+    br {
+      display: none;
+    }
+  }
+}
+.cs_banner.cs_style_2 {
+  height: 600px;
+}
+.cs_banner.cs_style_3 {
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .cs_shape_1 {
+    position: absolute;
+    left: 0px;
+    bottom: -126px;
+    @media (max-width: 575px) {
+      left: -120px;
+      bottom: -224px;
+    }
+  }
+  .cs_shape_2 {
+    position: absolute;
+    top: -139px;
+    right: 0;
+    @media (max-width: 575px) {
+      right: -120px;
+      top: -240px;
+    }
+  }
+}
