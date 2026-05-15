@@ -747,6 +747,69 @@
         }
       }
     }
+
+    .cs_services_mega_wrapper {
+      gap: 18px;
+      padding: 22px !important;
+      border-top: 0;
+      border-radius: 0 0 18px 18px;
+      box-shadow: 0 20px 60px rgba(11, 22, 42, 0.12);
+      overflow-x: auto;
+      background: var(--white);
+
+      > li {
+        flex: 0 0 232px;
+        padding: 0;
+      }
+    }
+
+    .cs_service_mega_card {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 10px;
+      min-height: 232px;
+      padding: 18px !important;
+      border: 1px solid var(--border);
+      border-radius: 28px 28px 8px 28px;
+      background: #f9fbfb;
+      color: var(--primary);
+      transition: all 0.3s ease;
+
+      &:hover {
+        border-color: rgba(23, 96, 105, 0.35);
+        box-shadow: 0 14px 34px rgba(11, 22, 42, 0.1);
+        transform: translateY(-4px);
+      }
+    }
+
+    .cs_service_mega_title {
+      display: block;
+      min-height: 56px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.24em;
+    }
+
+    .cs_service_mega_image {
+      display: block;
+      overflow: hidden;
+      border-radius: 4px 24px 4px 4px;
+      aspect-ratio: 4 / 3;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    .cs_service_mega_card:hover {
+      .cs_service_mega_image img {
+        transform: scale(1.05);
+      }
+    }
   }
   .cs_site_header.cs_style_1.cs_size_md {
     .cs_nav .cs_nav_list .cs_mega_wrapper {
@@ -779,6 +842,18 @@
 @media screen and (max-width: 1400px) {
   .cs_nav .cs_nav_list .cs_mega_wrapper {
     width: 1116px !important;
+  }
+
+  .cs_nav .cs_nav_list .cs_services_mega_wrapper {
+    gap: 14px;
+
+    > li {
+      flex-basis: 196px;
+    }
+  }
+
+  .cs_nav .cs_nav_list .cs_service_mega_title {
+    font-size: 16px;
   }
 
   .cs_site-branding {
@@ -880,6 +955,31 @@
       ul {
         padding-left: 15px;
         display: none;
+      }
+
+      .cs_services_mega_wrapper {
+        position: static !important;
+        width: auto !important;
+        transform: none;
+        padding: 8px 15px 18px !important;
+        box-shadow: none;
+        border-radius: 0;
+
+        > li {
+          padding: 0;
+        }
+      }
+
+      .cs_service_mega_card {
+        min-height: auto;
+        margin-bottom: 12px;
+        padding: 14px !important;
+        border-radius: 18px 18px 6px 18px;
+      }
+
+      .cs_service_mega_title {
+        min-height: auto;
+        font-size: 16px;
       }
 
       a {
