@@ -65,6 +65,7 @@
     shiningActive();
     hobbleEffect();
     scrollSliderActive();
+    headerSearch();
 
     if ($.exists('.wow')) {
       new WOW().init();
@@ -83,7 +84,7 @@
   --------------------------------------------------------------*/
   function preloader() {
     $('.cs_preloader').fadeOut();
-    $('cs_preloader_in').delay(150).fadeOut('slow');
+    $('.cs_preloader_in').delay(150).fadeOut('slow');
   }
 
   /*--------------------------------------------------------------
@@ -179,6 +180,114 @@
       $(this).css({
         'background-image': 'url(' + src + ')',
       });
+    });
+  }
+
+  /*--------------------------------------------------------------
+    Header Search
+  --------------------------------------------------------------*/
+  function headerSearch() {
+    var pages = [
+      { title: 'Home', url: 'index.html', keywords: 'healthstrat healthcare strategy leadership innovation consultancy' },
+      { title: 'About Us', url: 'about.html', keywords: 'founder executive director prema healthcare consultancy singapore' },
+      { title: 'Our Expertise', url: 'services.html', keywords: 'expertise services patient safety workforce governance transformation training' },
+      { title: 'Health Care Strategy & Transformation', url: 'health-care-strategy-transformation.html', keywords: 'strategy transformation systems clinical leadership healthcare' },
+      { title: 'Clinical Governance & Quality', url: 'clinical-governance-quality.html', keywords: 'clinical governance quality patient safety standards improvement' },
+      { title: 'Nursing & Workforce Development', url: 'nursing-workforce-development.html', keywords: 'nursing workforce development capability training leadership' },
+      { title: 'Innovation & Design Thinking', url: 'innovation-design-thinking.html', keywords: 'innovation design thinking service redesign healthcare' },
+      { title: 'Education & Training', url: 'education-training.html', keywords: 'education training workshops learning healthcare professionals' },
+      { title: 'Insights', url: 'blog-right-sidebar.html', keywords: 'insights articles blog healthcare strategy governance training' },
+      { title: 'Contact Us', url: 'contact.html', keywords: 'contact email whatsapp linkedin enquiry consultation' },
+    ];
+
+    $('.cs_header_search_form').each(function () {
+      var $form = $(this);
+      var $field = $form.find('.cs_header_search_field');
+      var $results = $('<div class="cs_header_search_results" aria-live="polite"></div>');
+      $form.append($results);
+
+      function getMatches(query) {
+        var terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+        if (!terms.length) {
+          return [];
+        }
+        return pages
+          .map(function (page) {
+            var haystack = (page.title + ' ' + page.keywords).toLowerCase();
+            var score = terms.reduce(function (total, term) {
+              if (page.title.toLowerCase().indexOf(term) !== -1) {
+                return total + 3;
+              }
+              if (haystack.indexOf(term) !== -1) {
+                return total + 1;
+              }
+              return total;
+            }, 0);
+            return Object.assign({}, page, { score: score });
+          })
+          .filter(function (page) {
+            return page.score > 0;
+          })
+          .sort(function (a, b) {
+            return b.score - a.score || a.title.localeCompare(b.title);
+          })
+          .slice(0, 5);
+      }
+
+      function renderResults(matches, query) {
+        $results.empty();
+        if (!query) {
+          $results.removeClass('active');
+          return;
+        }
+        if (!matches.length) {
+          $results
+            .append('<div class="cs_header_search_empty">No matches found</div>')
+            .addClass('active');
+          return;
+        }
+        matches.forEach(function (page) {
+          $('<a></a>')
+            .attr('href', page.url)
+            .text(page.title)
+            .appendTo($results);
+        });
+        $results.addClass('active');
+      }
+
+      $field.on('input focus', function () {
+        var query = $.trim($field.val());
+        renderResults(getMatches(query), query);
+      });
+
+      $field.on('keydown', function (e) {
+        if (e.key !== 'Enter') {
+          return;
+        }
+        var matches = getMatches($.trim($field.val()));
+        if (matches.length) {
+          e.preventDefault();
+          window.location.href = matches[0].url;
+        }
+      });
+
+      $form.on('submit', function (e) {
+        var query = $.trim($field.val());
+        var matches = getMatches(query);
+        if (!matches.length) {
+          e.preventDefault();
+          renderResults(matches, query);
+          return;
+        }
+        e.preventDefault();
+        window.location.href = matches[0].url;
+      });
+    });
+
+    $(document).on('click', function (e) {
+      if (!$(e.target).closest('.cs_header_search_form').length) {
+        $('.cs_header_search_results').removeClass('active');
+      }
     });
   }
 

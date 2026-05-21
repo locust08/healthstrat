@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Laralink">
+    <meta name="author" content="HealthStrat">
     <!-- Favicon Icon -->
     <link rel="icon" href="assets/img/favicon.png">
     <!-- Site Title -->
-    <title>Bione - Multi-Purpose Business Consulting HTML Template</title>
+    <title>HealthStrat - Healthcare Strategy & Transformation Consultancy</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -17,11 +17,724 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/odometer.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      .cs_hero.cs_style_1 .cs_healthstrat_hero_title {
+        font-size: clamp(64px, 5.1vw, 96px);
+        line-height: 1.02em;
+        letter-spacing: 0;
+        max-width: 1250px;
+      }
+      .cs_hero.cs_style_1 .cs_healthstrat_hero_title span::before {
+        height: 10px;
+        bottom: 2px;
+        background: #8fcb63;
+      }
+      .cs_hero.cs_style_1 {
+        min-height: min(650px, calc(100vh - 100px));
+        padding: 58px 0 42px;
+        overflow: hidden;
+        background:
+          linear-gradient(90deg, #fff 0%, #fff 38.6%, rgba(255, 255, 255, 0) 38.7%),
+          linear-gradient(180deg, #f8fcfb 0%, #fff 100%);
+      }
+      .cs_hero.cs_style_1 .cs_hero_title_box_wrap {
+        position: absolute;
+        left: 0;
+        top: 64px;
+      }
+      .cs_hero.cs_style_1::after {
+        content: "";
+        position: absolute;
+        left: 38.6%;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: rgba(24, 51, 59, 0.06);
+        z-index: 1;
+      }
+      .cs_hero.cs_style_1 .cs_hero_thumb {
+        max-width: 61.4vw;
+        background-position: 58% center;
+        filter: saturate(1.06) contrast(1.02);
+      }
+      .cs_hero.cs_style_1 .cs_hero_thumb::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(0, 80, 144, 0.2), rgba(0, 32, 48, 0.38) 48%, rgba(0, 20, 28, 0.52)),
+          linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.34));
+      }
+      .cs_hero.cs_style_1 > .container {
+        position: absolute;
+        left: 50%;
+        bottom: 48px;
+        transform: translateX(-50%);
+        width: 100%;
+      }
+      .cs_hero.cs_style_1 .cs_hero_bottom {
+        margin-top: 0;
+        align-items: flex-end;
+      }
+      .cs_hero.cs_style_1 .cs_hero_subtitle {
+        max-width: 470px;
+        font-size: 18px;
+        line-height: 1.5em;
+        text-shadow: 0 2px 18px rgba(0, 0, 0, 0.34);
+      }
+      .cs_hero.cs_style_1 .cs_hero_title_box {
+        width: 38.6vw;
+      }
+      .cs_hero.cs_style_1 .cs_hero_title_box.cs_title_cloned {
+        width: 61.4vw;
+      }
+      @media (max-width: 1400px) {
+        .cs_hero.cs_style_1 .cs_healthstrat_hero_title {
+          font-size: clamp(58px, 5.5vw, 84px);
+        }
+      }
+      @media (max-width: 1199px) {
+        .cs_hero.cs_style_1 .cs_healthstrat_hero_title {
+          font-size: clamp(50px, 6vw, 70px);
+        }
+      }
+      @media (max-width: 991px) {
+        .cs_hero.cs_style_1 {
+          min-height: min(650px, calc(100vh - 80px));
+          padding: 82px 0 56px;
+          background: #0b2730;
+        }
+        .cs_hero.cs_style_1::after {
+          display: none;
+        }
+        .cs_hero.cs_style_1 .cs_hero_thumb {
+          max-width: 100%;
+          opacity: 1;
+          background-position: 62% center;
+        }
+        .cs_hero.cs_style_1 .cs_hero_thumb::before {
+          background:
+            linear-gradient(90deg, rgba(4, 29, 38, 0.78), rgba(4, 29, 38, 0.42)),
+            linear-gradient(180deg, rgba(4, 29, 38, 0.22), rgba(4, 29, 38, 0.72));
+        }
+        .cs_hero.cs_style_1 .cs_hero_title_box,
+        .cs_hero.cs_style_1 .cs_hero_title_box.cs_title_cloned {
+          width: 100vw;
+        }
+        .cs_hero.cs_style_1 .cs_hero_title_box_wrap {
+          position: relative;
+          left: auto;
+          top: auto;
+        }
+        .cs_hero.cs_style_1 .cs_hero_title_box:not(.cs_title_cloned) .cs_hero_title {
+          color: #fff;
+        }
+        .cs_hero.cs_style_1 > .container {
+          position: relative;
+          left: auto;
+          bottom: auto;
+          transform: none;
+        }
+        .cs_hero.cs_style_1 .cs_hero_bottom {
+          margin-top: 34px;
+          align-items: flex-start;
+        }
+        .cs_hero.cs_style_1 .cs_hero_subtitle {
+          max-width: 620px;
+        }
+      }
+      @media (max-width: 575px) {
+        .cs_hero.cs_style_1 .cs_healthstrat_hero_title {
+          font-size: 44px;
+          line-height: 1.06em;
+        }
+        .cs_hero.cs_style_1 {
+          min-height: 620px;
+          padding-top: 68px;
+        }
+      }
+      .cs_healthstrat_hero_ctas {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .cs_healthstrat_hero_cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.2em;
+        text-decoration: none;
+      }
+      .cs_healthstrat_hero_cta_primary {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #25d366;
+        color: #fff;
+        box-shadow: 0 16px 30px rgba(0, 92, 58, 0.22);
+        font-size: 25px;
+      }
+      .cs_healthstrat_hero_cta_secondary {
+        min-height: 50px;
+        color: var(--primary);
+        font-size: 16px;
+        font-weight: 600;
+        gap: 12px;
+        overflow: hidden;
+      }
+      .cs_healthstrat_hero_cta_divider {
+        width: 1px;
+        height: 48px;
+        background-color: rgba(0, 80, 144, 0.22);
+      }
+      .cs_healthstrat_hero_cta_primary:hover {
+        background-color: #16b956;
+        color: #fff;
+      }
+      .cs_healthstrat_hero_cta_secondary:hover {
+        color: var(--primary);
+      }
+      .cs_healthstrat_hero_cta_secondary .cs_healthstrat_cta_arrow {
+        display: inline-flex;
+        justify-content: flex-end;
+        width: 0;
+        opacity: 0;
+        transform: translateX(-12px);
+        transition: width 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+      }
+      .cs_healthstrat_hero_cta_secondary:hover .cs_healthstrat_cta_arrow,
+      .cs_healthstrat_hero_cta_secondary:focus-visible .cs_healthstrat_cta_arrow {
+        width: 18px;
+        opacity: 1;
+        transform: translateX(0);
+      }
+      @media (max-width: 991px) {
+        .cs_healthstrat_hero_ctas {
+          gap: 14px;
+        }
+        .cs_healthstrat_hero_cta_primary {
+          width: 46px;
+          height: 46px;
+          font-size: 23px;
+        }
+        .cs_healthstrat_hero_cta_divider {
+          height: 42px;
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+        .cs_healthstrat_hero_cta_secondary,
+        .cs_healthstrat_hero_cta_secondary:hover {
+          min-height: 46px;
+          color: #fff;
+          font-size: 16px;
+          gap: 14px;
+        }
+      }
+      .cs_healthstrat_trust_bar {
+        padding: 80px 0;
+        background: #fff;
+        position: relative;
+        z-index: 1;
+      }
+      @media (max-width: 991px) {
+        .cs_healthstrat_trust_bar {
+          padding: 60px 0;
+        }
+      }
+      .cs_healthstrat_trust_panel {
+        position: relative;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
+        overflow: visible;
+      }
+      .cs_healthstrat_trust_panel::before {
+        display: none;
+      }
+      .cs_healthstrat_trust_grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 22px;
+        align-items: stretch;
+        position: relative;
+        z-index: 1;
+      }
+      .cs_healthstrat_trust_grid::before {
+        content: none;
+        position: absolute;
+        top: 28px;
+        left: calc(12.5% - 10.5px);
+        right: calc(12.5% - 10.5px);
+        height: 2px;
+        background-color: #d8e8ec;
+        transform: translateY(-50%);
+        z-index: 0;
+      }
+      .cs_healthstrat_trust_grid::after {
+        content: none;
+        position: absolute;
+        top: 28px;
+        left: calc(12.5% - 10.5px);
+        right: calc(12.5% - 10.5px);
+        height: 2px;
+        background: linear-gradient(90deg, var(--brand-green), var(--accent-cyan));
+        transform: translateY(-50%) scaleX(0);
+        transform-origin: left center;
+        z-index: 0;
+        animation: csTrustLineProgress 8s ease-in-out infinite;
+      }
+      @keyframes csTrustLineProgress {
+        0% {
+          transform: translateY(-50%) scaleX(0);
+          opacity: 0.45;
+        }
+        12% {
+          opacity: 1;
+        }
+        76% {
+          transform: translateY(-50%) scaleX(1);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-50%) scaleX(1);
+          opacity: 0;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .cs_healthstrat_trust_grid::after {
+          animation: none;
+        }
+      }
+      .cs_healthstrat_trust_item {
+        min-height: 170px;
+        padding: 28px 24px 26px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 9px;
+        background-color: #fff;
+        border: 1px solid var(--border-soft);
+        border-radius: 8px;
+        color: var(--primary);
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      .cs_healthstrat_trust_item::before {
+        content: none;
+      }
+      .cs_healthstrat_trust_item i {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+        background-color: var(--brand-green-soft);
+        color: var(--brand-green);
+        border: 1px solid #d9efe0;
+        box-shadow: none;
+        font-size: 19px;
+        margin-bottom: 2px;
+      }
+      .cs_healthstrat_trust_label {
+        color: var(--brand-green);
+        font-size: 11px;
+        line-height: 1.2em;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+      .cs_healthstrat_trust_title {
+        max-width: 210px;
+        color: var(--primary-blue-dark);
+        font-size: 16px;
+        line-height: 1.25em;
+        font-weight: 700;
+      }
+      @media (max-width: 991px) {
+        .cs_healthstrat_trust_panel {
+          padding: 22px 0;
+        }
+        .cs_healthstrat_trust_panel::before {
+          display: none;
+        }
+        .cs_healthstrat_trust_grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 22px;
+        }
+      }
+      @media (max-width: 575px) {
+        .cs_healthstrat_trust_grid {
+          grid-template-columns: 1fr;
+        }
+        .cs_healthstrat_trust_item {
+          min-height: auto;
+          padding: 26px 20px 24px;
+        }
+      }
+      #services {
+        position: relative;
+        z-index: 1;
+      }
+      #services .cs_healthstrat_services_top_gap {
+        height: 120px;
+      }
+      @media (max-width: 991px) {
+        #services .cs_healthstrat_services_top_gap {
+          height: 80px;
+        }
+      }
+      @media (max-width: 575px) {
+        #services .cs_healthstrat_services_top_gap {
+          height: 70px;
+        }
+      }
+      .cs_healthstrat_cta_actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      .cs_healthstrat_final_cta_title {
+        max-width: 920px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: clamp(38px, 5vw, 72px);
+        line-height: 1.08em;
+      }
+      .cs_healthstrat_whatsapp_btn {
+        background-color: var(--whatsapp-green);
+        color: #fff;
+      }
+      .cs_healthstrat_whatsapp_btn:hover {
+        background-color: var(--primary);
+        color: #fff;
+      }
+      .cs_healthstrat_why_icon {
+        color: var(--brand-green);
+        font-size: 30px;
+        line-height: 1;
+      }
+      .cs_healthstrat_outcome_icon {
+        color: var(--brand-green);
+        font-size: 28px;
+        line-height: 1;
+      }
+      .cs_healthstrat_outcome_icon_wrap {
+        width: auto !important;
+        height: auto !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        background-color: transparent !important;
+      }
+      .cs_healthstrat_outcome_item {
+        height: 100%;
+      }
+      .cs_healthstrat_audience_title {
+        font-size: clamp(34px, 4vw, 46px);
+        line-height: 1.15em;
+      }
+      .cs_healthstrat_audience_section .cs_post a {
+        pointer-events: none;
+        cursor: default;
+      }
+      .cs_healthstrat_final_cta_btn {
+        min-height: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 999px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+        box-shadow: 0 12px 24px rgba(0, 80, 144, 0.2);
+      }
+      .cs_healthstrat_final_cta_btn:hover {
+        color: #fff;
+        transform: translateY(-2px);
+      }
+      .cs_healthstrat_final_cta_primary {
+        min-width: 282px;
+        padding: 0 0 0 22px;
+        background: linear-gradient(135deg, #003b71 0%, #005090 100%);
+      }
+      .cs_healthstrat_final_cta_primary:hover {
+        background: linear-gradient(135deg, #002f5d 0%, #00477f 100%);
+      }
+      .cs_healthstrat_final_cta_whatsapp {
+        min-width: 150px;
+        padding: 0 20px;
+        background: linear-gradient(135deg, #2f9f44 0%, #60a030 100%);
+        box-shadow: 0 12px 24px rgba(96, 160, 48, 0.22);
+      }
+      .cs_healthstrat_final_cta_whatsapp:hover {
+        background: linear-gradient(135deg, #238936 0%, #4f9228 100%);
+      }
+      .cs_healthstrat_final_cta_icon {
+        font-size: 20px;
+        line-height: 1;
+      }
+      .cs_healthstrat_final_cta_arrow {
+        min-height: 46px;
+        width: 46px;
+        margin-left: 2px;
+        border-left: 1px solid rgba(255, 255, 255, 0.18);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+      }
+      .cs_healthstrat_map_section {
+        position: relative;
+        min-height: 760px;
+        overflow: hidden;
+        border-radius: 0;
+        background: var(--background-main);
+      }
+      .cs_healthstrat_map_image {
+        width: 100%;
+        height: 100%;
+        min-height: 760px;
+        object-fit: cover;
+        display: block;
+      }
+      .cs_healthstrat_map_cards {
+        position: absolute;
+        left: 50%;
+        bottom: 42px;
+        transform: translateX(-50%);
+        width: min(88%, 1500px);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+        z-index: 5;
+      }
+      .cs_healthstrat_map_card {
+        min-height: 150px;
+        display: grid;
+        grid-template-columns: 124px 1px 1fr;
+        align-items: center;
+        gap: 26px;
+        padding: 22px 28px;
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid rgba(227, 234, 240, 0.9);
+        border-radius: 18px;
+        box-shadow: 0 22px 55px rgba(0, 35, 75, 0.18);
+        backdrop-filter: blur(10px);
+      }
+      .cs_healthstrat_map_card_icon {
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        background: transparent;
+        border: 0;
+        overflow: hidden;
+      }
+      .cs_healthstrat_map_card_icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+      .cs_healthstrat_map_card_divider {
+        width: 1.5px;
+        height: 96px;
+        display: block;
+        background: #ee2028;
+        opacity: 0.9;
+      }
+      .cs_healthstrat_map_card_title {
+        margin: 0 0 8px;
+        color: #061f45;
+        font-size: clamp(22px, 1.6vw, 28px);
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+      }
+      .cs_healthstrat_map_card_text {
+        margin: 0;
+        max-width: 310px;
+        color: #18333b;
+        font-size: clamp(14px, 0.95vw, 16px);
+        font-weight: 500;
+        line-height: 1.45;
+      }
+      @media (max-width: 1024px) {
+        .cs_healthstrat_map_cards {
+          position: relative;
+          left: auto;
+          bottom: auto;
+          transform: none;
+          width: 92%;
+          margin: -80px auto 0;
+          grid-template-columns: 1fr;
+        }
+        .cs_healthstrat_map_card {
+          grid-template-columns: 112px 1px 1fr;
+          gap: 22px;
+          padding: 24px;
+        }
+        .cs_healthstrat_map_card_icon {
+          width: 96px;
+          height: 96px;
+        }
+        .cs_healthstrat_map_card_divider {
+          height: 96px;
+        }
+      }
+      @media (max-width: 640px) {
+        .cs_healthstrat_map_section {
+          min-height: auto;
+          padding-bottom: 32px;
+        }
+        .cs_healthstrat_map_image {
+          height: auto;
+          min-height: 0;
+          object-fit: contain;
+        }
+        .cs_healthstrat_map_cards {
+          margin-top: 22px;
+        }
+        .cs_healthstrat_map_card {
+          grid-template-columns: 1fr;
+          text-align: center;
+          gap: 14px;
+        }
+        .cs_healthstrat_map_card_divider {
+          width: 56px;
+          height: 2px;
+          justify-self: center;
+        }
+        .cs_healthstrat_map_card_icon {
+          width: 104px;
+          height: 104px;
+        }
+        .cs_healthstrat_map_card_text {
+          margin-inline: auto;
+        }
+      }
+      @media (max-width: 575px) {
+        .cs_healthstrat_cta_actions .cs_btn {
+          width: 100%;
+        }
+        .cs_healthstrat_final_cta_btn {
+          width: 100%;
+          min-width: 0;
+          min-height: 60px;
+          font-size: 17px;
+          gap: 12px;
+        }
+        .cs_healthstrat_final_cta_primary {
+          padding-left: 24px;
+        }
+        .cs_healthstrat_final_cta_arrow {
+          min-height: 60px;
+          width: 62px;
+          margin-left: auto;
+        }
+      }
+      #services .cs_image_box.cs_style_1 {
+        display: grid;
+        grid-template-columns: 80px 260px minmax(0, 1fr);
+        align-items: center;
+        gap: 40px;
+      }
+      #services .cs_image_box.cs_style_1 .cs_image_box_number {
+        display: block !important;
+        width: auto;
+      }
+      #services .cs_image_box.cs_style_1 .cs_image_box_img {
+        width: 260px;
+        height: 176px;
+      }
+      #services .cs_image_box.cs_style_1 .cs_image_box_info {
+        width: 100%;
+        padding-right: 112px;
+      }
+      #services .cs_image_box.cs_style_1 .cs_image_box_btn {
+        right: 0;
+      }
+      #services .cs_image_box_1_list li:not(:last-child) {
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+      }
+      @media (max-width: 991px) {
+        #services .cs_image_box.cs_style_1 {
+          grid-template-columns: 58px 200px minmax(0, 1fr);
+          gap: 26px;
+        }
+        #services .cs_image_box.cs_style_1 .cs_image_box_img {
+          width: 200px;
+          height: 148px;
+        }
+        #services .cs_image_box.cs_style_1 .cs_image_box_info {
+          padding-right: 90px;
+        }
+      }
+      @media (max-width: 767px) {
+        #services .cs_image_box.cs_style_1 {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+        #services .cs_image_box.cs_style_1 .cs_image_box_img {
+          width: 100%;
+          height: 220px;
+        }
+        #services .cs_image_box.cs_style_1 .cs_image_box_info {
+          padding-right: 0;
+        }
+      }
+      @media (max-width: 575px) {
+        .cs_site_header.cs_style_1 .cs_main_header_in {
+          height: 82px;
+          flex-wrap: nowrap;
+          align-items: center;
+        }
+        .cs_site_header.cs_style_1 .cs_main_header_left {
+          width: 100%;
+          min-width: 0;
+          display: flex;
+          align-items: center;
+        }
+        .cs_site_header.cs_style_1 .cs_site_branding {
+          max-width: calc(100% - 64px);
+        }
+        .cs_site_header.cs_style_1 .cs_site_branding img {
+          width: min(238px, 100%);
+          height: auto;
+          display: block;
+        }
+        .cs_site_header.cs_style_1 .cs_main_header_right {
+          display: none;
+        }
+        .cs_site_header.cs_style_1 .cs_menu_toggle {
+          right: 0;
+          top: 50%;
+          margin-top: -13px;
+          z-index: 102;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="cs_preloader cs_accent_color">
       <div class="cs_preloader_in">
-        <img src="assets/img/preloader_icon.svg" alt="Bione">
+        <img src="assets/img/healthstrat_preloader_logo.png" alt="HealthStrat">
       </div>
     </div>
     <!-- Start Header Section -->
@@ -31,49 +744,48 @@
           <div class="cs_main_header_in">
             <div class="cs_main_header_left">
               <a class="cs_site_branding" href="index.html">
-                <img src="assets/img/logo.svg" alt="Logo">
+                <img src="assets/img/healthstrat_logo_nav_text.png" alt="HealthStrat">
               </a>
               <div class="cs_nav">
                 <ul class="cs_nav_list">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About Us</a></li>
                   <li><a href="services.html">Our Expertise</a></li>
-                  <li class="menu-item-has-children cs_mega_menu cs_services_mega_menu"><a href="service-details.html">Our Services</a>
+                  <li class="menu-item-has-children cs_mega_menu cs_services_mega_menu"><a href="javascript:void(0)" aria-haspopup="true">Our Services</a>
                     <ul class="cs_mega_wrapper cs_services_mega_wrapper">
                       <li>
                         <a class="cs_service_mega_card" href="health-care-strategy-transformation.html">
                           <span class="cs_service_mega_title">Health Care Strategy &amp; Transformation</span>
-                          <span class="cs_service_mega_image"><img src="assets/img/services/health-care-strategy-transformation.png" alt="Health Care Strategy and Transformation"></span>
+                          <span class="cs_service_mega_image"><img src="assets/img/healthstrat/generated/global-service-strategy-transformation.png" alt="Health Care Strategy and Transformation"></span>
                         </a>
                       </li>
                       <li>
                         <a class="cs_service_mega_card" href="clinical-governance-quality.html">
                           <span class="cs_service_mega_title">Clinical Governance &amp; Quality</span>
-                          <span class="cs_service_mega_image"><img src="assets/img/services/clinical-governance-quality.png" alt="Clinical Governance and Quality"></span>
+                          <span class="cs_service_mega_image"><img src="assets/img/healthstrat/generated/global-service-clinical-governance.png" alt="Clinical Governance and Quality"></span>
                         </a>
                       </li>
                       <li>
                         <a class="cs_service_mega_card" href="nursing-workforce-development.html">
                           <span class="cs_service_mega_title">Nursing &amp; Workforce Development</span>
-                          <span class="cs_service_mega_image"><img src="assets/img/services/nursing-workforce-development.png" alt="Nursing and Workforce Development"></span>
+                          <span class="cs_service_mega_image"><img src="assets/img/healthstrat/generated/global-service-workforce-development.png" alt="Nursing and Workforce Development"></span>
                         </a>
                       </li>
                       <li>
                         <a class="cs_service_mega_card" href="innovation-design-thinking.html">
                           <span class="cs_service_mega_title">Innovation &amp; Design Thinking</span>
-                          <span class="cs_service_mega_image"><img src="assets/img/services/innovation-design-thinking.png" alt="Innovation and Design Thinking"></span>
+                          <span class="cs_service_mega_image"><img src="assets/img/healthstrat/generated/global-service-innovation-design-thinking.png" alt="Innovation and Design Thinking"></span>
                         </a>
                       </li>
                       <li>
                         <a class="cs_service_mega_card" href="education-training.html">
                           <span class="cs_service_mega_title">Education &amp; Training</span>
-                          <span class="cs_service_mega_image"><img src="assets/img/services/education-training.png" alt="Education and Training"></span>
+                          <span class="cs_service_mega_image"><img src="assets/img/healthstrat/generated/global-service-education-training.png" alt="Education and Training"></span>
                         </a>
                       </li>
                     </ul>
                   </li>
                   <li><a href="blog-right-sidebar.html">Insight</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -87,7 +799,7 @@
                     </svg>                      
                   </button>
                 </form>
-                <button class="cs_hamburger_btn cs_hamburger_info_btn ">
+                <button type="button" aria-label="Open quick contact" class="cs_hamburger_btn cs_hamburger_info_btn">
                   <span class="cs_hamburger_btn_in">
                     <span></span>
                     <span></span>
@@ -107,68 +819,50 @@
       <div class="cs_side_header_in">
         <div class="cs_side_header_shape"></div>
         <a class="cs_site_branding" href="index.html">
-          <img src="assets/img/logo.svg" alt="Logo">
+          <img src="assets/img/healthstrat_logo_nav_text.png" alt="HealthStrat">
         </a>
         <div class="cs_side_header_box">
-          <h2 class="cs_side_header_heading">Do you have a project in your  <br> mind? Keep connect us.</h2>
+          <h2 class="cs_side_header_heading">Partner with HealthStrat to build safer, future-ready healthcare systems.</h2>
         </div>
         <div class="cs_side_header_box">
           <h3 class="cs_side_header_title cs_primary_color">Contact Us</h3>
           <ul class="cs_side_header_contact_info cs_mp0">
             <li>
               <i class="fa-solid fa-phone"></i>
-              <span><a href="tel:+444547800112">+44 454 7800 112</a></span>
+              <span><a href="https://wa.me/6591176220">WhatsApp +65 9117 6220</a></span>
             </li>
             <li>
               <i class="fa-solid fa-envelope"></i>             
-              <span><a href="mailto:example@gmail.com">example@gmail.com</a></span>
+              <span><a href="mailto:healthstrat.consult@gmail.com">healthstrat.consult@gmail.com</a></span>
             </li>
             <li>
               <i class="fa-solid fa-location-dot"></i>            
-              <span>50 Wall Street Suite, 44150 <br>Ohio, United States</span>
+              <span>Singapore-based consultancy<br>serving regional healthcare teams</span>
             </li>
           </ul>
         </div>
         <div class="cs_side_header_box">
-          <h3 class="cs_side_header_title cs_primary_color">Subscribe</h3>
-          <div class="cs_newsletter cs_style_1 cs_type_1">
-            <form action="#" class="cs_newsletter_form">
-              <input type="email" class="cs_newsletter_input" placeholder="Email address">
-              <button class="cs_btn cs_style_1 cs_type_2 cs_white_color cs_primary_bg">
-                Subscribe
-                <span>
-                  <i>
-                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>                      
-                  </i>
-                  <i>
-                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>                      
-                  </i>
-                </span>
-              </button>
-            </form>
-            <div class="cs_newsletter_text">At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit.</div>
+          <h3 class="cs_side_header_title cs_primary_color">Quick Links</h3>
+          <div class="cs_side_header_links">
+            <a href="services.html">Our Expertise</a>
+            <a href="health-care-strategy-transformation.html">Strategy &amp; Transformation</a>
+            <a href="clinical-governance-quality.html">Clinical Governance &amp; Quality</a>
+            <a href="contact.html">Contact Us</a>
           </div>
         </div>
         <div class="cs_side_header_box">
           <h3 class="cs_side_header_title cs_primary_color">Follow Us</h3>
           <div class="cs_social_btns cs_style_1">
-            <a href="#" class="cs_center">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="cs_center">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#" class="cs_center">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="#" class="cs_center">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-          </div>
+                <a href="https://wa.me/6591176220" class="cs_center" aria-label="WhatsApp HealthStrat">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:healthstrat.consult@gmail.com" class="cs_center" aria-label="Email HealthStrat">
+                  <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="contact.html" class="cs_center" aria-label="Contact HealthStrat">
+                  <i class="fa-solid fa-calendar-days"></i>
+                </a>
+              </div>
         </div>
       </div>
     </div>
@@ -179,14 +873,14 @@
         <div class="cs_hero_title_box">
           <div class="cs_hero_title_box_in">
             <div class="container">
-              <h1 class="cs_hero_title cs_fs_120 mb-0">Discover the Key to Pioneering the <span>Future</span> of Wealth Generation.</h1>
+              <h1 class="cs_hero_title cs_fs_120 cs_healthstrat_hero_title mb-0">Transforming Healthcare<br>Systems Through <span>Strategy</span>,<br>Clinical Leadership<br>& Innovation.</h1>
             </div>
           </div>
         </div>
         <div class="cs_hero_title_box cs_title_cloned">
           <div class="cs_hero_title_box_in">
             <div class="container">
-              <h1 class="cs_hero_title cs_fs_120 mb-0">Discover the Key to Pioneering the <span>Future</span> of Wealth Generation.</h1>
+              <h1 class="cs_hero_title cs_fs_120 cs_healthstrat_hero_title mb-0">Transforming Healthcare<br>Systems Through <span>Strategy</span>,<br>Clinical Leadership<br>& Innovation.</h1>
             </div>
           </div>
         </div>
@@ -194,184 +888,66 @@
       <div class="container wow fadeIn" data-wow-duration="0.9s" data-wow-delay="0.25s">
         <div class="cs_hero_text">
           <div class="cs_hero_bottom">
-            <div class="cs_hero_phone_number cs_primary_font cs_fs_24 cs_primary_color">
-              <span class="cs_accent_bg cs_white_color cs_center"><i class="fa-solid fa-phone"></i></span>
-              <a href="tel:1(800)2944567">1 (800) 294 - 4567</a>
+            <div class="cs_healthstrat_hero_ctas cs_primary_font">
+              <a href="https://wa.me/6591176220" class="cs_healthstrat_hero_cta cs_healthstrat_hero_cta_primary" aria-label="Book a Consultation on WhatsApp">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              </a>
+              <span class="cs_healthstrat_hero_cta_divider" aria-hidden="true"></span>
+              <a href="#services" class="cs_healthstrat_hero_cta cs_healthstrat_hero_cta_secondary">
+                Explore Services
+                <i class="fa-solid fa-arrow-right cs_healthstrat_cta_arrow" aria-hidden="true"></i>
+              </a>
             </div>
             <div class="cs_hero_subtitle cs_white_color cs_fs_18 cs_medium">
-              Unleash the potential of your website with our limited-time offer on the Bione Theme. Elevate your online presence with its sleek design, versatile features, and user-friendly customization options.
+              HealthStrat partners with healthcare organisations across Singapore and the region to strengthen patient safety, clinical governance, workforce capability, and sustainable healthcare transformation.
             </div>
           </div>
         </div>
       </div>
-      <div class="cs_hero_thumb cs_bg_filed cs_primary_bg" data-src="assets/img/default/hero_img.jpeg"></div>
+      <div class="cs_hero_thumb cs_bg_filed cs_primary_bg" data-src="assets/img/healthstrat/generated/global-hero-healthcare-transformation.png"></div>
     </div>
     <!-- End Hero -->
-    <!-- Start About Section -->
-    <section class="cs_shape_wrap_1">
-      <div class="cs_shape_1"></div>
-      <div class="cs_height_145 cs_height_lg_75"></div>
+    <!-- Start Trust Bar -->
+    <section class="cs_healthstrat_trust_bar">
       <div class="container">
-        <div class="cs_section_heading cs_style_1">
-          <p class="cs_section_subtitle cs_fs_18 cs_medium wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay="0.25s">About Us</p>
-          <h2 class="cs_section_title cs_fs_53 cs_normal mb-0">Securing lasting value for <br>stakeholders over the long term</h2>
-        </div>
-        <div class="cs_height_85 cs_height_lg_50"></div>
-        <div class="cs_grid_style_4">
-          <div class="cs_grid_item">
-            <div class="cs_card cs_style_1 cs_shining">
-              <div class="cs_card_img cs_shining_item"><img src="assets/img/default/about_img_1.jpeg" alt="Thumb"></div>
-              <h2 class="cs_card_title cs_fs_30 cs_normal">Dive into our core principles</h2>
-              <p class="cs_card_subtitle">Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor.</p>
-              <a href="about.html" class="cs_btn cs_style_1 cs_type_1 cs_primary_color cs_shining_btn">
-                Learn More 
-                <span>
-                  <i>
-                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                      
-                  </i>
-                  <i>
-                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                      
-                  </i>
-                </span>
-              </a>
+        <div class="cs_healthstrat_trust_panel">
+          <div class="cs_healthstrat_trust_grid">
+            <div class="cs_healthstrat_trust_item wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.05s">
+              <i class="fa-solid fa-user-doctor"></i>
+              <small class="cs_healthstrat_trust_label">Leadership</small>
+              <span class="cs_healthstrat_trust_title">Former CEO &amp; Chief Nurse</span>
             </div>
-          </div>
-          <div class="cs_grid_item">
-            <div class="cs_card cs_style_1 cs_shining">
-              <div class="cs_card_img cs_shining_item"><img src="assets/img/default/about_img_2.jpeg" alt="Thumb"></div>
-              <h2 class="cs_card_title cs_fs_30 cs_normal">Discover our areas of expertise</h2>
-              <p class="cs_card_subtitle">Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor.</p>
-              <a href="about.html" class="cs_btn cs_style_1 cs_type_1 cs_primary_color cs_shining_btn">
-                Learn More 
-                <span>
-                  <i>
-                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                      
-                  </i>
-                  <i>
-                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                      
-                  </i>
-                </span>
-              </a>
+            <div class="cs_healthstrat_trust_item wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.15s">
+              <i class="fa-solid fa-award"></i>
+              <small class="cs_healthstrat_trust_label">Recognition</small>
+              <span class="cs_healthstrat_trust_title">WHO Scholar</span>
             </div>
-          </div>
-          <div class="cs_grid_item">
-            <div class="cs_card cs_style_1 cs_shining">
-              <div class="cs_card_img cs_shining_item"><img src="assets/img/default/about_img_3.jpeg" alt="Thumb"></div>
-              <h2 class="cs_card_title cs_fs_30 cs_normal">Approach with positive vibe</h2>
-              <p class="cs_card_subtitle">Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor.</p>
-              <a href="about.html" class="cs_btn cs_style_1 cs_type_1 cs_primary_color cs_shining_btn">
-                Learn More 
-                <span>
-                  <i>
-                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                      
-                  </i>
-                  <i>
-                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                      
-                  </i>
-                </span>
-              </a>
+            <div class="cs_healthstrat_trust_item wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.25s">
+              <i class="fa-solid fa-earth-asia"></i>
+              <small class="cs_healthstrat_trust_label">Regional</small>
+              <span class="cs_healthstrat_trust_title">Regional Healthcare Advisor</span>
+            </div>
+            <div class="cs_healthstrat_trust_item wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.35s">
+              <i class="fa-solid fa-location-dot"></i>
+              <small class="cs_healthstrat_trust_label">Singapore Base</small>
+              <span class="cs_healthstrat_trust_title">Singapore Consultancy</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="cs_height_145 cs_height_lg_75"></div>
     </section>
-    <!-- End About Section -->
-    <!-- Start Banner Section -->
-    <div class="cs_banner cs_style_1 cs_bg_filed cs_primary_bg" data-src="assets/img/default/banner.jpeg">
-      <div class="container">
-        <h2 class="mb-0 cs_white_color cs_fs_30 text-end cs_normal">This objective mirrors our growth plan, our mission,<br> our fundamental principles, and our ethos of<br> collective achievement.</h2>
-      </div>
-    </div>
-    <!-- End Banner Section -->
-    <!-- Start Specializations Section -->
-    <section class="cs_slider cs_style_2 cs_slider_gap_24">
-      <div class="cs_height_150 cs_height_lg_75"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-4 col-lg-5">
-            <div class="cs_section_heading cs_style_1">
-              <p class="cs_section_subtitle cs_fs_18 cs_medium wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay="0.25s">Specializations</p>
-              <h2 class="cs_section_title cs_fs_53 cs_normal mb-0">Explore the sectors we cater to</h2>
-            </div>
-            <div class="cs_height_44 cs_height_lg_30"></div>
-            <div class="cs_slider_arrows cs_style1">
-              <div class="cs_left_arrow cs_accent_bg rounded-circle cs_center cs_white_color">
-                <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.469669 5.46967C0.176777 5.76256 0.176777 6.23744 0.469669 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989593 6.3033 0.696699C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.469669 5.46967ZM17 5.25L1 5.25V6.75L17 6.75V5.25Z" fill="currentColor"/>
-                </svg>                  
-              </div>
-              <div class="cs_right_arrow cs_accent_bg rounded-circle cs_center cs_white_color">
-                <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.5303 6.53033C16.8232 6.23744 16.8232 5.76256 16.5303 5.46967L11.7574 0.696698C11.4645 0.403805 10.9896 0.403805 10.6967 0.696698C10.4038 0.989592 10.4038 1.46447 10.6967 1.75736L14.9393 6L10.6967 10.2426C10.4038 10.5355 10.4038 11.0104 10.6967 11.3033C10.9896 11.5962 11.4645 11.5962 11.7574 11.3033L16.5303 6.53033ZM6.55671e-08 6.75L16 6.75L16 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="currentColor"/>
-                </svg>                  
-              </div>
-            </div>
-            <div class="cs_height_85 cs_height_lg_50"></div>
-          </div>
-          <div class="col-xl-8 col-lg-7">
-            <div class="cs_slider_2_in">
-              <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-variable-width="1" data-slides-per-view="1">
-                <div class="cs_slider_wrapper">
-                  <div class="cs_slide">
-                    <div class="cs_card cs_style_2 cs_gray_bg">
-                      <div class="cs_card_in">
-                        <div class="cs_card_thumb"><img src="assets/img/default/specializations_1.png" alt="Specializations"></div>
-                        <h2 class="cs_card_title cs_normal cs_fs_30">01. Government</h2>
-                        <p class="cs_card_subtitle mb-0">We create visual elements such as logos, packaging, and marketing materials for your brand. We create visual elements such as logos, packaging, and marketing.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cs_slide">
-                    <div class="cs_card cs_style_2 cs_gray_bg">
-                      <div class="cs_card_in">
-                        <div class="cs_card_thumb"><img src="assets/img/default/specializations_2.png" alt="Specializations"></div>
-                        <h2 class="cs_card_title cs_normal cs_fs_30">02. Healthcare</h2>
-                        <p class="cs_card_subtitle mb-0">We create visual elements such as logos, packaging, and marketing materials for your brand. We create visual elements such as logos, packaging, and marketing.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cs_slide">
-                    <div class="cs_card cs_style_2 cs_gray_bg">
-                      <div class="cs_card_in">
-                        <div class="cs_card_thumb"><img src="assets/img/default/specializations_3.png" alt="Specializations"></div>
-                        <h2 class="cs_card_title cs_normal cs_fs_30">03. Education</h2>
-                        <p class="cs_card_subtitle mb-0">We create visual elements such as logos, packaging, and marketing materials for your brand. We create visual elements such as logos, packaging, and marketing.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cs_height_150 cs_height_lg_80"></div>
-    </section>
-    <!-- End Specializations Section -->
+    <!-- End Trust Bar -->
     <!-- Start Service Section -->
-    <section class="cs_primary_bg cs_bg_filed" data-src="assets/img/default/service_pattern.svg">
-      <div class="cs_height_145 cs_height_lg_75"></div>
+    <section id="services" class="cs_primary_bg cs_bg_filed" data-src="assets/img/default/service_pattern.svg">
+      <div class="cs_healthstrat_services_top_gap"></div>
       <div class="container">
         <div class="cs_section_heading cs_style_2">
           <div class="cs_section_heading_left">
             <p class="cs_section_subtitle cs_fs_18 cs_medium wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay="0.25s">Services</p>
-            <h2 class="cs_section_title cs_fs_53 cs_normal mb-0 cs_normal">Craft your future with strategy, envisioning, and execution</h2>
+            <h2 class="cs_section_title cs_fs_53 cs_normal mb-0 cs_normal">Practical healthcare expertise for safer, future-ready systems</h2>
           </div>
           <div class="cs_section_heading_right">
-            <p class="cs_section_heading_text mb-0 cs_fs_18 cs_medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enimus ad minim veniam.</p>
+            <p class="cs_section_heading_text mb-0 cs_fs_18 cs_medium">Focused consulting, advisory, workforce, innovation, and training support for healthcare organisations across Singapore and the region.</p>
           </div>
         </div>
         <div class="cs_height_85 cs_height_lg_50"></div>
@@ -379,13 +955,13 @@
           <li>
             <div class="cs_image_box cs_style_1">
               <div class="cs_image_box_number cs_white_color cs_primary_font cs_fs_53">01.</div>
-              <a href="service-details.html" class="cs_image_box_img overflow-hidden">
-                <img src="assets/img/default/service_1.jpeg" alt="Service">
+              <a href="health-care-strategy-transformation.html" class="cs_image_box_img overflow-hidden">
+                <img src="assets/img/healthstrat/generated/slot-home-service-strategy.png" alt="Healthcare Strategy and Transformation">
               </a>
               <div class="cs_image_box_info position-relative">
-                <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="service-details.html">Financial Consulting</a></h2>
-                <p class="cs_image_box_subtitle mb-0 cs_ternary_color">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                <a href="service-details.html" class="cs_image_box_btn cs_center position-absolute rounded-circle">
+                <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="health-care-strategy-transformation.html">Healthcare Strategy & Transformation</a></h2>
+                <p class="cs_image_box_subtitle mb-0 cs_ternary_color">Designing future-ready healthcare systems and operational transformation.</p>
+                <a href="health-care-strategy-transformation.html" class="cs_image_box_btn cs_center position-absolute rounded-circle">
                   <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
                   </svg>
@@ -399,13 +975,13 @@
           <li>
             <div class="cs_image_box cs_style_1">
               <div class="cs_image_box_number cs_white_color cs_primary_font cs_fs_53">02.</div>
-              <a href="service-details.html" class="cs_image_box_img overflow-hidden">
-                <img src="assets/img/default/service_2.jpeg" alt="Service">
+              <a href="clinical-governance-quality.html" class="cs_image_box_img overflow-hidden">
+                <img src="assets/img/healthstrat/generated/slot-home-service-clinical.png" alt="Clinical Governance and Quality">
               </a>
               <div class="cs_image_box_info position-relative">
-                <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="service-details.html">Management Consulting</a></h2>
-                <p class="cs_image_box_subtitle mb-0 cs_ternary_color">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                <a href="service-details.html" class="cs_image_box_btn cs_center position-absolute rounded-circle">
+                <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="clinical-governance-quality.html">Clinical Governance & Patient Safety</a></h2>
+                <p class="cs_image_box_subtitle mb-0 cs_ternary_color">Strengthening quality systems, accreditation readiness, and safer care delivery.</p>
+                <a href="clinical-governance-quality.html" class="cs_image_box_btn cs_center position-absolute rounded-circle">
                   <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
                   </svg>
@@ -419,13 +995,13 @@
           <li>
             <div class="cs_image_box cs_style_1">
               <div class="cs_image_box_number cs_white_color cs_primary_font cs_fs_53">03.</div>
-              <a href="service-details.html" class="cs_image_box_img overflow-hidden">
-                <img src="assets/img/default/service_3.jpeg" alt="Service">
+              <a href="nursing-workforce-development.html" class="cs_image_box_img overflow-hidden">
+                <img src="assets/img/healthstrat/generated/slot-home-service-workforce.png" alt="Nursing and Workforce Development">
               </a>
               <div class="cs_image_box_info position-relative">
-                <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="service-details.html">Marketing Strategy</a></h2>
-                <p class="cs_image_box_subtitle mb-0 cs_ternary_color">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                <a href="service-details.html" class="cs_image_box_btn cs_center position-absolute rounded-circle">
+                <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="nursing-workforce-development.html">Workforce Development</a></h2>
+                <p class="cs_image_box_subtitle mb-0 cs_ternary_color">Building resilient healthcare leadership and workforce capability.</p>
+                <a href="nursing-workforce-development.html" class="cs_image_box_btn cs_center position-absolute rounded-circle">
                   <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
                   </svg>
@@ -439,13 +1015,33 @@
           <li>
             <div class="cs_image_box cs_style_1">
               <div class="cs_image_box_number cs_white_color cs_primary_font cs_fs_53">04.</div>
-              <a href="service-details.html" class="cs_image_box_img overflow-hidden">
-                <img src="assets/img/default/service_4.jpeg" alt="Service">
+              <a href="innovation-design-thinking.html" class="cs_image_box_img overflow-hidden">
+                <img src="assets/img/healthstrat/generated/slot-home-service-innovation.png" alt="Innovation and Design Thinking">
               </a>
               <div class="cs_image_box_info position-relative">
-                <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="service-details.html">IT Consulting</a></h2>
-                <p class="cs_image_box_subtitle mb-0 cs_ternary_color">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium lorema doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
-                <a href="service-details.html" class="cs_image_box_btn cs_center position-absolute rounded-circle">
+                <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="innovation-design-thinking.html">Innovation & Design Thinking</a></h2>
+                <p class="cs_image_box_subtitle mb-0 cs_ternary_color">Integrating AI, digital health, and process redesign into care models.</p>
+                <a href="innovation-design-thinking.html" class="cs_image_box_btn cs_center position-absolute rounded-circle">
+                  <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
+                  </svg>
+                  <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cs_image_box cs_style_1">
+              <div class="cs_image_box_number cs_white_color cs_primary_font cs_fs_53">05.</div>
+              <a href="education-training.html" class="cs_image_box_img overflow-hidden">
+                <img src="assets/img/healthstrat/generated/slot-home-service-education.png" alt="Education and Training">
+              </a>
+              <div class="cs_image_box_info position-relative">
+                <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="education-training.html">Education &amp; Training</a></h2>
+                <p class="cs_image_box_subtitle mb-0 cs_ternary_color">Developing outcomes-based healthcare education and leadership programs.</p>
+                <a href="education-training.html" class="cs_image_box_btn cs_center position-absolute rounded-circle">
                   <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M29.3803 3.05172C29.4089 1.94752 28.537 1.02921 27.4328 1.00062L9.43879 0.534749C8.33459 0.506159 7.41628 1.37811 7.38769 2.48231C7.35911 3.58651 8.23106 4.50482 9.33526 4.53341L25.3299 4.94752L24.9158 20.9422C24.8872 22.0464 25.7592 22.9647 26.8634 22.9933C27.9676 23.0218 28.8859 22.1499 28.9144 21.0457L29.3803 3.05172ZM3.37714 28.5502L28.7581 4.4503L26.0039 1.54961L0.622863 25.6495L3.37714 28.5502Z" fill="currentColor"></path>
                   </svg>
@@ -457,66 +1053,10 @@
             </div>
           </li>
         </ul>
-        <div class="cs_image_box_1_list_more_btn text-center wow fadeInDown" data-wow-duration="0.9s" data-wow-delay="0.25s">
-          <a href="services.html" class="cs_btn cs_style_1 cs_type_2 cs_white_bg cs_primary_color cs_w_100_sm">
-            More Services
-            <span>
-              <i>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>                      
-              </i>
-              <i>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>                      
-              </i>
-            </span>
-          </a>
-        </div>
       </div>
       <div class="cs_height_150 cs_height_lg_80"></div>
     </section>
     <!-- End Service Section -->
-    <!-- Start Our Values Section -->
-    <div class="container">
-      <div class="cs_height_145 cs_height_lg_75"></div>
-      <div class="cs_section_heading cs_style_2">
-        <div class="cs_section_heading_left">
-          <p class="cs_section_subtitle cs_fs_18 cs_medium wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay="0.25s">Our Values</p>
-          <h2 class="cs_section_title cs_fs_53 cs_normal mb-0 cs_normal">Building lasting value</h2>
-        </div>
-        <div class="cs_section_heading_right">
-          <p class="cs_section_heading_text mb-0 cs_fs_18 cs_medium">Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </div>
-      </div>
-      <div class="cs_height_85 cs_height_lg_50"></div>
-      <div class="row cs_gap_y_40">
-        <div class="col-lg-4">
-          <div class="cs_iconbox cs_style_1">
-            <div class="cs_iconbox_icon rounded-circle cs_gray_bg"><img src="assets/img/default/value_icon_1.svg" alt=""></div>
-            <h2 class="cs_iconbox_title cs_fs_30 cs_normal">Innovation</h2>
-            <p class="cs_iconbox_subtitle mb-0">Fostering a culture of creativity and continuous improvement to stay ahead in a dynamic market. At its core, innovation is about the relentless pursuit.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="cs_iconbox cs_style_1">
-            <div class="cs_iconbox_icon rounded-circle cs_gray_bg"><img src="assets/img/default/value_icon_2.svg" alt=""></div>
-            <h2 class="cs_iconbox_title cs_fs_30 cs_normal">Customer Centricity</h2>
-            <p class="cs_iconbox_subtitle mb-0">Placing customers at the heart of decisions and actions, prioritizing their needs and satisfaction. Once such show each uniforms, to such ancient vices from select.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="cs_iconbox cs_style_1">
-            <div class="cs_iconbox_icon rounded-circle cs_gray_bg"><img src="assets/img/default/value_icon_3.svg" alt=""></div>
-            <h2 class="cs_iconbox_title cs_fs_30 cs_normal">Sustainability</h2>
-            <p class="cs_iconbox_subtitle mb-0">Adhering to environmentally and socially responsible practices, aiming for long-term sustainability. Once such show he each uniforms, to such ancient vices.</p>
-          </div>
-        </div>
-      </div>
-      <div class="cs_height_150 cs_height_lg_80"></div>
-    </div>
-    <!-- End Our Values Section -->
     <!-- Start Why Chose Us -->
     <section class="cs_gray_bg cs_why_choose_us_1 cs_shape_wrap_2">
       <div class="cs_height_0 cs_height_lg_80"></div>
@@ -525,69 +1065,60 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="cs_why_choose_us_thumb">
-              <div class="cs_why_choose_us_thumb_in cs_bg_filed" data-src="assets/img/default/why_chose_us_thumb.jpeg"></div>
+              <div class="cs_why_choose_us_thumb_in cs_bg_filed" data-src="assets/img/healthstrat/generated/founder-dr-prema-k.png"></div>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="cs_height_75 cs_height_lg_50"></div>
             <div class="cs_section_heading cs_style_1">
-              <p class="cs_section_subtitle cs_fs_18 cs_medium wow fadeInRight" data-wow-duration="0.9s" data-wow-delay="0.25s">Why Choose Us</p>
-              <h2 class="cs_section_title cs_fs_53 cs_normal mb-0">Experienced experts with industry accreditation</h2>
+              <p class="cs_section_subtitle cs_fs_18 cs_medium wow fadeInRight" data-wow-duration="0.9s" data-wow-delay="0.25s">Why</p>
+              <h2 class="cs_section_title cs_fs_53 cs_normal mb-0">Why healthcare leaders choose HealthStrat</h2>
             </div>
             <div class="cs_height_55 cs_height_lg_40"></div>
             <div class="row cs_gap_y_45">
               <div class="col-md-6">
                 <div class="cs_iconbox cs_style_2">
                   <div class="cs_iconbox_icon">
-                    <img src="assets/img/default/why_chose_us_icon_1.svg" alt="Icon">
+                    <i class="fa-solid fa-user-doctor cs_healthstrat_why_icon" aria-hidden="true"></i>
                   </div>
-                  <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Expertise</h2>
-                  <p class="cs_iconbox_subtitle mb-0">Fostering a culture of creativity and continuous improvement to stay ahead in a dynamic market. At its core, innovation.</p>
+                  <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Led by Real Healthcare Leadership Experience</h2>
+                  <p class="cs_iconbox_subtitle mb-0">Former healthcare CEO and Chief Nurse with decades of operational and strategic leadership.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="cs_iconbox cs_style_2">
                   <div class="cs_iconbox_icon">
-                    <img src="assets/img/default/why_chose_us_icon_2.svg" alt="Icon">
+                    <i class="fa-solid fa-earth-asia cs_healthstrat_why_icon" aria-hidden="true"></i>
                   </div>
-                  <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Proven Track Record</h2>
-                  <p class="cs_iconbox_subtitle mb-0">Surprise to right such-like option derive scent trust, the unpleasing lane. Effortless Named myself and doing on not intor.</p>
+                  <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Regional Transformation Expertise</h2>
+                  <p class="cs_iconbox_subtitle mb-0">Active engagements across Singapore, India, and Indonesia.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="cs_iconbox cs_style_2">
                   <div class="cs_iconbox_icon">
-                    <img src="assets/img/default/why_chose_us_icon_3.svg" alt="Icon">
+                    <i class="fa-solid fa-clipboard-check cs_healthstrat_why_icon" aria-hidden="true"></i>
                   </div>
-                  <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Industry Recognition</h2>
-                  <p class="cs_iconbox_subtitle mb-0">A little psychological free to the clean it packed, is he the quitting to solider, the as he the furnished outside where of ages.</p>
+                  <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Strategy That Works in Practice</h2>
+                  <p class="cs_iconbox_subtitle mb-0">Practical, implementable solutions—not theoretical frameworks.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="cs_iconbox cs_style_2">
                   <div class="cs_iconbox_icon">
-                    <img src="assets/img/default/why_chose_us_icon_4.svg" alt="Icon">
+                    <i class="fa-solid fa-shield-heart cs_healthstrat_why_icon" aria-hidden="true"></i>
                   </div>
-                  <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Customer Centric</h2>
-                  <p class="cs_iconbox_subtitle mb-0">Expand that ridden should logging bolsuro uniforms, of puzzles look the and voila personalities with other small.</p>
+                  <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Deep Clinical &amp; Governance Expertise</h2>
+                  <p class="cs_iconbox_subtitle mb-0">Specialised expertise in patient safety, workforce optimisation, community care, and healthcare education.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="cs_iconbox cs_style_2">
                   <div class="cs_iconbox_icon">
-                    <img src="assets/img/default/why_chose_us_icon_5.svg" alt="Icon">
+                    <i class="fa-solid fa-hospital-user cs_healthstrat_why_icon" aria-hidden="true"></i>
                   </div>
-                  <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Innovative Solutions</h2>
-                  <p class="cs_iconbox_subtitle mb-0">Kicked happened of he that of I one and area project anyone was explanation effortless guide with weather.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="cs_iconbox cs_style_2">
-                  <div class="cs_iconbox_icon">
-                    <img src="assets/img/default/why_chose_us_icon_6.svg" alt="Icon">
-                  </div>
-                  <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Dedicated Support</h2>
-                  <p class="cs_iconbox_subtitle mb-0">Get your and a survey sleepiness in hat a could except contact duty worthy.</p>
+                  <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Trusted Across Care Settings</h2>
+                  <p class="cs_iconbox_subtitle mb-0">Experience spanning hospitals, community care, policy, and higher education.</p>
                 </div>
               </div>
             </div>
@@ -597,128 +1128,191 @@
       </div>
     </section>
     <!-- End Why Chose Us -->
-    <!-- Blog Post Section -->
-    <section>
+    <!-- Start Our Values Section -->
+    <div class="container">
       <div class="cs_height_145 cs_height_lg_75"></div>
+      <div class="cs_section_heading cs_style_2">
+        <div class="cs_section_heading_left">
+          <p class="cs_section_subtitle cs_fs_18 cs_medium wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay="0.25s">Results</p>
+          <h2 class="cs_section_title cs_fs_53 cs_normal mb-0 cs_normal">Strategic Outcomes We Help Achieve</h2>
+        </div>
+        <div class="cs_section_heading_right">
+          <p class="cs_section_heading_text mb-0 cs_fs_18 cs_medium">Decision-makers need more than service descriptions. HealthStrat focuses on safer care, reduced risk, stronger workforce performance, accreditation readiness, and transformation execution.</p>
+        </div>
+      </div>
+      <div class="cs_height_85 cs_height_lg_50"></div>
+      <div class="row cs_gap_y_40">
+        <div class="col-lg-4 col-md-6">
+          <div class="cs_iconbox cs_style_1 cs_healthstrat_outcome_item">
+            <div class="cs_iconbox_icon cs_healthstrat_outcome_icon_wrap"><i class="fa-solid fa-shield-heart cs_healthstrat_outcome_icon" aria-hidden="true"></i></div>
+            <h2 class="cs_iconbox_title cs_fs_30 cs_normal">Stronger patient safety systems</h2>
+            <p class="cs_iconbox_subtitle mb-0">Strengthen safer care delivery, clinical accountability, and risk reduction practices.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="cs_iconbox cs_style_1 cs_healthstrat_outcome_item">
+            <div class="cs_iconbox_icon cs_healthstrat_outcome_icon_wrap"><i class="fa-solid fa-users-gear cs_healthstrat_outcome_icon" aria-hidden="true"></i></div>
+            <h2 class="cs_iconbox_title cs_fs_30 cs_normal">Workforce optimisation and retention</h2>
+            <p class="cs_iconbox_subtitle mb-0">Improve workforce capability, performance, resilience, and long-term team sustainability.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="cs_iconbox cs_style_1 cs_healthstrat_outcome_item">
+            <div class="cs_iconbox_icon cs_healthstrat_outcome_icon_wrap"><i class="fa-solid fa-route cs_healthstrat_outcome_icon" aria-hidden="true"></i></div>
+            <h2 class="cs_iconbox_title cs_fs_30 cs_normal">Operational readiness for transformation</h2>
+            <p class="cs_iconbox_subtitle mb-0">Prepare healthcare teams, workflows, and systems for practical transformation execution.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="cs_iconbox cs_style_1 cs_healthstrat_outcome_item">
+            <div class="cs_iconbox_icon cs_healthstrat_outcome_icon_wrap"><i class="fa-solid fa-clipboard-check cs_healthstrat_outcome_icon" aria-hidden="true"></i></div>
+            <h2 class="cs_iconbox_title cs_fs_30 cs_normal">Accreditation preparedness</h2>
+            <p class="cs_iconbox_subtitle mb-0">Build stronger quality systems, governance evidence, and accreditation readiness.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="cs_iconbox cs_style_1 cs_healthstrat_outcome_item">
+            <div class="cs_iconbox_icon cs_healthstrat_outcome_icon_wrap"><i class="fa-solid fa-house-medical-circle-check cs_healthstrat_outcome_icon" aria-hidden="true"></i></div>
+            <h2 class="cs_iconbox_title cs_fs_30 cs_normal">Future-ready community care models</h2>
+            <p class="cs_iconbox_subtitle mb-0">Support sustainable care models across hospitals, community care, and ageing care needs.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="cs_iconbox cs_style_1 cs_healthstrat_outcome_item">
+            <div class="cs_iconbox_icon cs_healthstrat_outcome_icon_wrap"><i class="fa-solid fa-people-arrows cs_healthstrat_outcome_icon" aria-hidden="true"></i></div>
+            <h2 class="cs_iconbox_title cs_fs_30 cs_normal">Leadership capability building</h2>
+            <p class="cs_iconbox_subtitle mb-0">Develop leaders who can guide healthcare teams through change, safety, and innovation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_130 cs_height_lg_75"></div>
+    </div>
+    <!-- End Our Values Section -->
+    <!-- Start Regional Map Section -->
+    <section class="cs_healthstrat_map_section">
+      <img class="cs_healthstrat_map_image" src="assets/img/map.png" alt="Regional healthcare presence across India, Singapore, and Indonesia">
+      <div class="cs_healthstrat_map_cards" aria-label="Regional focus areas">
+        <div class="cs_healthstrat_map_card">
+          <div class="cs_healthstrat_map_card_icon" aria-hidden="true"><img src="assets/img/singapore.png" alt=""></div>
+          <span class="cs_healthstrat_map_card_divider" aria-hidden="true"></span>
+          <div>
+            <h3 class="cs_healthstrat_map_card_title">Singapore</h3>
+            <p class="cs_healthstrat_map_card_text">Healthcare innovation, policy and provider transformation.</p>
+          </div>
+        </div>
+        <div class="cs_healthstrat_map_card">
+          <div class="cs_healthstrat_map_card_icon" aria-hidden="true"><img src="assets/img/india.png" alt=""></div>
+          <span class="cs_healthstrat_map_card_divider" aria-hidden="true"></span>
+          <div>
+            <h3 class="cs_healthstrat_map_card_title">India</h3>
+            <p class="cs_healthstrat_map_card_text">Large-scale healthcare operations and digital health growth.</p>
+          </div>
+        </div>
+        <div class="cs_healthstrat_map_card">
+          <div class="cs_healthstrat_map_card_icon" aria-hidden="true"><img src="assets/img/indonesia.png" alt=""></div>
+          <span class="cs_healthstrat_map_card_divider" aria-hidden="true"></span>
+          <div>
+            <h3 class="cs_healthstrat_map_card_title">Indonesia</h3>
+            <p class="cs_healthstrat_map_card_text">Emerging healthcare access and regional expansion opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Regional Map Section -->
+    <!-- Who We Work With Section -->
+    <section class="cs_healthstrat_audience_section">
+      <div class="cs_height_70 cs_height_lg_45"></div>
       <div class="container">
         <div class="cs_section_heading cs_style_1 text-center">
-          <p class="cs_section_subtitle cs_fs_18 cs_medium wow fadeInUp" data-wow-duration="0.9s" data-wow-delay="0.25s">Recent Blog</p>
-          <h2 class="cs_section_title cs_fs_53 cs_normal mb-0">Insights hub: Navigating the world <br>business of Knowledge</h2>
+          <p class="cs_section_subtitle cs_fs_18 cs_medium wow fadeInUp" data-wow-duration="0.9s" data-wow-delay="0.25s">Who We Work With</p>
+          <h2 class="cs_section_title cs_fs_53 cs_normal mb-0 cs_healthstrat_audience_title">We support healthcare organisations, <br>care providers and transformation leaders</h2>
         </div>
         <div class="cs_height_85 cs_height_lg_50"></div>
       </div>
       <div class="container-fluid">
         <div class="cs_slider cs_style_1 cs_slider_gap_24">
-          <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3" data-lg-slides="3" data-add-slides="4">
+          <div class="cs_slider_container" data-autoplay="4500" data-loop="1" data-speed="1200" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3" data-lg-slides="3" data-add-slides="4">
             <div class="cs_slider_wrapper">
               <div class="cs_slide">
                 <div class="cs_post cs_style_1">
-                  <a href="blog-details.html" class="cs_post_thumb"><img src="assets/img/default/post_1.jpeg" alt="Post"></a>
+                  <a href="services.html" class="cs_post_thumb"><img src="assets/img/healthstrat/generated/slot-home-audience-hospitals.png" alt="Hospitals and healthcare systems"></a>
                   <div class="cs_post_info">
                     <div class="cs_post_meta">
-                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="blog-details.html">Business</a></span>
-                      <span>Jun 25, 2023</span>
+                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="services.html">We support</a></span>
+                      <span>Care Systems</span>
                     </div>
                     <h2 class="cs_post_title cs_fs_30 cs_normal mb-0">
-                      <a href="blog-details.html">Strategies for a Post-Pandemic Workplace</a>
+                      <a href="services.html">Hospitals and healthcare systems</a>
                     </h2>
                   </div>
                 </div>
               </div>
               <div class="cs_slide">
                 <div class="cs_post cs_style_1">
-                  <a href="blog-details.html" class="cs_post_thumb"><img src="assets/img/default/post_2.jpeg" alt="Post"></a>
+                  <a href="services.html" class="cs_post_thumb"><img src="assets/img/healthstrat/generated/slot-home-audience-community-care.png" alt="Community care providers"></a>
                   <div class="cs_post_info">
                     <div class="cs_post_meta">
-                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="blog-details.html">Corporate</a></span>
-                      <span>Aug 01, 2023</span>
+                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="services.html">We support</a></span>
+                      <span>Community Care</span>
                     </div>
                     <h2 class="cs_post_title cs_fs_30 cs_normal mb-0">
-                      <a href="blog-details.html">Making a Positive Impact Beyond Profits</a>
+                      <a href="services.html">Community care providers</a>
                     </h2>
                   </div>
                 </div>
               </div>
               <div class="cs_slide">
                 <div class="cs_post cs_style_1">
-                  <a href="blog-details.html" class="cs_post_thumb"><img src="assets/img/default/post_3.jpeg" alt="Post"></a>
+                  <a href="services.html" class="cs_post_thumb"><img src="assets/img/healthstrat/generated/slot-home-audience-transformation-leaders.png" alt="Healthcare groups and networks"></a>
                   <div class="cs_post_info">
                     <div class="cs_post_meta">
-                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="blog-details.html">Consulting</a></span>
-                      <span>Sep 14, 2023</span>
+                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="services.html">We support</a></span>
+                      <span>Networks</span>
                     </div>
                     <h2 class="cs_post_title cs_fs_30 cs_normal mb-0">
-                      <a href="blog-details.html">Protecting Your Business from Data Breaches</a>
+                      <a href="services.html">Healthcare groups and networks</a>
                     </h2>
                   </div>
                 </div>
               </div>
               <div class="cs_slide">
                 <div class="cs_post cs_style_1">
-                  <a href="blog-details.html" class="cs_post_thumb"><img src="assets/img/default/post_4.jpeg" alt="Post"></a>
+                  <a href="services.html" class="cs_post_thumb"><img src="assets/img/healthstrat/generated/slot-home-audience-public-health.png" alt="Government and public healthcare agencies"></a>
                   <div class="cs_post_info">
                     <div class="cs_post_meta">
-                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="blog-details.html">Business</a></span>
-                      <span>Jun 25, 2023</span>
+                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="services.html">We support</a></span>
+                      <span>Public Health</span>
                     </div>
                     <h2 class="cs_post_title cs_fs_30 cs_normal mb-0">
-                      <a href="blog-details.html">Navigating the Complex Path to Corporate Growth</a>
+                      <a href="services.html">Government and public healthcare agencies</a>
                     </h2>
                   </div>
                 </div>
               </div>
               <div class="cs_slide">
                 <div class="cs_post cs_style_1">
-                  <a href="blog-details.html" class="cs_post_thumb"><img src="assets/img/default/post_1.jpeg" alt="Post"></a>
+                  <a href="services.html" class="cs_post_thumb"><img src="assets/img/healthstrat/generated/slot-home-audience-training-institutions.png" alt="Training and educational institutions"></a>
                   <div class="cs_post_info">
                     <div class="cs_post_meta">
-                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="blog-details.html">Business</a></span>
-                      <span>Jun 25, 2023</span>
+                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="services.html">We support</a></span>
+                      <span>Education</span>
                     </div>
                     <h2 class="cs_post_title cs_fs_30 cs_normal mb-0">
-                      <a href="blog-details.html">Strategies for a Post-Pandemic Workplace</a>
+                      <a href="services.html">Training and educational institutions</a>
                     </h2>
                   </div>
                 </div>
               </div>
               <div class="cs_slide">
                 <div class="cs_post cs_style_1">
-                  <a href="blog-details.html" class="cs_post_thumb"><img src="assets/img/default/post_2.jpeg" alt="Post"></a>
+                  <a href="services.html" class="cs_post_thumb"><img src="assets/img/healthstrat/generated/global-team-healthcare-advisors.png" alt="Healthcare transformation leaders"></a>
                   <div class="cs_post_info">
                     <div class="cs_post_meta">
-                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="blog-details.html">Corporate</a></span>
-                      <span>Aug 01, 2023</span>
+                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="services.html">We support</a></span>
+                      <span>Leadership</span>
                     </div>
                     <h2 class="cs_post_title cs_fs_30 cs_normal mb-0">
-                      <a href="blog-details.html">Making a Positive Impact Beyond Profits</a>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div class="cs_slide">
-                <div class="cs_post cs_style_1">
-                  <a href="blog-details.html" class="cs_post_thumb"><img src="assets/img/default/post_3.jpeg" alt="Post"></a>
-                  <div class="cs_post_info">
-                    <div class="cs_post_meta">
-                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="blog-details.html">Consulting</a></span>
-                      <span>Sep 14, 2023</span>
-                    </div>
-                    <h2 class="cs_post_title cs_fs_30 cs_normal mb-0">
-                      <a href="blog-details.html">Protecting Your Business from Data Breaches</a>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div class="cs_slide">
-                <div class="cs_post cs_style_1">
-                  <a href="blog-details.html" class="cs_post_thumb"><img src="assets/img/default/post_4.jpeg" alt="Post"></a>
-                  <div class="cs_post_info">
-                    <div class="cs_post_meta">
-                      <span class="cs_medium cs_fs_18 cs_primary_color"><a href="blog-details.html">Business</a></span>
-                      <span>Jun 25, 2023</span>
-                    </div>
-                    <h2 class="cs_post_title cs_fs_30 cs_normal mb-0">
-                      <a href="blog-details.html">Navigating the Complex Path to Corporate Growth</a>
+                      <a href="services.html">Healthcare transformation leaders</a>
                     </h2>
                   </div>
                 </div>
@@ -728,149 +1322,124 @@
           <div class="cs_pagination cs_style_2"></div>
         </div>
       </div>
+      <div class="cs_height_70 cs_height_lg_45"></div>
     </section>
-    <!-- End Post Section -->
+    <!-- End Who We Work With Section -->
     <!-- Start Case Study -->
     <section>
-      <div class="cs_height_145 cs_height_lg_75"></div>
+      <div class="cs_height_70 cs_height_lg_45"></div>
       <div class="container">
         <div class="cs_section_heading cs_style_1">
-          <p class="cs_section_subtitle cs_fs_18 cs_medium wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay="0.25s">Case Study</p>
-          <h2 class="cs_section_title cs_fs_53 cs_normal mb-0">Experienced experts with  <br>industry accreditation</h2>
+          <p class="cs_section_subtitle cs_fs_18 cs_medium wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay="0.25s">Regional Presence</p>
+          <h2 class="cs_section_title cs_fs_53 cs_normal mb-0">Supporting healthcare transformation <br>across Asia</h2>
         </div>
         <div class="cs_height_85 cs_height_lg_50"></div>
         <div class="cs_grid_style_1">
           <div class="cs_grid_item">
             <div class="cs_case_study cs_style_1">
-              <a href="case-study-details.html" class="cs_case_study_thumb cs_bg_filed" data-src="assets/img/default/case_study_1.jpeg"></a>
+              <div class="cs_case_study_thumb cs_bg_filed" data-src="assets/img/healthstrat/generated/slot-home-case-singapore.png" aria-hidden="true"></div>
               <div class="cs_case_study_info cs_white_color">
                 <div class="cs_case_study_info_in">
-                  <h2 class="cs_case_study_title cs_fs_30 cs_normal cs_white_color"><a href="case-study-details.html">Founders You Want to Invest</a></h2>
-                  <a href="case-study-details.html" class="cs_btn cs_style_1 cs_type_1">
-                    See Details
+                  <h2 class="cs_case_study_title cs_fs_30 cs_normal cs_white_color">Singapore healthcare leadership experience</h2>
+                  <span class="cs_btn cs_style_1 cs_type_1" aria-hidden="true">
+                    Learn More
                     <span>
                       <i>
                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>                      
+                        </svg>
                       </i>
                       <i>
                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>                      
+                        </svg>
                       </i>
                     </span>
-                  </a>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
           <div class="cs_grid_item cs_double">
             <div class="cs_case_study cs_style_1">
-              <a href="case-study-details.html" class="cs_case_study_thumb cs_bg_filed" data-src="assets/img/default/case_study_2.jpeg"></a>
+              <div class="cs_case_study_thumb cs_bg_filed" data-src="assets/img/healthstrat/generated/slot-home-case-regional-global.png" aria-hidden="true"></div>
               <div class="cs_case_study_info cs_white_color">
                 <div class="cs_case_study_info_in">
-                  <h2 class="cs_case_study_title cs_fs_30 cs_normal cs_white_color"><a href="case-study-details.html">Founders You Want to Invest</a></h2>
-                  <a href="case-study-details.html" class="cs_btn cs_style_1 cs_type_1">
-                    See Details
+                  <h2 class="cs_case_study_title cs_fs_30 cs_normal cs_white_color">Regional engagements in India and Indonesia</h2>
+                  <span class="cs_btn cs_style_1 cs_type_1" aria-hidden="true">
+                    Learn More
                     <span>
                       <i>
                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>                      
+                        </svg>
                       </i>
                       <i>
                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>                      
+                        </svg>
                       </i>
                     </span>
-                  </a>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
           <div class="cs_grid_item cs_double">
             <div class="cs_case_study cs_style_1">
-              <a href="case-study-details.html" class="cs_case_study_thumb cs_bg_filed" data-src="assets/img/default/case_study_3.jpeg"></a>
+              <div class="cs_case_study_thumb cs_bg_filed" data-src="assets/img/healthstrat/generated/global-service-community-ageing-care.png" aria-hidden="true"></div>
               <div class="cs_case_study_info cs_white_color">
                 <div class="cs_case_study_info_in">
-                  <h2 class="cs_case_study_title cs_fs_30 cs_normal cs_white_color"><a href="case-study-details.html">Founders You Want to Invest</a></h2>
-                  <a href="case-study-details.html" class="cs_btn cs_style_1 cs_type_1">
-                    See Details
+                  <h2 class="cs_case_study_title cs_fs_30 cs_normal cs_white_color">Hospitals, community care and training institutions</h2>
+                  <span class="cs_btn cs_style_1 cs_type_1" aria-hidden="true">
+                    Learn More
                     <span>
                       <i>
                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>                      
+                        </svg>
                       </i>
                       <i>
                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>                      
+                        </svg>
                       </i>
                     </span>
-                  </a>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
           <div class="cs_grid_item">
-            <a href="https://www.youtube.com/embed/rRid6GCJtgc" class="cs_video_block cs_style_1 cs_video_open cs_bg_filed" data-src="assets/img/default/case_study_4.jpeg">
+            <div class="cs_video_block cs_style_1 cs_bg_filed" data-src="assets/img/healthstrat/generated/slot-home-video-leadership-forum.png">
               <span class="cs_player_btn cs_accent_color">
                 <span></span>
               </span>
-            </a>
+            </div>
           </div>
         </div>
-        <div class="cs_height_100 cs_height_lg_50"></div>
+        <div class="cs_height_60 cs_height_lg_35"></div>
         <div class="text-center wow fadeInDown" data-wow-duration="0.9s" data-wow-delay="0.25s">
-          <a href="case-study.html" class="cs_btn cs_style_1 cs_type_2 cs_primary_bg cs_white_color cs_w_100_sm">
-            More Case Study
+          <a href="blog-right-sidebar.html" class="cs_btn cs_style_1 cs_type_2 cs_primary_bg cs_white_color cs_w_100_sm">
+            Explore Insights
             <span>
               <i>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>                      
+                </svg>
               </i>
               <i>
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>                      
+                </svg>
               </i>
             </span>
           </a>
         </div>
       </div>
-      <div class="cs_height_150 cs_height_lg_80"></div>
+      <div class="cs_height_70 cs_height_lg_45"></div>
     </section>
     <!-- End Case Study -->
-    <!-- Start Team Section -->
-    <section class="cs_team cs_style_1 cs_bg_filed" data-src="assets/img/default/team_bg.jpeg">
-      <div class="container">
-        <div class="cs_section_heading cs_style_1">
-          <p class="cs_section_subtitle cs_fs_18 cs_medium cs_ternary_color">Talented Team</p>
-          <h2 class="cs_section_title cs_fs_53 cs_normal mb-0 cs_white_color">Get to know the incredible individuals  <br>behind our company</h2>
-          <div class="cs_height_35 cs_height_lg_25"></div>
-          <a href="team.html" class="cs_btn cs_style_1 cs_type_2 cs_primary_color cs_white_bg">
-            Meet Our Team
-            <span>
-              <i>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>                      
-              </i>
-              <i>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>                      
-              </i>
-            </span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- End Team Section -->
     <!-- Start CTA Section -->
     <section class="cs_cta cs_style_1 text-center position-relative">
       <div class="cs_cta_shape_1 cs_accent_color position-absolute">
@@ -888,84 +1457,36 @@
           </svg>                  
       </div>
       <div class="cs_cta_shape_1"></div>
-      <div class="cs_height_135 cs_height_lg_70"></div>
+      <div class="cs_height_70 cs_height_lg_45"></div>
       <div class="container">
-        <h2 class="cs_cta_title cs_fs_120 cs_bold wow fadeInUp" data-wow-duration="0.9s" data-wow-delay="0.25s">Consult now today & elevate tomorrow</h2>
-        <p class="cs_cta_subtitle">Deliver a structured client experience that fosters loyalty. Partner with the #1 <br> consulting service to elevate your business.</p>
-        <a href="contact.html" class="cs_btn cs_style_1 cs_type_2 cs_primary_bg cs_white_color cs_w_100_sm">
-          Contact now
-          <span>
-            <i>
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>                      
-            </i>
-            <i>
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>                      
-            </i>
-          </span>
-        </a>
-        <div class="cs_cta_thumb"><img src="assets/img/default/cta_img.jpeg" alt="Thumb"></div>
+        <h2 class="cs_cta_title cs_fs_120 cs_bold cs_healthstrat_final_cta_title wow fadeInUp" data-wow-duration="0.9s" data-wow-delay="0.25s">Looking to Strengthen Healthcare Transformation, Patient Safety or Workforce Capability?</h2>
+        <p class="cs_cta_subtitle">Partner with HealthStrat to build safer, future-ready healthcare systems.</p>
+        <div class="cs_healthstrat_cta_actions">
+          <a href="contact.html" class="cs_healthstrat_final_cta_btn cs_healthstrat_final_cta_primary cs_w_100_sm" aria-label="Book a Strategy Discussion">
+            <i class="fa-regular fa-calendar-days cs_healthstrat_final_cta_icon" aria-hidden="true"></i>
+            <span>Book a Strategy Discussion</span>
+            <i class="fa-solid fa-arrow-right cs_healthstrat_final_cta_arrow" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/6591176220" class="cs_healthstrat_final_cta_btn cs_healthstrat_final_cta_whatsapp cs_w_100_sm" aria-label="WhatsApp HealthStrat">
+            <i class="fa-brands fa-whatsapp cs_healthstrat_final_cta_icon" aria-hidden="true"></i>
+            <span>WhatsApp Us</span>
+          </a>
+        </div>
+        <div class="cs_cta_thumb"><img src="assets/img/healthstrat/generated/slot-home-contact-consultation.png" alt="Healthcare strategy discussion"></div>
       </div>
     </section>
     <!-- End CTA Section -->
-    <!-- Start Brands Section -->
-    <div class="cs_height_95 cs_height_lg_70"></div>
-    <div class="container">
-      <div class="cs_slider cs_style_1 cs_slider_gap_24">
-        <p class="text-center cs_primary_color cs_fs_18 cs_medium mb-0">Join the 3.4K+ industrial businesses that are thriving alongside Group</p>
-        <div class="cs_height_65 cs_height_lg_50"></div>
-        <div class="cs_slider_container wow fadeIn" data-wow-duration="0.9s" data-wow-delay="0.25s" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="2" data-sm-slides="3" data-md-slides="4" data-lg-slides="4" data-add-slides="5">
-          <div class="cs_slider_wrapper">
-            <div class="cs_slide">
-              <div class="cs_brand cs_style_1 text-center">
-                <img src="assets/img/default/brand_logo_1.svg" alt="Brand">
-              </div>
-            </div>
-            <div class="cs_slide">
-              <div class="cs_brand cs_style_1 text-center">
-                <img src="assets/img/default/brand_logo_2.svg" alt="Brand">
-              </div>
-            </div>
-            <div class="cs_slide">
-              <div class="cs_brand cs_style_1 text-center">
-                <img src="assets/img/default/brand_logo_3.svg" alt="Brand">
-              </div>
-            </div>
-            <div class="cs_slide">
-              <div class="cs_brand cs_style_1 text-center">
-                <img src="assets/img/default/brand_logo_4.svg" alt="Brand">
-              </div>
-            </div>
-            <div class="cs_slide">
-              <div class="cs_brand cs_style_1 text-center">
-                <img src="assets/img/default/brand_logo_5.svg" alt="Brand">
-              </div>
-            </div>
-            <div class="cs_slide">
-              <div class="cs_brand cs_style_1 text-center">
-                <img src="assets/img/default/brand_logo_1.svg" alt="Brand">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cs_pagination cs_style_1 cs_mobile_show"></div>
-      </div>
-    </div>
-    <div class="cs_height_150 cs_height_lg_80"></div>
-    <!-- End Brands Section -->
+    <div class="cs_height_60 cs_height_lg_40"></div>
     <!-- Start Footer -->
-    <footer class="cs_footer cs_primary_bg cs_ternary_color">
+            <footer class="cs_footer cs_primary_bg cs_ternary_color">
       <div class="cs_footer_main">
         <div class="container">
           <div class="cs_newsletter cs_style_1">
-            <h2 class="cs_newsletter_title cs_fs_53 cs_normal cs_white_color mb-0">Subscribe to our  <br>newsletter</h2>
+            <h2 class="cs_newsletter_title cs_fs_53 cs_normal cs_white_color mb-0">Receive healthcare  <br>transformation insights</h2>
             <form action="#" class="cs_newsletter_form">
               <input type="email" class="cs_newsletter_input" placeholder="Email address">
               <button class="cs_btn cs_style_1 cs_type_2 cs_primary_color cs_white_bg">
-                Subscribe Now
+                Subscribe
                 <span>
                   <i>
                     <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -985,21 +1506,21 @@
             <div class="cs_footer_grid_item">
               <div class="cs_footer_item">
                 <div class="cs_text_widget">
-                  <img src="assets/img/logo_white.svg" alt="Logo">
-                  <p>1321 Gateway Atlantic City, <br>Florida (FL), 54012</p>
-                  <h3><a href="tel:+444547800112">+44 454 7800 112</a></h3>
-                  <p><a href="mailto:infodesk@bione.net">infodesk@bione.net</a></p>
+                  <img src="assets/img/healthstrat_logo_nav_text.png" alt="HealthStrat">
+                  <p>Singapore-based healthcare strategy<br>Patient safety &amp; workforce transformation</p>
+                  <h3><a href="tel:+6591176220">+65 9117 6220</a></h3>
+                  <p><a href="mailto:healthstrat.consult@gmail.com">healthstrat.consult@gmail.com</a></p>
                 </div>
               </div>
             </div>
             <div class="cs_footer_grid_item">
               <div class="cs_footer_item">
-                <h2 class="cs_widget_title cs_secondary_font cs_medium text-uppercase cs_fs_18 cs_white_color">USEFULL LINKS</h2>
+                <h2 class="cs_widget_title cs_secondary_font cs_medium text-uppercase cs_fs_18 cs_white_color">USEFUL LINKS</h2>
                 <ul class="cs_menu_widget cs_mp0">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About Us</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="case-study.html">Case Study</a></li>
+                  <li><a href="services.html">Our Expertise</a></li>
+                  <li><a href="blog-right-sidebar.html">Insight</a></li>
                 </ul>
               </div>
             </div>
@@ -1007,20 +1528,19 @@
               <div class="cs_footer_item">
                 <h2 class="cs_widget_title cs_secondary_font cs_medium text-uppercase cs_fs_18 cs_white_color">SERVICES</h2>
                 <ul class="cs_menu_widget cs_mp0">
-                  <li><a href="service-details.html">Financial Advisory</a></li>
-                  <li><a href="service-details.html">IT Consulting</a></li>
-                  <li><a href="service-details.html">Management Consulting</a></li>
-                  <li><a href="service-details.html">Marketing Strategy</a></li>
+                  <li><a href="health-care-strategy-transformation.html">Healthcare Strategy &amp; Transformation</a></li>
+                  <li><a href="clinical-governance-quality.html">Clinical Governance &amp; Patient Safety</a></li>
+                  <li><a href="nursing-workforce-development.html">Nursing &amp; Workforce Development</a></li>
+                  <li><a href="innovation-design-thinking.html">Innovation &amp; Design Thinking</a></li>
+                  <li><a href="education-training.html">Education &amp; Training</a></li>
                 </ul>
               </div>
             </div>
             <div class="cs_footer_grid_item">
               <div class="cs_footer_item">
-                <h2 class="cs_widget_title cs_secondary_font cs_medium text-uppercase cs_fs_18 cs_white_color">RESOURCES</h2>
+                <h2 class="cs_widget_title cs_secondary_font cs_medium text-uppercase cs_fs_18 cs_white_color">CONTACT</h2>
                 <ul class="cs_menu_widget cs_mp0">
-                  <li><a href="">Help</a></li>
-                  <li><a href="">Videos</a></li>
-                  <li><a href="">Legal License</a></li>
+                  <li><a href="contact.html">Book a Strategy Discussion</a></li>
                 </ul>
               </div>
             </div>
@@ -1032,25 +1552,22 @@
           <div class="cs_bottom_footer">
             <div class="cs_bottom_footer_left">
               <div class="cs_social_btns cs_style_1">
-                <a href="#" class="cs_center">
-                  <i class="fa-brands fa-linkedin-in"></i>
+                <a href="https://wa.me/6591176220" class="cs_center" aria-label="WhatsApp HealthStrat">
+                  <i class="fa-brands fa-whatsapp"></i>
                 </a>
-                <a href="#" class="cs_center">
-                  <i class="fa-brands fa-twitter"></i>
+                <a href="mailto:healthstrat.consult@gmail.com" class="cs_center" aria-label="Email HealthStrat">
+                  <i class="fa-regular fa-envelope"></i>
                 </a>
-                <a href="#" class="cs_center">
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="#" class="cs_center">
-                  <i class="fa-brands fa-facebook-f"></i>
+                <a href="contact.html" class="cs_center" aria-label="Contact HealthStrat">
+                  <i class="fa-solid fa-calendar-days"></i>
                 </a>
               </div>
             </div>
-            <div class="cs_copyright">All Right Reserved Copyright © <span class="cs_copyright_year">2024</span> <a href="#">Laralink</a></div>
+            <div class="cs_copyright">Copyright © <span class="cs_copyright_year">2026</span> <a href="index.html">HealthStrat</a>. All rights reserved.</div>
             <div class="cs_bottom_footer_right">
               <ul class="cs_footer_links cs_mp0">
                 <li>
-                  <a href="#">Privacy & Cookie Policy</a>
+                  <a href="contact.html">Contact HealthStrat</a>
                 </li>
               </ul>
             </div>

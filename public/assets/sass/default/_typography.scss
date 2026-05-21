@@ -33,7 +33,7 @@
 
 body,
 html {
-  color: var(--secondary);
+  color: var(--text-main);
   font-family: var(--secondary-font);
   font-size: 16px;
   line-height: 1.563em;
@@ -54,6 +54,10 @@ h6 {
   font-weight: 700;
   line-height: 1.2em;
   font-family: var(--primary-font);
+}
+
+h1 {
+  color: var(--primary-blue-dark);
 }
 
 .cs_primary_font {

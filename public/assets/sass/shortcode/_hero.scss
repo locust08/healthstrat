@@ -140,7 +140,7 @@
         height: 11px;
         width: 360px;
         width: calc(100% + 27px);
-        background-color: #ffad96;
+        background-color: var(--brand-green);
         bottom: -10px;
         left: -12px;
         @media (max-width: 1400px) {
@@ -283,8 +283,8 @@
     backdrop-filter: blur(100px);
     background: linear-gradient(
       136deg,
-      rgb(254 91 44 / 80%) 14.28%,
-      rgba(254, 91, 44, 0.25) 86.17%
+      rgb(96 160 48 / 80%) 14.28%,
+      rgba(96, 160, 48, 0.25) 86.17%
     );
     &:hover {
       color: #fff;
@@ -403,7 +403,7 @@
 }
 .cs_hero.cs_style_5 {
   min-height: 100vh;
-  background-color: #f9f3eb;
+  background-color: var(--background-section);
   position: relative;
   padding: 185px 0 100px 0;
   @media (max-width: 1199px) {
@@ -662,7 +662,7 @@
       width: 448px;
       height: 448px;
       border-radius: 50%;
-      background: #e7e8db;
+      background: var(--brand-green-soft);
       filter: blur(100px);
       position: absolute;
       right: -85px;

@@ -160,3 +160,20 @@
     margin-bottom: 22px;
   }
 }
+
+.cs_expertise_card_grid {
+  > [class*='col-'] {
+    display: flex;
+  }
+  .cs_card.cs_style_4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cs_card_subtitle {
+    flex-grow: 1;
+  }
+  .cs_btn {
+    align-self: flex-start;
+  }
+}

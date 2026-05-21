@@ -33,7 +33,7 @@
 }
 .cs_iconbox.cs_style_3 {
   border-radius: 20px;
-  border: 1px solid #18333b;
+  border: 1px solid var(--primary);
   display: flex;
   padding: 40px 38px;
   transition: all 0.3s ease;
@@ -65,7 +65,7 @@
   .cs_iconbox_icon {
     height: 60px;
     width: 60px;
-    background-color: #f9f3eb;
+    background-color: var(--brand-green-soft);
     padding: 5px;
     border-radius: 50%;
     margin-bottom: 22px;

@@ -132,6 +132,15 @@
   .cs_cta_title {
     margin-bottom: 40px;
   }
+  .cs_cta_actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
+  }
   .cs_btn.cs_style_1 {
     &:hover {
       background-color: #fff;

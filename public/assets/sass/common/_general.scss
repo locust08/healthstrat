@@ -282,6 +282,51 @@ hr {
   color: var(--ternary);
 }
 
+.cs_region_engagement_visual {
+  svg {
+    display: none;
+  }
+}
+
+.cs_region_engagement_icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--brand-green-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 92px;
+  line-height: 1;
+}
+
+.cs_region_dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  border: 4px solid var(--white);
+  position: absolute;
+  box-shadow: 0 8px 18px var(--shadow-soft);
+}
+
+.cs_region_dot_1 {
+  top: 48px;
+  right: 52px;
+}
+
+.cs_region_dot_2 {
+  left: 52px;
+  bottom: 60px;
+}
+
+.cs_region_dot_3 {
+  right: 60px;
+  bottom: 44px;
+}
+
 .cs_accent_color {
   color: var(--accent);
 }
@@ -294,7 +339,7 @@ hr {
   background-color: var(--primary);
 }
 .cs_primary_bg_2 {
-  background-color: #13282f;
+  background-color: var(--primary-blue-dark);
 }
 
 .cs_secondary_bg {
@@ -308,10 +353,10 @@ hr {
   background-color: var(--gray);
 }
 .cs_gray_bg_2 {
-  background-color: #f9f3eb;
+  background-color: var(--background-section);
 }
 .cs_gray_bg_3 {
-  background-color: #f6f6f6;
+  background-color: var(--primary-blue-light);
 }
 
 .cs_accent_bg {
@@ -454,7 +499,7 @@ label {
   }
 
   &:hover {
-    background-color: var(--accent);
+    background-color: var(--cta-primary-hover);
     color: #fff;
     i {
       &:first-child {
@@ -472,20 +517,20 @@ label {
     padding: 0;
     background-color: transparent;
     span {
-      color: var(--accent);
+      color: var(--accent-cyan);
     }
     &:hover {
       background-color: transparent;
-      color: var(--accent);
+      color: var(--accent-cyan);
     }
   }
   &.cs_type_2 {
     span {
-      color: var(--accent);
+      color: var(--brand-green);
     }
     &:hover {
-      background-color: var(--accent);
-      border-color: var(--accent);
+      background-color: var(--cta-primary-hover);
+      border-color: var(--cta-primary-hover);
       span {
         color: #fff;
       }
@@ -521,7 +566,7 @@ label {
   &.cs_type_4 {
     &:hover {
       background-color: transparent;
-      color: var(--accent);
+      color: var(--accent-cyan);
     }
   }
   &.cs_type_5 {
@@ -838,7 +883,7 @@ label {
   .cs_shape_1 {
     width: 448px;
     height: 448px;
-    background: #e7e8db;
+    background: var(--brand-green-soft);
     border-radius: 50%;
     filter: blur(100px);
     position: absolute;
@@ -876,7 +921,7 @@ label {
   }
   &.cs_gray_bg_2 {
     .cs_shape_1 {
-      background-color: #fdeeda;
+      background-color: var(--accent-cyan-soft);
     }
   }
 }
@@ -2129,13 +2174,16 @@ select.cs_insurance_input {
   cursor: pointer;
   transition: all 0.4s ease;
   z-index: 10;
-  background-color: var(--primary);
-  color: var(--accent);
-  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
+  color: var(--primary);
+  border: 1px solid rgba(0, 80, 144, 0.18);
+  box-shadow: 0px 8px 24px rgba(0, 80, 144, 0.18);
   border-radius: 50%;
   &:hover {
     background-color: var(--accent);
     color: var(--white);
+    border-color: var(--accent);
+    box-shadow: 0px 10px 28px rgba(96, 160, 48, 0.28);
   }
 }
 
@@ -2212,7 +2260,7 @@ select.cs_insurance_input {
 @media (max-width: 1199px) {
   .cs_site_header {
     .cs_hamburger_info_btn {
-      display: none;
+      display: flex;
     }
   }
 }
