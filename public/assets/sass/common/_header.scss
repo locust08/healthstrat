@@ -1222,6 +1222,47 @@
   .cs_site-branding {
     max-width: 150px;
   }
+
+  .cs_site_header.cs_style_1 {
+    .cs_main_header_in {
+      height: 72px;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
+    .cs_main_header_left {
+      width: 100%;
+      min-width: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .cs_site_branding {
+      max-width: calc(100% - 58px);
+
+      img {
+        width: min(190px, 100%);
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    .cs_main_header_right {
+      display: none;
+    }
+
+    .cs_menu_toggle {
+      right: 0;
+      top: 50%;
+      margin-top: -13px;
+      z-index: 102;
+    }
+  }
+
+  .cs_site_header_spacing_100 {
+    height: 72px;
+  }
 }
 .cs_site_header.cs_style_2.cs_color_1.cs_gescout_sticky {
   .cs_btn.cs_style_1 {

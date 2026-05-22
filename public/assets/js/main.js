@@ -190,13 +190,13 @@
     var pages = [
       { title: 'Home', url: 'index.html', keywords: 'healthstrat healthcare strategy leadership innovation consultancy' },
       { title: 'About Us', url: 'about.html', keywords: 'founder executive director prema healthcare consultancy singapore' },
-      { title: 'Our Expertise', url: 'services.html', keywords: 'expertise services patient safety workforce governance transformation training' },
+      { title: 'Our Expertise', url: 'expertise.html', keywords: 'expertise services patient safety workforce governance transformation training' },
       { title: 'Health Care Strategy & Transformation', url: 'health-care-strategy-transformation.html', keywords: 'strategy transformation systems clinical leadership healthcare' },
       { title: 'Clinical Governance & Quality', url: 'clinical-governance-quality.html', keywords: 'clinical governance quality patient safety standards improvement' },
       { title: 'Nursing & Workforce Development', url: 'nursing-workforce-development.html', keywords: 'nursing workforce development capability training leadership' },
       { title: 'Innovation & Design Thinking', url: 'innovation-design-thinking.html', keywords: 'innovation design thinking service redesign healthcare' },
       { title: 'Education & Training', url: 'education-training.html', keywords: 'education training workshops learning healthcare professionals' },
-      { title: 'Insights', url: 'blog-right-sidebar.html', keywords: 'insights articles blog healthcare strategy governance training' },
+      { title: 'Insights', url: 'insights.html', keywords: 'insights articles blog healthcare strategy governance training' },
       { title: 'Contact Us', url: 'contact.html', keywords: 'contact email whatsapp linkedin enquiry consultation' },
     ];
 

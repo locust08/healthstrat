@@ -68,6 +68,21 @@
     border-color: var(--ternary);
   }
 }
+.cs_team_text_card {
+  height: 100%;
+  padding: 30px;
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  .cs_team.cs_style_2& .cs_team_info {
+    padding-top: 0;
+  }
+  .cs_team_member_social {
+    display: none;
+  }
+  .cs_team_member_name {
+    margin-bottom: 0;
+  }
+}
 .cs_team.cs_style_3 {
   position: relative;
   .cs_team_member_thumb {

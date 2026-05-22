@@ -1491,6 +1491,12 @@ h1 {
   font-size: 30px;
   line-height: 1.167em;
 }
+@media (max-width: 575px) {
+  .cs_fs_30 {
+    font-size: 24px;
+    line-height: 1.3em;
+  }
+}
 
 .cs_fs_53 {
   font-size: 53px;
@@ -1508,7 +1514,13 @@ h1 {
 }
 @media (max-width: 575px) {
   .cs_fs_53 {
-    font-size: 40px;
+    font-size: 34px;
+    line-height: 1.18em;
+  }
+}
+@media (max-width: 380px) {
+  .cs_fs_53 {
+    font-size: 31px;
   }
 }
 
@@ -1519,6 +1531,17 @@ h1 {
 @media (max-width: 1199px) {
   .cs_fs_60 {
     font-size: 46px;
+  }
+}
+@media (max-width: 575px) {
+  .cs_fs_60 {
+    font-size: 38px;
+    line-height: 1.16em;
+  }
+}
+@media (max-width: 380px) {
+  .cs_fs_60 {
+    font-size: 34px;
   }
 }
 
@@ -1543,12 +1566,13 @@ h1 {
 }
 @media (max-width: 575px) {
   .cs_fs_120 {
-    font-size: 56px;
+    font-size: 42px;
+    line-height: 1.1em;
   }
 }
 @media (max-width: 420px) {
   .cs_fs_120 {
-    font-size: 48px;
+    font-size: 38px;
   }
 }
 
@@ -3182,6 +3206,74 @@ label {
   }
 }
 
+.cs_founder_profile_list li {
+  position: relative;
+  padding-left: 28px;
+}
+.cs_founder_profile_list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+.cs_founder_profile_list li:not(:last-child) {
+  margin-bottom: 34px;
+}
+.cs_founder_profile_list h2 {
+  margin-bottom: 14px;
+}
+
+.cs_founder_profile_photo {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+  display: block;
+}
+@media (max-width: 575px) {
+  .cs_founder_profile_photo {
+    aspect-ratio: 1/1;
+  }
+}
+
+.cs_approach_image_card {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--white);
+  border: 1px solid rgba(0, 59, 113, 0.14);
+}
+.cs_approach_image_card img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
+}
+.cs_approach_image_card_body {
+  padding: 28px 28px 30px;
+}
+.cs_approach_image_card_body h2 {
+  margin-bottom: 14px;
+}
+.cs_approach_image_card_wide img {
+  aspect-ratio: 16/7;
+}
+@media (max-width: 991px) {
+  .cs_approach_image_card_wide img {
+    aspect-ratio: 16/10;
+  }
+}
+@media (max-width: 575px) {
+  .cs_approach_image_card_body {
+    padding: 22px 20px 24px;
+  }
+}
+
 .cs_list.cs_style_4 li {
   padding-left: 38px;
   position: relative;
@@ -3812,6 +3904,11 @@ select.cs_insurance_input {
   .cs_about_thumb_1 {
     height: 400px;
   }
+}
+
+.cs_about_process_thumb {
+  width: 100%;
+  aspect-ratio: 554/668;
 }
 
 .cs_team_details h2 {
@@ -6393,6 +6490,45 @@ select.cs_insurance_input {
   .cs_site-branding {
     max-width: 150px;
   }
+  .cs_site_header.cs_style_1 .cs_main_header_in {
+    height: 72px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cs_site_header.cs_style_1 .cs_main_header_left {
+    width: 100%;
+    min-width: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cs_site_header.cs_style_1 .cs_site_branding {
+    max-width: calc(100% - 58px);
+  }
+  .cs_site_header.cs_style_1 .cs_site_branding img {
+    width: min(190px, 100%);
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .cs_site_header.cs_style_1 .cs_main_header_right {
+    display: none;
+  }
+  .cs_site_header.cs_style_1 .cs_menu_toggle {
+    right: 0;
+    top: 50%;
+    margin-top: -13px;
+    z-index: 102;
+  }
+  .cs_site_header_spacing_100 {
+    height: 72px;
+  }
 }
 .cs_site_header.cs_style_2.cs_color_1.cs_gescout_sticky .cs_btn.cs_style_1 {
   background-color: var(--white);
@@ -8803,6 +8939,40 @@ select.cs_insurance_input {
   z-index: 1;
   max-width: 650px;
 }
+.cs_cta.cs_style_3.cs_expertise_cta {
+  overflow: hidden;
+  background-position: center right;
+  padding-left: 90px;
+}
+.cs_cta.cs_style_3.cs_expertise_cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 59, 113, 0.82)), color-stop(48%, rgba(0, 80, 144, 0.58)), color-stop(72%, rgba(0, 80, 144, 0.1)), to(rgba(0, 80, 144, 0)));
+  background: linear-gradient(90deg, rgba(0, 59, 113, 0.82) 0%, rgba(0, 80, 144, 0.58) 48%, rgba(0, 80, 144, 0.1) 72%, rgba(0, 80, 144, 0) 100%);
+}
+.cs_cta.cs_style_3.cs_expertise_cta .cs_cta_in {
+  max-width: 460px;
+}
+@media (max-width: 1199px) {
+  .cs_cta.cs_style_3.cs_expertise_cta {
+    padding-left: 45px;
+  }
+  .cs_cta.cs_style_3.cs_expertise_cta .cs_cta_in {
+    max-width: 430px;
+  }
+}
+@media (max-width: 991px) {
+  .cs_cta.cs_style_3.cs_expertise_cta {
+    text-align: left;
+  }
+  .cs_cta.cs_style_3.cs_expertise_cta .cs_cta_actions {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .cs_cta.cs_style_3 .cs_cta_title {
   margin-bottom: 40px;
 }
@@ -9288,6 +9458,22 @@ select.cs_insurance_input {
 }
 .cs_team.cs_style_2 .cs_team_member_designation {
   border-color: var(--ternary);
+}
+
+.cs_team_text_card {
+  height: 100%;
+  padding: 30px;
+  border: 1px solid var(--border);
+  background-color: var(--white);
+}
+.cs_team.cs_style_2.cs_team_text_card .cs_team_info {
+  padding-top: 0;
+}
+.cs_team_text_card .cs_team_member_social {
+  display: none;
+}
+.cs_team_text_card .cs_team_member_name {
+  margin-bottom: 0;
 }
 
 .cs_team.cs_style_3 {
