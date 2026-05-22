@@ -7521,6 +7521,15 @@ select.cs_insurance_input {
   width: 100%;
   height: 100%;
 }
+.cs_hero.cs_style_1 .cs_hero_video_wrap {
+  overflow: hidden;
+}
+.cs_hero.cs_style_1 .cs_hero_video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
 @media (max-width: 991px) {
   .cs_hero.cs_style_1 .cs_hero_thumb {
     max-width: 100%;

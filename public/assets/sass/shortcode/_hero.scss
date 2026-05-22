@@ -130,6 +130,15 @@
       max-width: 100%;
     }
   }
+  .cs_hero_video_wrap {
+    overflow: hidden;
+  }
+  .cs_hero_video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
   .cs_hero_title {
     span {
       position: relative;
