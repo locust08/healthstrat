@@ -129,6 +129,21 @@
     z-index: 1;
     max-width: 650px;
   }
+  &.cs_strategy_cta {
+    padding-left: 140px;
+    @media (max-width: 1400px) {
+      padding-left: 90px;
+    }
+    @media (max-width: 1199px) {
+      padding-left: 50px;
+    }
+    @media (max-width: 991px) {
+      padding-left: 40px;
+    }
+    @media (max-width: 575px) {
+      padding-left: 25px;
+    }
+  }
   &.cs_expertise_cta {
     overflow: hidden;
     background-position: center right;
@@ -148,6 +163,10 @@
     }
     .cs_cta_in {
       max-width: 460px;
+    }
+    .cs_cta_title {
+      font-size: 24px;
+      line-height: 1.28em;
     }
     @media (max-width: 1199px) {
       padding-left: 45px;

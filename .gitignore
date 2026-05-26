@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .astro/
+.wrangler/
 .playwright-mcp/
 .DS_Store
 /assets/

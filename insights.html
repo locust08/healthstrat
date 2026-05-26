@@ -131,9 +131,15 @@
         <div class="cs_side_header_box">
           <h3 class="cs_side_header_title cs_primary_color">Quick Links</h3>
           <div class="cs_side_header_links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
             <a href="expertise.html">Our Expertise</a>
-            <a href="health-care-strategy-transformation.html">Strategy &amp; Transformation</a>
+            <a href="health-care-strategy-transformation.html">Health Care Strategy &amp; Transformation</a>
             <a href="clinical-governance-quality.html">Clinical Governance &amp; Quality</a>
+            <a href="nursing-workforce-development.html">Nursing &amp; Workforce Development</a>
+            <a href="innovation-design-thinking.html">Innovation &amp; Design Thinking</a>
+            <a href="education-training.html">Education &amp; Training</a>
+            <a href="insights.html">Insights</a>
             <a href="contact.html">Contact Us</a>
           </div>
         </div>
@@ -173,20 +179,24 @@
           <div class="cs_insights_intro_content">
             <span class="cs_insights_kicker">HealthStrat Insights</span>
             <h2 class="cs_section_title cs_fs_53 cs_normal mb-0">Evidence-informed perspectives for healthcare leaders</h2>
-            <p>Explore practical insights, evidence-informed perspectives, and emerging healthcare trends across patient safety, clinical governance, workforce transformation, community care, leadership, and innovation.</p>
+            <p>Explore thought leadership, practical insights, and emerging trends shaping the future of healthcare across patient safety, clinical governance, workforce transformation, community care, leadership, and healthcare innovation.</p>
           </div>
-          <div class="cs_insights_lens" aria-label="Insight focus areas">
-            <p class="cs_insights_lens_title">Insight lens</p>
-            <div class="cs_insights_lens_grid">
-              <span>Patient Safety</span>
-              <span>Clinical Governance</span>
-              <span>Workforce Transformation</span>
-              <span>Community Care</span>
-              <span>Leadership</span>
-              <span>Healthcare Innovation</span>
+          <div class="cs_insights_proof_bar" aria-label="HealthStrat insight strengths">
+            <div class="cs_insights_proof_item">
+              <span>01</span>
+              <strong>Evidence-informed</strong>
             </div>
-            <p class="cs_insights_lens_note">Real-world healthcare experience to support leaders in improving care delivery, navigating change, and building future-ready healthcare systems.</p>
+            <div class="cs_insights_proof_item">
+              <span>02</span>
+              <strong>Real-world healthcare experience</strong>
+            </div>
+            <div class="cs_insights_proof_item">
+              <span>03</span>
+              <strong>Future-ready systems</strong>
+            </div>
           </div>
+          <p class="cs_insights_focus_line"><strong>Focus:</strong> Patient Safety · Clinical Governance · Workforce Transformation · Community Care · Leadership · Healthcare Innovation</p>
+          <p class="cs_insights_support_note">At HealthStrat, we share evidence-informed perspectives and real-world healthcare experiences to support healthcare leaders navigating change, improving care delivery, and building future-ready healthcare systems.</p>
         </div>
         <div class="cs_height_80 cs_height_lg_50"></div>
         <div class="cs_insights_tabs">
@@ -256,18 +266,14 @@
     </section>
     <style>
       .cs_insights_intro {
-        display: grid;
-        grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
-        gap: 50px;
-        align-items: center;
-        padding: 42px;
+        padding: 46px;
         border: 1px solid rgba(15, 23, 42, 0.12);
         border-left: 4px solid var(--accent);
         border-radius: 6px;
         background: linear-gradient(135deg, rgba(255, 85, 33, 0.08), rgba(255, 255, 255, 0) 45%), #fff;
       }
       .cs_insights_intro_content {
-        max-width: 760px;
+        max-width: 920px;
       }
       .cs_insights_kicker {
         display: inline-block;
@@ -283,38 +289,48 @@
         font-size: 18px;
         line-height: 1.65em;
       }
-      .cs_insights_lens {
-        padding: 28px;
-        border: 1px solid rgba(15, 23, 42, 0.12);
-        border-radius: 6px;
-        background: rgba(255, 255, 255, 0.82);
+      .cs_insights_proof_bar {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 34px;
       }
-      .cs_insights_lens_title {
-        margin-bottom: 18px;
-        color: var(--primary);
-        font-size: 20px;
-        font-weight: 600;
-      }
-      .cs_insights_lens_grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-      .cs_insights_lens_grid span {
-        display: inline-flex;
-        align-items: center;
-        min-height: 38px;
-        padding: 8px 12px;
-        border: 1px solid rgba(15, 23, 42, 0.12);
+      .cs_insights_proof_item {
+        min-height: 104px;
+        padding: 20px;
+        border: 1px solid rgba(0, 59, 113, 0.14);
         border-radius: 4px;
-        color: var(--primary);
         background: #fff;
-        font-size: 14px;
-        font-weight: 600;
       }
-      .cs_insights_lens_note {
-        margin: 22px 0 0;
+      .cs_insights_proof_item span {
+        display: block;
+        margin-bottom: 16px;
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .cs_insights_proof_item strong {
+        display: block;
+        color: var(--primary);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.35em;
+      }
+      .cs_insights_focus_line {
+        margin: 28px 0 0;
+        color: var(--primary);
+        font-size: 18px;
+        line-height: 1.65em;
+      }
+      .cs_insights_focus_line strong {
+        color: var(--accent);
+      }
+      .cs_insights_support_note {
+        max-width: 920px;
+        margin: 14px 0 0;
         color: var(--ternary);
+        font-size: 17px;
+        line-height: 1.65em;
       }
       .cs_insights_tabs {
         border: 1px solid rgba(15, 23, 42, 0.12);
@@ -401,9 +417,10 @@
       }
       @media (max-width: 991px) {
         .cs_insights_intro {
-          grid-template-columns: 1fr;
-          gap: 30px;
           padding: 30px;
+        }
+        .cs_insights_proof_bar {
+          grid-template-columns: 1fr;
         }
       }
       @media (max-width: 575px) {
@@ -411,6 +428,10 @@
           padding: 24px;
         }
         .cs_insights_intro_content p {
+          font-size: 16px;
+        }
+        .cs_insights_focus_line,
+        .cs_insights_support_note {
           font-size: 16px;
         }
         .cs_insights_tabs {

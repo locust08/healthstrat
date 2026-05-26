@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
       .cs_hero.cs_style_1 .cs_healthstrat_hero_title {
+        font-family: var(--primary-font);
+        font-weight: 700;
+        color: var(--primary);
         font-size: clamp(64px, 5.1vw, 96px);
         line-height: 1.02em;
         letter-spacing: 0;
@@ -88,6 +91,9 @@
       .cs_hero.cs_style_1 .cs_hero_title_box.cs_title_cloned {
         width: 61.4vw;
       }
+      .cs_hero.cs_style_1 .cs_hero_title_box.cs_title_cloned .cs_healthstrat_hero_title {
+        color: #fff;
+      }
       @media (max-width: 1400px) {
         .cs_hero.cs_style_1 .cs_healthstrat_hero_title {
           font-size: clamp(58px, 5.5vw, 84px);
@@ -121,13 +127,19 @@
         .cs_hero.cs_style_1 .cs_hero_title_box.cs_title_cloned {
           width: 100vw;
         }
+        .cs_hero.cs_style_1 .cs_hero_title_box:not(.cs_title_cloned) {
+          display: none;
+        }
+        .cs_hero.cs_style_1 .cs_hero_title_box.cs_title_cloned {
+          position: relative;
+          top: auto;
+          right: auto;
+          justify-content: flex-start;
+        }
         .cs_hero.cs_style_1 .cs_hero_title_box_wrap {
           position: relative;
           left: auto;
           top: auto;
-        }
-        .cs_hero.cs_style_1 .cs_hero_title_box:not(.cs_title_cloned) .cs_hero_title {
-          color: #fff;
         }
         .cs_hero.cs_style_1 > .container {
           position: relative;
@@ -145,12 +157,18 @@
       }
       @media (max-width: 575px) {
         .cs_hero.cs_style_1 .cs_healthstrat_hero_title {
-          font-size: 44px;
-          line-height: 1.06em;
+          font-size: 38px;
+          line-height: 1.08em;
+          max-width: 100%;
         }
         .cs_hero.cs_style_1 {
           min-height: 620px;
           padding-top: 68px;
+        }
+      }
+      @media (max-width: 380px) {
+        .cs_hero.cs_style_1 .cs_healthstrat_hero_title {
+          font-size: 34px;
         }
       }
       .cs_healthstrat_hero_ctas {
@@ -446,6 +464,14 @@
       .cs_healthstrat_audience_section .cs_post a {
         pointer-events: none;
         cursor: default;
+      }
+      .cs_healthstrat_audience_section .cs_post_thumb {
+        aspect-ratio: 16 / 9;
+      }
+      .cs_healthstrat_audience_section .cs_post_thumb img {
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
       .cs_healthstrat_final_cta_btn {
         min-height: 46px;
@@ -844,9 +870,15 @@
         <div class="cs_side_header_box">
           <h3 class="cs_side_header_title cs_primary_color">Quick Links</h3>
           <div class="cs_side_header_links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
             <a href="expertise.html">Our Expertise</a>
-            <a href="health-care-strategy-transformation.html">Strategy &amp; Transformation</a>
+            <a href="health-care-strategy-transformation.html">Health Care Strategy &amp; Transformation</a>
             <a href="clinical-governance-quality.html">Clinical Governance &amp; Quality</a>
+            <a href="nursing-workforce-development.html">Nursing &amp; Workforce Development</a>
+            <a href="innovation-design-thinking.html">Innovation &amp; Design Thinking</a>
+            <a href="education-training.html">Education &amp; Training</a>
+            <a href="insights.html">Insights</a>
             <a href="contact.html">Contact Us</a>
           </div>
         </div>
@@ -873,7 +905,7 @@
         <div class="cs_hero_title_box">
           <div class="cs_hero_title_box_in">
             <div class="container">
-              <h1 class="cs_hero_title cs_fs_120 cs_healthstrat_hero_title mb-0">Transforming Healthcare<br>Systems Through <span>Strategy</span>,<br>Clinical Leadership<br>& Innovation.</h1>
+              <div class="cs_hero_title cs_fs_120 cs_healthstrat_hero_title mb-0" aria-hidden="true">Transforming Healthcare<br>Systems Through <span>Strategy</span>,<br>Clinical Leadership<br>& Innovation.</div>
             </div>
           </div>
         </div>
