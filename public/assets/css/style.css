@@ -8375,10 +8375,12 @@ select.cs_insurance_input {
   width: 100%;
   height: 100%;
 }
-.cs_hero.cs_style_1 .cs_hero_video_wrap {
+.cs_hero.cs_style_1 .cs_hero_video_wrap,
+.cs_hero.cs_style_1 .cs_hero_image_wrap {
   overflow: hidden;
 }
-.cs_hero.cs_style_1 .cs_hero_video {
+.cs_hero.cs_style_1 .cs_hero_video,
+.cs_hero.cs_style_1 .cs_hero_image {
   width: 100%;
   height: 100%;
   display: block;
@@ -11318,5 +11320,60 @@ select.cs_insurance_input {
 @media (max-width: 991px) {
   .cs_landing_feature_left_img .cs_landing_feature_text_box {
     padding-left: 0px;
+  }
+}
+
+body.cs_healthstrat_page .cs_section_subtitle {
+  font-size: 46px;
+  line-height: 1.04em;
+  margin-bottom: 18px;
+}
+body.cs_healthstrat_page .cs_section_title,
+body.cs_healthstrat_page .cs_iconbox_title,
+body.cs_healthstrat_page .cs_post_title,
+body.cs_healthstrat_page .cs_cta_title,
+body.cs_healthstrat_page .cs_newsletter_title,
+body.cs_healthstrat_page .cs_founder_profile_list h2,
+body.cs_healthstrat_page .cs_founder_highlight strong {
+  font-size: 30px;
+  line-height: 1.12em;
+}
+body.cs_healthstrat_page .cs_section_heading_text,
+body.cs_healthstrat_page p:not(.cs_section_subtitle),
+body.cs_healthstrat_page .cs_iconbox_subtitle,
+body.cs_healthstrat_page .cs_post_subtitle,
+body.cs_healthstrat_page .cs_cta_subtitle,
+body.cs_healthstrat_page .cs_about_intro_text,
+body.cs_healthstrat_page .cs_about_partner_text,
+body.cs_healthstrat_page .cs_founder_profile_list p,
+body.cs_healthstrat_page .cs_founder_highlight span,
+body.cs_healthstrat_page .cs_footer .cs_menu_widget a,
+body.cs_healthstrat_page .cs_footer .cs_text_widget p,
+body.cs_healthstrat_page .cs_footer .cs_text_widget a {
+  font-size: 20px;
+  line-height: 1.25em;
+}
+body.cs_healthstrat_page .cs_footer .cs_menu_widget a,
+body.cs_healthstrat_page .cs_footer .cs_text_widget p,
+body.cs_healthstrat_page .cs_footer .cs_text_widget a {
+  line-height: 1.35em;
+}
+@media (max-width: 991px) {
+  body.cs_healthstrat_page .cs_section_subtitle {
+    font-size: 36px;
+  }
+}
+@media (max-width: 575px) {
+  body.cs_healthstrat_page .cs_section_subtitle {
+    font-size: 32px;
+  }
+  body.cs_healthstrat_page .cs_section_title,
+  body.cs_healthstrat_page .cs_iconbox_title,
+  body.cs_healthstrat_page .cs_post_title,
+  body.cs_healthstrat_page .cs_cta_title,
+  body.cs_healthstrat_page .cs_newsletter_title,
+  body.cs_healthstrat_page .cs_founder_profile_list h2,
+  body.cs_healthstrat_page .cs_founder_highlight strong {
+    font-size: 28px;
   }
 }/*# sourceMappingURL=style.css.map */
