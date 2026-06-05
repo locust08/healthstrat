@@ -11328,30 +11328,93 @@ body.cs_healthstrat_page .cs_section_subtitle {
   line-height: 1.04em;
   margin-bottom: 18px;
 }
+body.cs_healthstrat_page,
+body.cs_healthstrat_page input,
+body.cs_healthstrat_page textarea,
+body.cs_healthstrat_page select,
+body.cs_healthstrat_page button,
+body.cs_healthstrat_page .cs_secondary_font {
+  font-family: var(--primary-font);
+}
+body.cs_healthstrat_page .cs_hamburger_info_btn {
+  display: none !important;
+}
+body.cs_healthstrat_page .cs_site_header.cs_style_1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  opacity: 1 !important;
+  background-color: var(--white);
+  box-shadow: 0 8px 24px rgba(0, 80, 144, 0.08);
+}
+body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_main_header_in {
+  height: 112px;
+}
+body.cs_healthstrat_page .cs_site_header_spacing_100 {
+  height: 112px;
+}
+body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_site_branding img {
+  width: 220px;
+}
+body.cs_healthstrat_page .cs_nav .cs_nav_list > li > a,
+body.cs_healthstrat_page .cs_header_search_form .cs_header_search_field {
+  font-size: 18px;
+}
+@media (max-width: 575px) {
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_main_header_in {
+    height: 88px;
+  }
+  body.cs_healthstrat_page .cs_site_header_spacing_100 {
+    height: 88px;
+  }
+}
 body.cs_healthstrat_page .cs_section_title,
 body.cs_healthstrat_page .cs_iconbox_title,
 body.cs_healthstrat_page .cs_post_title,
 body.cs_healthstrat_page .cs_cta_title,
 body.cs_healthstrat_page .cs_newsletter_title,
+body.cs_healthstrat_page .cs_strategy_showcase_head h2,
+body.cs_healthstrat_page .cs_strategy_showcase_card_in h3,
 body.cs_healthstrat_page .cs_founder_profile_list h2,
 body.cs_healthstrat_page .cs_founder_highlight strong {
   font-size: 30px;
   line-height: 1.12em;
+  font-weight: 400;
 }
 body.cs_healthstrat_page .cs_section_heading_text,
 body.cs_healthstrat_page p:not(.cs_section_subtitle),
 body.cs_healthstrat_page .cs_iconbox_subtitle,
 body.cs_healthstrat_page .cs_post_subtitle,
 body.cs_healthstrat_page .cs_cta_subtitle,
+body.cs_healthstrat_page .cs_strategy_showcase_head > p:last-child,
+body.cs_healthstrat_page .cs_strategy_showcase_card_in > span,
+body.cs_healthstrat_page .cs_strategy_showcase_card_in li,
+body.cs_healthstrat_page .cs_achievement_box h2,
 body.cs_healthstrat_page .cs_about_intro_text,
 body.cs_healthstrat_page .cs_about_partner_text,
 body.cs_healthstrat_page .cs_founder_profile_list p,
 body.cs_healthstrat_page .cs_founder_highlight span,
+body.cs_healthstrat_page .cs_region_work_list li,
+body.cs_healthstrat_page .cs_strategy_outcomes_list li,
 body.cs_healthstrat_page .cs_footer .cs_menu_widget a,
 body.cs_healthstrat_page .cs_footer .cs_text_widget p,
 body.cs_healthstrat_page .cs_footer .cs_text_widget a {
   font-size: 20px;
   line-height: 1.25em;
+}
+body.cs_healthstrat_page .cs_strategy_showcase_card_in > span,
+body.cs_healthstrat_page .cs_strategy_showcase_card_in > p {
+  font-weight: 400;
+}
+body.cs_healthstrat_page .cs_strategy_showcase_card_in li,
+body.cs_healthstrat_page .cs_strategy_showcase_card_in > p:last-of-type {
+  font-weight: 700;
+}
+body.cs_healthstrat_page .cs_strategy_showcase_card_in h3 {
+  font-weight: 700;
 }
 body.cs_healthstrat_page .cs_footer .cs_menu_widget a,
 body.cs_healthstrat_page .cs_footer .cs_text_widget p,
@@ -11372,6 +11435,8 @@ body.cs_healthstrat_page .cs_footer .cs_text_widget a {
   body.cs_healthstrat_page .cs_post_title,
   body.cs_healthstrat_page .cs_cta_title,
   body.cs_healthstrat_page .cs_newsletter_title,
+  body.cs_healthstrat_page .cs_strategy_showcase_head h2,
+  body.cs_healthstrat_page .cs_strategy_showcase_card_in h3,
   body.cs_healthstrat_page .cs_founder_profile_list h2,
   body.cs_healthstrat_page .cs_founder_highlight strong {
     font-size: 28px;
