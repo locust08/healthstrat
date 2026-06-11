@@ -3695,6 +3695,23 @@ label {
   font-weight: 900;
   line-height: 1;
 }
+.cs_strategy_showcase_card_in li.cs_strategy_showcase_subitem {
+  margin-left: 31px;
+  padding-left: 18px;
+  color: rgba(7, 27, 61, 0.72);
+  font-size: 13px;
+  font-weight: 500;
+}
+.cs_strategy_showcase_card_in li.cs_strategy_showcase_subitem::before {
+  content: "";
+  left: 0;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--accent);
+}
 .cs_strategy_showcase_icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

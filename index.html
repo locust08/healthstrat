@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
       .cs_hero.cs_style_1 {
-        min-height: calc(100vh - 100px);
+        min-height: max(calc(100vh - 100px), 660px);
         margin-top: 100px;
         padding: 0;
         overflow: hidden;
@@ -162,6 +162,7 @@
       .cs_healthstrat_hero_cta_primary {
         width: 50px;
         height: 50px;
+        padding: 0;
         border-radius: 50%;
         background-color: #25d366;
         color: #fff;
@@ -202,6 +203,52 @@
         opacity: 1;
         transform: translateX(0);
       }
+      .cs_healthstrat_trust_bar {
+        width: min(100%, 560px);
+        padding-top: 16px;
+        border-top: 1px solid rgba(0, 80, 144, 0.16);
+      }
+      .cs_healthstrat_trust_kicker {
+        display: block;
+        margin-bottom: 9px;
+        color: #66808f;
+        font-family: var(--primary-font);
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 1.2em;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .cs_healthstrat_trust_list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px 16px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .cs_healthstrat_trust_list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        min-width: 0;
+        color: #173646;
+        font-family: var(--primary-font);
+        font-size: 12.5px;
+        font-weight: 600;
+        line-height: 1.28em;
+      }
+      .cs_healthstrat_trust_list li:first-child {
+        grid-column: 1 / -1;
+        max-width: 520px;
+      }
+      .cs_healthstrat_trust_list i {
+        flex: 0 0 auto;
+        margin-top: 2px;
+        color: var(--brand-green);
+        font-size: 11px;
+        line-height: 1;
+      }
       @media (max-width: 991px) {
         .cs_healthstrat_hero_ctas {
           gap: 14px;
@@ -221,6 +268,21 @@
           color: var(--primary);
           font-size: 16px;
           gap: 14px;
+        }
+        .cs_healthstrat_trust_bar {
+          width: 100%;
+        }
+      }
+      @media (max-width: 575px) {
+        .cs_hero.cs_style_1 {
+          min-height: auto;
+        }
+        .cs_healthstrat_trust_list {
+          grid-template-columns: 1fr;
+          gap: 9px;
+        }
+        .cs_healthstrat_trust_list li:first-child {
+          grid-column: auto;
         }
       }
       #services {
@@ -741,6 +803,7 @@
                     </ul>
                   </li>
                   <li><a href="insights.html">Insights</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -831,7 +894,7 @@
     <!-- Start Hero -->
     <div class="cs_hero cs_style_1">
       <div class="cs_healthstrat_hero_content wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay="0.25s">
-        <h1 class="cs_hero_title cs_fs_120 cs_healthstrat_hero_title mb-0">Transforming Healthcare Systems Through <span>Strategy</span>, Clinical Leadership &amp; Innovation.</h1>
+        <h1 class="cs_hero_title cs_fs_120 cs_healthstrat_hero_title mb-0">Transforming Healthcare Systems Through <span>Strategy</span>, Clinical Leadership &amp; Transformation</h1>
         <div class="cs_hero_bottom">
           <div class="cs_healthstrat_hero_ctas cs_primary_font">
             <a href="https://wa.me/6591176220" class="cs_healthstrat_hero_cta cs_healthstrat_hero_cta_primary" aria-label="Book a Consultation on WhatsApp">
@@ -843,12 +906,23 @@
               <i class="fa-solid fa-arrow-right cs_healthstrat_cta_arrow" aria-hidden="true"></i>
             </a>
           </div>
+          <div class="cs_healthstrat_trust_bar" aria-label="HealthStrat credentials">
+            <span class="cs_healthstrat_trust_kicker">Credentials</span>
+            <ul class="cs_healthstrat_trust_list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Former CEO &amp; Chief Nurse with vast experience in internationally recognised Singapore’s healthcare system</span></li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>WHO Scholar</span></li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Regional Healthcare Advisor</span></li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Leader in educational transformation</span></li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Decades of teaching and curriculum development experience</span></li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Singapore-Based Consultancy</span></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="cs_hero_thumb cs_hero_image_wrap cs_primary_bg">
         <img class="cs_hero_image" src="assets/img/healthstrat/generated/global-case-study-expansion.png" alt="Healthcare leaders collaborating on regional strategy">
         <p class="cs_hero_subtitle cs_fs_18 cs_medium mb-0">
-          HealthStrat partners with healthcare organisations across Singapore and the region to strengthen patient safety, clinical governance, workforce capability, and sustainable healthcare transformation.
+          HealthStrat partners with healthcare organisations across Singapore and Asia to strengthen patient safety, clinical governance, workforce capability, workforce optimisation, education and sustainable healthcare transformation.
         </p>
       </div>
     </div>
@@ -860,10 +934,10 @@
         <div class="cs_section_heading cs_style_2">
           <div class="cs_section_heading_left">
             <h1 class="cs_section_subtitle cs_medium cs_healthstrat_section_label cs_healthstrat_services_label wow fadeInLeft" data-wow-duration="0.9s" data-wow-delay="0.25s">Services</h1>
-            <h2 class="cs_section_title cs_normal mb-0 cs_healthstrat_section_title cs_healthstrat_services_title">Practical healthcare expertise for safer, future-ready systems</h2>
+            <h2 class="cs_section_title cs_normal mb-0 cs_healthstrat_section_title cs_healthstrat_services_title">Practical healthcare expertise for safer, future-ready healthcare systems</h2>
           </div>
           <div class="cs_section_heading_right">
-            <h3 class="cs_section_heading_text mb-0 cs_medium cs_healthstrat_section_text cs_healthstrat_services_text">Focused consulting, advisory, workforce, innovation, and training support for healthcare organisations across Singapore and the region.</h3>
+            <h3 class="cs_section_heading_text mb-0 cs_medium cs_healthstrat_section_text cs_healthstrat_services_text">Focused consulting, advisory, workforce, innovation, and training support for healthcare organisations across Singapore and Asia.</h3>
           </div>
         </div>
         <div class="cs_height_85 cs_height_lg_50"></div>
@@ -905,7 +979,7 @@
                 <img src="assets/img/healthstrat/generated/slot-home-service-workforce.png" alt="Nursing and Workforce Development">
               </a>
               <div class="cs_image_box_info position-relative">
-                <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="nursing-workforce-development.html">Workforce Development</a></h2>
+                <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="nursing-workforce-development.html">Workforce Optimisation</a></h2>
                 <p class="cs_image_box_subtitle mb-0 cs_ternary_color">Building resilient healthcare leadership and workforce capability.</p>
                 <a href="nursing-workforce-development.html" class="cs_image_box_btn cs_center position-absolute rounded-circle">
                   <span class="cs_image_box_btn_text">Read More</span>
@@ -973,7 +1047,7 @@
                     <i class="fa-solid fa-user-doctor cs_healthstrat_why_icon" aria-hidden="true"></i>
                   </div>
                   <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Led by Real Healthcare Leadership Experience</h2>
-                  <p class="cs_iconbox_subtitle mb-0">Former healthcare CEO and Chief Nurse with decades of operational and strategic leadership.</p>
+                  <p class="cs_iconbox_subtitle mb-0">Former healthcare CEO and Chief Nurse with decades of operational and strategic leadership, including nursing systems and educational transformation at national and institutional levels.</p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -982,7 +1056,7 @@
                     <i class="fa-solid fa-earth-asia cs_healthstrat_why_icon" aria-hidden="true"></i>
                   </div>
                   <h2 class="cs_iconbox_title cs_fs_24 cs_normal">Regional Transformation Expertise</h2>
-                  <p class="cs_iconbox_subtitle mb-0">Active engagements across Singapore, India, and Indonesia.</p>
+                  <p class="cs_iconbox_subtitle mb-0">Active engagements across Asia including Singapore, India, and Indonesia.</p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -1072,7 +1146,7 @@
           <div class="cs_iconbox cs_style_1 cs_healthstrat_outcome_item">
             <div class="cs_iconbox_icon cs_healthstrat_outcome_icon_wrap"><i class="fa-solid fa-people-arrows cs_healthstrat_outcome_icon" aria-hidden="true"></i></div>
             <h2 class="cs_iconbox_title cs_fs_30 cs_normal">Leadership capability building</h2>
-            <p class="cs_iconbox_subtitle mb-0">Develop leaders who can guide healthcare teams through change, safety, and innovation.</p>
+            <p class="cs_iconbox_subtitle mb-0">Develop leaders who can guide healthcare teams through design thinking, strategies, change, safety, and innovation.</p>
           </div>
         </div>
       </div>
@@ -1189,7 +1263,7 @@
                       <span>Education</span>
                     </div>
                     <h2 class="cs_post_title cs_fs_30 cs_normal mb-0">
-                      <a href="expertise.html">Training and educational institutions</a>
+                      <a href="expertise.html">Institutes of Higher Learning</a>
                     </h2>
                   </div>
                 </div>
@@ -1390,7 +1464,7 @@
                 </a>
               </div>
             </div>
-            <div class="cs_copyright">Copyright © <span class="cs_copyright_year">2026</span> <a href="index.html">HealthStrat</a>. All rights reserved.</div>
+            <div class="cs_copyright">Copyright © <span class="cs_copyright_year">2026</span> <a href="index.html">HealthStrat Singapore</a>. All rights reserved.</div>
             <div class="cs_bottom_footer_right">
               <ul class="cs_footer_links cs_mp0">
                 <li>
