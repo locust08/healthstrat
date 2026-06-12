@@ -69,7 +69,7 @@ body,
 html {
   color: var(--text-main);
   font-family: var(--secondary-font);
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.563em;
   font-weight: 400;
   overflow-x: clip;
@@ -99,27 +99,27 @@ h6 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 64px;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 50px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 38px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 26px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 p {
@@ -147,7 +147,7 @@ i {
 blockquote {
   margin: 0 15px;
   font-style: italic;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 1.6em;
   margin: 0;
 }
@@ -210,7 +210,7 @@ strong {
 pre {
   color: var(--secondary);
   border: 1px solid var(--border);
-  font-size: 18px;
+  font-size: 26px;
   padding: 25px;
   border-radius: 5px;
 }
@@ -246,7 +246,7 @@ textarea {
   top: 0;
   width: 100%;
   height: 100vh;
-  font-size: 80px;
+  font-size: 88px;
   background-color: var(--white);
 }
 
@@ -1473,106 +1473,106 @@ h1 {
 }
 
 .cs_fs_16 {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.563em;
 }
 
 .cs_fs_18 {
-  font-size: 18px;
+  font-size: 26px;
   line-height: 1.5em;
 }
 
 .cs_fs_24 {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.333em;
 }
 
 .cs_fs_30 {
-  font-size: 30px;
+  font-size: 38px;
   line-height: 1.167em;
 }
 @media (max-width: 575px) {
   .cs_fs_30 {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 1.3em;
   }
 }
 
 .cs_fs_53 {
-  font-size: 53px;
+  font-size: 61px;
   line-height: 1.226em;
 }
 @media (max-width: 1400px) {
   .cs_fs_53 {
-    font-size: 50px;
+    font-size: 58px;
   }
 }
 @media (max-width: 1199px) {
   .cs_fs_53 {
-    font-size: 46px;
+    font-size: 54px;
   }
 }
 @media (max-width: 575px) {
   .cs_fs_53 {
-    font-size: 34px;
+    font-size: 42px;
     line-height: 1.18em;
   }
 }
 @media (max-width: 380px) {
   .cs_fs_53 {
-    font-size: 31px;
+    font-size: 39px;
   }
 }
 
 .cs_fs_60 {
-  font-size: 60px;
+  font-size: 68px;
   line-height: 1.167em;
 }
 @media (max-width: 1199px) {
   .cs_fs_60 {
-    font-size: 46px;
+    font-size: 54px;
   }
 }
 @media (max-width: 575px) {
   .cs_fs_60 {
-    font-size: 38px;
+    font-size: 46px;
     line-height: 1.16em;
   }
 }
 @media (max-width: 380px) {
   .cs_fs_60 {
-    font-size: 34px;
+    font-size: 42px;
   }
 }
 
 .cs_fs_120 {
-  font-size: 120px;
+  font-size: 128px;
   line-height: 1.083em;
 }
 @media (max-width: 1550px) {
   .cs_fs_120 {
-    font-size: 110px;
+    font-size: 118px;
   }
 }
 @media (max-width: 1400px) {
   .cs_fs_120 {
-    font-size: 100px;
+    font-size: 108px;
   }
 }
 @media (max-width: 991px) {
   .cs_fs_120 {
-    font-size: 70px;
+    font-size: 78px;
   }
 }
 @media (max-width: 575px) {
   .cs_fs_120 {
-    font-size: 42px;
+    font-size: 50px;
     line-height: 1.1em;
   }
 }
 @media (max-width: 420px) {
   .cs_fs_120 {
-    font-size: 38px;
+    font-size: 46px;
   }
 }
 
@@ -1814,7 +1814,7 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  font-size: 92px;
+  font-size: 100px;
   line-height: 1;
 }
 
@@ -1868,14 +1868,14 @@ hr {
   display: block;
   margin-bottom: 24px;
   color: var(--accent);
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1;
 }
 .cs_achievement_box h2 {
   margin: 0;
   color: var(--primary);
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1.25em;
 }
@@ -1923,7 +1923,7 @@ hr {
   border: 1px solid var(--accent);
   border-radius: 4px;
   color: var(--primary);
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 1.25em;
   background-color: #fff;
@@ -1944,7 +1944,7 @@ hr {
   position: relative;
   padding-left: 32px;
   color: var(--primary);
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 1.45em;
 }
@@ -2095,7 +2095,7 @@ label {
   margin-bottom: 0;
 }
 .cs_contact_info .cs_social_btns.cs_style_1 {
-  font-size: 18px;
+  font-size: 26px;
   gap: 10px 20px;
   color: var(--ternary);
 }
@@ -3100,7 +3100,7 @@ label {
 }
 @media (max-width: 991px) {
   .cs_moving_section_in.cs_fs_120 {
-    font-size: 80px;
+    font-size: 88px;
   }
 }
 
@@ -3174,7 +3174,7 @@ label {
   width: 92px;
   height: 14px;
   position: relative;
-  font-size: 14px;
+  font-size: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3239,7 +3239,7 @@ label {
   position: absolute;
   left: 0px;
   top: 4px;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 1.5em;
 }
 .cs_list.cs_style_2 .cs_btn.cs_style_1 {
@@ -3293,13 +3293,13 @@ label {
   position: absolute;
   left: 0px;
   top: 0px;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 1.5em;
   height: 62px;
   width: 62px;
   background-color: var(--accent);
   color: #fff;
-  font-size: 30px;
+  font-size: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3343,7 +3343,7 @@ label {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 14px;
+  font-size: 22px;
 }
 
 .cs_approach_checklist {
@@ -3367,7 +3367,7 @@ label {
   background-color: rgba(230, 244, 255, 0.64);
   color: var(--primary);
   font-family: var(--primary-font);
-  font-size: 20px;
+  font-size: 28px;
   line-height: 1.3em;
 }
 .cs_approach_checklist span {
@@ -3388,7 +3388,7 @@ label {
           justify-content: center;
   background-color: var(--accent);
   color: #fff;
-  font-size: 14px;
+  font-size: 22px;
 }
 
 .cs_approach_note {
@@ -3398,7 +3398,7 @@ label {
 }
 
 .cs_strategy_outcomes_section .cs_section_title {
-  font-size: 42px;
+  font-size: 50px;
   line-height: 1.16em;
 }
 
@@ -3430,7 +3430,7 @@ label {
   background: linear-gradient(180deg, #fff 0%, #f8fbff 100%);
   color: var(--primary);
   font-family: var(--secondary-font);
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.42em;
   -webkit-box-shadow: 0 12px 30px rgba(0, 59, 113, 0.04);
@@ -3454,7 +3454,7 @@ label {
           justify-content: center;
   background-color: rgba(101, 184, 45, 0.14);
   color: var(--accent);
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .cs_why_healthstrat_cards .cs_iconbox.cs_style_2 {
@@ -3488,12 +3488,12 @@ label {
     padding: 32px;
   }
   .cs_approach_checklist li {
-    font-size: 18px;
+    font-size: 26px;
   }
   .cs_strategy_outcomes_list li {
     min-height: 112px;
     padding: 20px;
-    font-size: 15px;
+    font-size: 23px;
   }
 }
 @media (max-width: 767px) {
@@ -3508,13 +3508,13 @@ label {
   }
   .cs_strategy_outcomes_list li {
     min-height: initial;
-    font-size: 15px;
+    font-size: 23px;
   }
   .cs_strategy_outcomes_list {
     grid-template-columns: 1fr;
   }
   .cs_strategy_outcomes_section .cs_section_title {
-    font-size: 34px;
+    font-size: 42px;
   }
 }
 .cs_strategy_showcase {
@@ -3530,7 +3530,7 @@ label {
 .cs_strategy_showcase_head h2 {
   margin-bottom: 18px;
   color: var(--primary);
-  font-size: 44px;
+  font-size: 52px;
   font-weight: 700;
   line-height: 1.12em;
 }
@@ -3538,7 +3538,7 @@ label {
   max-width: 720px;
   margin: 0 auto;
   color: rgba(7, 27, 61, 0.68);
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 1.55em;
 }
@@ -3568,7 +3568,7 @@ label {
   border-radius: 50%;
   background-color: #fff;
   color: var(--primary);
-  font-size: 16px;
+  font-size: 24px;
   -webkit-box-shadow: 0 10px 24px rgba(7, 27, 61, 0.08);
           box-shadow: 0 10px 24px rgba(7, 27, 61, 0.08);
   -webkit-transition: all 0.3s ease;
@@ -3634,7 +3634,7 @@ label {
 .cs_strategy_showcase_card_in h3 {
   margin-bottom: 16px;
   color: var(--primary);
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.16em;
 }
@@ -3642,14 +3642,14 @@ label {
   display: block;
   margin-bottom: 16px;
   color: rgba(7, 27, 61, 0.78);
-  font-size: 15px;
+  font-size: 23px;
   font-weight: 500;
   line-height: 1.5em;
 }
 .cs_strategy_showcase_card_in > p {
   margin-bottom: 12px;
   color: var(--primary);
-  font-size: 13px;
+  font-size: 21px;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 1.2em;
@@ -3667,7 +3667,7 @@ label {
   position: relative;
   padding-left: 31px;
   color: rgba(7, 27, 61, 0.82);
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 1.35em;
 }
@@ -3691,7 +3691,7 @@ label {
   border-radius: 50%;
   color: var(--accent);
   font-family: "Font Awesome 6 Free";
-  font-size: 10px;
+  font-size: 18px;
   font-weight: 900;
   line-height: 1;
 }
@@ -3699,7 +3699,7 @@ label {
   margin-left: 31px;
   padding-left: 18px;
   color: rgba(7, 27, 61, 0.72);
-  font-size: 13px;
+  font-size: 21px;
   font-weight: 500;
 }
 .cs_strategy_showcase_card_in li.cs_strategy_showcase_subitem::before {
@@ -3728,7 +3728,7 @@ label {
   border-radius: 50%;
   background-color: rgba(101, 184, 45, 0.13);
   color: var(--accent);
-  font-size: 30px;
+  font-size: 38px;
 }
 @media (max-width: 1199px) {
   .cs_strategy_showcase_card {
@@ -3747,7 +3747,7 @@ label {
         flex-basis: 88%;
   }
   .cs_strategy_showcase_head h2 {
-    font-size: 34px;
+    font-size: 42px;
   }
 }
 .cs_strategy_expertise_tabs {
@@ -3870,7 +3870,7 @@ label {
   background-color: var(--accent);
 }
 .cs_strategy_panel_intro h3 {
-  font-size: 30px;
+  font-size: 38px;
   line-height: 1.2em;
   margin-bottom: 12px;
 }
@@ -3932,7 +3932,7 @@ label {
     min-height: auto;
   }
   .cs_strategy_panel_intro h3 {
-    font-size: 26px;
+    font-size: 34px;
   }
   .cs_strategy_cards_wrap {
     padding: 0;
@@ -3995,10 +3995,13 @@ label {
 }
 
 .cs_founder_profile_section .cs_why_choose_us_thumb {
+  height: clamp(620px, calc(100vh - 88px), 720px);
   min-height: 620px;
 }
 .cs_founder_profile_section .cs_why_choose_us_thumb_in {
-  background-position: center 20%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .cs_founder_profile_content {
   padding: 48px 0;
@@ -4006,19 +4009,20 @@ label {
 .cs_founder_profile_heading .cs_section_title {
   max-width: 620px;
   margin-top: 18px;
-  font-size: 32px;
+  font-size: 40px;
   line-height: 1.22em;
 }
 .cs_founder_group_label {
   margin-bottom: 14px;
   color: var(--primary);
-  font-size: 13px;
+  font-size: 21px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 @media (max-width: 991px) {
   .cs_founder_profile_section .cs_why_choose_us_thumb {
+    height: 420px;
     min-height: 420px;
   }
   .cs_founder_profile_content {
@@ -4027,6 +4031,7 @@ label {
 }
 @media (max-width: 575px) {
   .cs_founder_profile_section .cs_why_choose_us_thumb {
+    height: 340px;
     min-height: 340px;
   }
 }
@@ -4044,7 +4049,7 @@ label {
 .cs_founder_highlight strong {
   display: block;
   color: var(--primary);
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.35em;
   margin-bottom: 4px;
@@ -4053,7 +4058,7 @@ label {
   display: block;
   color: var(--primary);
   font-family: var(--primary-font);
-  font-size: 15px;
+  font-size: 23px;
   line-height: 1.28em;
 }
 .cs_founder_highlight:last-child {
@@ -4207,7 +4212,7 @@ label {
   content: counter(number-counter, decimal-leading-zero) ". ";
   font-family: var(--primary-font);
   color: var(--primary);
-  font-size: 53px;
+  font-size: 61px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -4219,7 +4224,7 @@ label {
     -webkit-transform: initial;
             transform: initial;
     top: 41px;
-    font-size: 30px;
+    font-size: 38px;
   }
 }
 .cs_list.cs_style_5 .cs_list_right {
@@ -4745,7 +4750,7 @@ select.cs_insurance_input {
   }
 }
 .cs_casestudy_details h2 {
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 400;
   margin-bottom: 18px;
   margin-top: 25px;
@@ -4826,7 +4831,7 @@ select.cs_insurance_input {
   margin-bottom: 40px;
 }
 .cs_blog_details h2 {
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 400;
   margin-bottom: 15px;
 }
@@ -4836,7 +4841,7 @@ select.cs_insurance_input {
 .cs_blog_details p:first-child:first-letter,
 .cs_blog_details > img:first-child + p:first-letter {
   float: left;
-  font-size: 53px;
+  font-size: 61px;
   line-height: 0.5em;
   font-weight: 400;
   margin: 10px 10px 0 0;
@@ -4847,7 +4852,7 @@ select.cs_insurance_input {
 }
 .cs_blog_details blockquote {
   border-left: 5px solid var(--ternary);
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.33em;
   font-style: italic;
   font-weight: 400;
@@ -4869,7 +4874,7 @@ select.cs_insurance_input {
   display: block;
   font-family: var(--secondary-font);
   font-style: initial;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.5em;
   color: var(--secondary);
   margin-top: 18px;
@@ -5780,7 +5785,7 @@ select.cs_insurance_input {
   bottom: initial;
   width: initial;
   color: #fff;
-  font-size: 60px;
+  font-size: 68px;
   left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5804,7 +5809,7 @@ select.cs_insurance_input {
 .cs_number_pagination .swiper-pagination-total {
   position: relative;
   bottom: -10px;
-  font-size: 25px;
+  font-size: 33px;
 }
 
 .swiper-slide .cs_hero.cs_style_2 .cs_hero_title {
@@ -5897,7 +5902,7 @@ select.cs_insurance_input {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 68px;
+  font-size: 76px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   line-height: 48px;
@@ -6280,7 +6285,7 @@ select.cs_insurance_input {
   padding: 10px 12px;
   border-radius: 6px;
   color: var(--primary);
-  font-size: 14px;
+  font-size: 22px;
   line-height: 1.35em;
 }
 .cs_header_search_results a:hover {
@@ -6567,13 +6572,13 @@ select.cs_insurance_input {
   transition: all 0.4s ease;
 }
 .cs_side_header .cs_side_header_heading {
-  font-size: 28px;
+  font-size: 36px;
   line-height: 1.2em;
   font-weight: 400;
   margin: 0;
 }
 .cs_side_header .cs_side_header_title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 400;
   margin-bottom: 22px;
 }
@@ -6606,7 +6611,7 @@ select.cs_insurance_input {
   position: absolute;
   left: 0;
   top: 5px;
-  font-size: 18px;
+  font-size: 26px;
   width: 18px;
   text-align: center;
 }
@@ -6628,7 +6633,7 @@ select.cs_insurance_input {
   color: var(--white);
 }
 .cs_side_header .cs_social_btns.cs_style_1 {
-  font-size: 14px;
+  font-size: 22px;
 }
 .cs_side_header .cs_social_btns.cs_style_1 a {
   height: 35px;
@@ -6945,7 +6950,7 @@ select.cs_insurance_input {
     padding: 0;
     display: block;
     text-align: center;
-    font-size: 14px;
+    font-size: 22px;
     line-height: 1.6em;
     font-weight: 500;
   }
@@ -7025,7 +7030,7 @@ select.cs_insurance_input {
   .cs_nav .cs_nav_list .cs_service_mega_title {
     display: block;
     min-height: 56px;
-    font-size: 18px;
+    font-size: 26px;
     font-weight: 600;
     line-height: 1.24em;
   }
@@ -7077,7 +7082,7 @@ select.cs_insurance_input {
         flex-basis: 196px;
   }
   .cs_nav .cs_nav_list .cs_service_mega_title {
-    font-size: 16px;
+    font-size: 24px;
   }
   .cs_site-branding {
     max-width: 190px;
@@ -7194,7 +7199,7 @@ select.cs_insurance_input {
   }
   .cs_nav .cs_nav_list .cs_service_mega_title {
     min-height: auto;
-    font-size: 16px;
+    font-size: 24px;
   }
   .cs_nav .cs_nav_list a {
     display: block;
@@ -7202,7 +7207,7 @@ select.cs_insurance_input {
     line-height: 16px;
   }
   .cs_nav .cs_nav_list > li > a {
-    font-size: 18px;
+    font-size: 26px;
     line-height: 22px;
   }
   .cs_nav .menu-item-has-children {
@@ -7515,14 +7520,14 @@ select.cs_insurance_input {
   margin-bottom: 30px;
 }
 .cs_hamburger_header .cs_nav_list > li > a {
-  font-size: 30px;
+  font-size: 38px;
   display: block;
   line-height: 1.2em;
   font-weight: 400;
   text-transform: uppercase;
 }
 .cs_hamburger_header .cs_nav_list > li ul {
-  font-size: 18px;
+  font-size: 26px;
   line-height: 1.6em;
   font-family: var(--secondary-font);
   padding-top: 5px;
@@ -7533,7 +7538,7 @@ select.cs_insurance_input {
   left: -20px;
 }
 .cs_hamburger_header .cs_nav_list > li ul ul {
-  font-size: 16px;
+  font-size: 24px;
 }
 .cs_hamburger_header .cs_nav_list > li ul a {
   display: block;
@@ -7624,7 +7629,7 @@ select.cs_insurance_input {
   margin-top: 40px;
 }
 .cs_hamburger_footer h3 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 400;
   color: var(--white);
   margin-bottom: 8px;
@@ -7705,7 +7710,7 @@ select.cs_insurance_input {
 .cs_text_widget h3 {
   color: #fff;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 0px;
   margin-top: 30px;
 }
@@ -7716,7 +7721,7 @@ select.cs_insurance_input {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 13px;
+  font-size: 21px;
   gap: 10px;
 }
 .cs_social_btns.cs_style_1 a {
@@ -7737,7 +7742,7 @@ select.cs_insurance_input {
   fill: var(--accent);
 }
 .cs_social_btns.cs_style_1.cs_type_1 {
-  font-size: 17px;
+  font-size: 25px;
   gap: 20px;
 }
 .cs_social_btns.cs_style_1.cs_type_1 a {
@@ -7869,26 +7874,40 @@ select.cs_insurance_input {
 }
 
 .cs_bottom_footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
   padding: 32px 0;
   gap: 15px;
 }
+.cs_bottom_footer .cs_bottom_footer_left {
+  justify-self: start;
+}
+.cs_bottom_footer .cs_copyright {
+  grid-column: 2;
+  justify-self: center;
+  text-align: center;
+}
+.cs_bottom_footer .cs_bottom_footer_right {
+  grid-column: 3;
+  justify-self: end;
+  text-align: right;
+}
 @media (max-width: 767px) {
   .cs_bottom_footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
+  }
+  .cs_bottom_footer .cs_bottom_footer_left,
+  .cs_bottom_footer .cs_copyright,
+  .cs_bottom_footer .cs_bottom_footer_right {
+    justify-self: center;
     text-align: center;
   }
 }
@@ -7915,7 +7934,7 @@ select.cs_insurance_input {
 .cs_fullscreen_footer .cs_social_btns.cs_style_1 a {
   height: 32px;
   width: 32px;
-  font-size: 14px;
+  font-size: 22px;
 }
 .cs_fullscreen_footer .cs_copyright {
   color: rgba(255, 255, 255, 0.75);
@@ -8011,7 +8030,7 @@ select.cs_insurance_input {
 }
 
 .cs_sidebar_widget_title {
-  font-size: 30px;
+  font-size: 38px;
   margin-bottom: 30px;
   font-weight: 400;
 }
@@ -8041,7 +8060,7 @@ select.cs_insurance_input {
 
 .widget_archive,
 .widget_categories {
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 500;
   line-height: 1.5em;
 }
@@ -8096,7 +8115,7 @@ select.cs_insurance_input {
 }
 
 .cs_recent_post_title {
-  font-size: 18px;
+  font-size: 26px;
   line-height: 1.5em;
   font-weight: 500;
   margin-bottom: 8px;
@@ -8138,7 +8157,7 @@ select.cs_insurance_input {
   border-radius: 20px;
   background-color: var(--accent);
   color: var(--white);
-  font-size: 18px;
+  font-size: 26px;
 }
 .cs_sidebar_search_btn:hover {
   color: var(--white);
@@ -8183,7 +8202,7 @@ select.cs_insurance_input {
 
 @media screen and (max-width: 991px) {
   .cs_sidebar_widget_title {
-    font-size: 26px;
+    font-size: 34px;
     margin-bottom: 20px;
   }
   .widget_archive ul li:not(:last-child),
@@ -8312,7 +8331,7 @@ select.cs_insurance_input {
   height: 30px;
   width: 30px;
   rotate: 180deg;
-  font-size: 14px;
+  font-size: 22px;
 }
 
 .cs_hero.cs_style_1 {
@@ -8626,7 +8645,7 @@ select.cs_insurance_input {
 }
 @media (max-width: 991px) {
   .cs_hero.cs_style_3 .cs_hero_info {
-    font-size: 36px;
+    font-size: 44px;
     gap: 10px 40px;
     margin-bottom: 25px;
   }
@@ -8640,15 +8659,15 @@ select.cs_insurance_input {
           align-items: center;
 }
 .cs_hero.cs_style_3 .cs_hero_info i {
-  font-size: 18px;
+  font-size: 26px;
   color: var(--accent);
   margin-right: 25px;
-  font-size: 30px;
+  font-size: 38px;
 }
 @media (max-width: 991px) {
   .cs_hero.cs_style_3 .cs_hero_info i {
     margin-right: 12px;
-    font-size: 26px;
+    font-size: 34px;
   }
 }
 .cs_hero.cs_style_3 .cs_hero_avatar_wrap {
@@ -8678,7 +8697,7 @@ select.cs_insurance_input {
 }
 @media (max-width: 991px) {
   .cs_hero.cs_style_3 .cs_hero_avatar h3 {
-    font-size: 36px;
+    font-size: 44px;
   }
 }
 @media (max-width: 991px) {
@@ -9861,7 +9880,7 @@ select.cs_insurance_input {
   max-width: 460px;
 }
 .cs_cta.cs_style_3.cs_expertise_cta .cs_cta_title {
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1.28em;
 }
 @media (max-width: 1199px) {
@@ -10958,18 +10977,18 @@ select.cs_insurance_input {
 }
 
 .cs_landing_hero_title {
-  font-size: 90px;
+  font-size: 98px;
   margin-bottom: 40px;
   z-index: 1;
 }
 @media (max-width: 991px) {
   .cs_landing_hero_title {
-    font-size: 70px;
+    font-size: 78px;
   }
 }
 @media (max-width: 767px) {
   .cs_landing_hero_title {
-    font-size: 60px;
+    font-size: 68px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10991,7 +11010,7 @@ select.cs_insurance_input {
 }
 @media (max-width: 450px) {
   .cs_landing_hero_title {
-    font-size: 50px;
+    font-size: 58px;
   }
 }
 
@@ -11249,7 +11268,7 @@ select.cs_insurance_input {
   display: inline-block;
   color: transparent;
   -webkit-text-stroke: 2px var(--primary);
-  font-size: 70px;
+  font-size: 78px;
   margin-right: 5px;
 }
 @media (max-width: 575px) {
@@ -11341,7 +11360,7 @@ select.cs_insurance_input {
 }
 
 body.cs_healthstrat_page .cs_section_subtitle {
-  font-size: 46px;
+  font-size: 54px;
   line-height: 1.04em;
   margin-bottom: 18px;
 }
@@ -11378,7 +11397,65 @@ body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_site_branding img {
 }
 body.cs_healthstrat_page .cs_nav .cs_nav_list > li > a,
 body.cs_healthstrat_page .cs_header_search_form .cs_header_search_field {
-  font-size: 18px;
+  font-size: 26px;
+}
+@media (min-width: 1200px) {
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_main_header .container {
+    max-width: none;
+    width: 100%;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_main_header_in {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr) 240px;
+    gap: 30px;
+    align-items: center;
+  }
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_main_header_left {
+    display: contents;
+  }
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_site_branding {
+    grid-column: 1;
+    justify-self: start;
+    max-width: 220px;
+  }
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_nav {
+    grid-column: 2;
+    justify-self: center;
+    min-width: 0;
+    margin-left: 0;
+  }
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_nav .cs_nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 26px;
+  }
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_nav .cs_nav_list > li {
+    margin: 0;
+    flex: 0 0 auto;
+  }
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_nav .cs_nav_list > li > a {
+    white-space: nowrap;
+  }
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_main_header_right {
+    grid-column: 3;
+    justify-self: end;
+    flex: 0 0 auto;
+  }
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_toolbox {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 0;
+  }
+  body.cs_healthstrat_page .cs_header_search_form {
+    width: 240px;
+  }
+  body.cs_healthstrat_page .cs_header_search_form .cs_header_search_field {
+    width: 100%;
+  }
 }
 @media (max-width: 575px) {
   body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_main_header_in {
@@ -11397,7 +11474,7 @@ body.cs_healthstrat_page .cs_strategy_showcase_head h2,
 body.cs_healthstrat_page .cs_strategy_showcase_card_in h3,
 body.cs_healthstrat_page .cs_founder_profile_list h2,
 body.cs_healthstrat_page .cs_founder_highlight strong {
-  font-size: 30px;
+  font-size: 38px;
   line-height: 1.12em;
   font-weight: 400;
 }
@@ -11419,7 +11496,7 @@ body.cs_healthstrat_page .cs_strategy_outcomes_list li,
 body.cs_healthstrat_page .cs_footer .cs_menu_widget a,
 body.cs_healthstrat_page .cs_footer .cs_text_widget p,
 body.cs_healthstrat_page .cs_footer .cs_text_widget a {
-  font-size: 20px;
+  font-size: 28px;
   line-height: 1.25em;
 }
 body.cs_healthstrat_page .cs_strategy_showcase_card_in > span,
@@ -11440,12 +11517,12 @@ body.cs_healthstrat_page .cs_footer .cs_text_widget a {
 }
 @media (max-width: 991px) {
   body.cs_healthstrat_page .cs_section_subtitle {
-    font-size: 36px;
+    font-size: 44px;
   }
 }
 @media (max-width: 575px) {
   body.cs_healthstrat_page .cs_section_subtitle {
-    font-size: 32px;
+    font-size: 40px;
   }
   body.cs_healthstrat_page .cs_section_title,
   body.cs_healthstrat_page .cs_iconbox_title,
@@ -11456,6 +11533,6 @@ body.cs_healthstrat_page .cs_footer .cs_text_widget a {
   body.cs_healthstrat_page .cs_strategy_showcase_card_in h3,
   body.cs_healthstrat_page .cs_founder_profile_list h2,
   body.cs_healthstrat_page .cs_founder_highlight strong {
-    font-size: 28px;
+    font-size: 36px;
   }
 }/*# sourceMappingURL=style.css.map */

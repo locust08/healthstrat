@@ -19,14 +19,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
       .cs_about_page .cs_section_subtitle {
-        font-size: 46px;
+        font-size: 54px;
         line-height: 1.04em;
         margin-bottom: 18px;
       }
       .cs_about_page .cs_section_title,
       .cs_about_page .cs_iconbox_title,
       .cs_about_page .cs_founder_profile_list h2 {
-        font-size: 30px;
+        font-size: 38px;
         line-height: 1.12em;
       }
       .cs_about_page .cs_section_heading_text,
@@ -35,11 +35,11 @@
       .cs_about_page .cs_about_intro_text,
       .cs_about_page .cs_about_partner_text,
       .cs_about_page .cs_founder_highlight span {
-        font-size: 20px;
+        font-size: 28px;
         line-height: 1.25em;
       }
       .cs_about_page .cs_founder_group_label {
-        font-size: 20px;
+        font-size: 28px;
         line-height: 1.25em;
       }
       .cs_about_page .cs_founder_teaching_note {
@@ -49,34 +49,62 @@
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.62);
         color: var(--primary);
-        font-size: 18px;
+        font-size: 26px;
         font-weight: 600;
         line-height: 1.35em;
       }
       .cs_about_page .cs_founder_highlight strong {
-        font-size: 30px;
+        font-size: 38px;
         line-height: 1.12em;
       }
       .cs_about_page .cs_footer .cs_menu_widget a,
       .cs_about_page .cs_footer .cs_text_widget p,
       .cs_about_page .cs_footer .cs_text_widget a {
-        font-size: 20px;
+        font-size: 28px;
         line-height: 1.35em;
+      }
+      @media (min-width: 992px) {
+        .cs_about_page .cs_founder_profile_section > .container {
+          max-width: none;
+          padding-left: 0;
+          padding-right: clamp(48px, 5vw, 96px);
+        }
+        .cs_about_page .cs_founder_profile_section > .container > .row {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .cs_about_page .cs_founder_profile_section > .container > .row > .col-lg-6:first-child {
+          flex: 0 0 44%;
+          max-width: 44%;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .cs_about_page .cs_founder_profile_section > .container > .row > .col-lg-6:last-child {
+          flex: 0 0 56%;
+          max-width: 56%;
+          padding-left: clamp(38px, 4vw, 74px);
+          padding-right: 0;
+        }
+        .cs_about_page .cs_founder_profile_section .cs_why_choose_us_thumb {
+          width: 100%;
+          margin-left: 0;
+          padding-right: 0;
+        }
       }
       @media (max-width: 991px) {
         .cs_about_page .cs_section_subtitle {
-          font-size: 36px;
+          font-size: 44px;
         }
       }
       @media (max-width: 575px) {
         .cs_about_page .cs_section_subtitle {
-          font-size: 32px;
+          font-size: 40px;
         }
         .cs_about_page .cs_section_title,
         .cs_about_page .cs_iconbox_title,
         .cs_about_page .cs_founder_profile_list h2,
         .cs_about_page .cs_founder_highlight strong {
-          font-size: 28px;
+          font-size: 36px;
         }
       }
     </style>
@@ -250,7 +278,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="cs_why_choose_us_thumb">
-              <div class="cs_why_choose_us_thumb_in cs_bg_filed" data-src="assets/img/others/founder.jpeg" role="img" aria-label="Dr Prema K., Founder and Executive Director of HealthStrat"></div>
+              <div class="cs_why_choose_us_thumb_in cs_bg_filed" data-src="assets/img/1.png" role="img" aria-label="Dr Prema K., Founder and Executive Director of HealthStrat"></div>
             </div>
           </div>
           <div class="col-lg-6">

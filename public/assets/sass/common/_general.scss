@@ -2186,16 +2186,21 @@ label {
 }
 .cs_founder_profile_section {
   .cs_why_choose_us_thumb {
+    height: clamp(620px, calc(100vh - 88px), 720px);
     min-height: 620px;
     @media (max-width: 991px) {
+      height: 420px;
       min-height: 420px;
     }
     @media (max-width: 575px) {
+      height: 340px;
       min-height: 340px;
     }
   }
   .cs_why_choose_us_thumb_in {
-    background-position: center 20%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .cs_founder_profile_content {
