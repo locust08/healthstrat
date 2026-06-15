@@ -382,6 +382,14 @@
             },
           ],
         });
+
+        function syncSlickAccessibility() {
+          $slickActive.find('.slick-slide[aria-hidden="true"] a, .slick-slide[aria-hidden="true"] button').attr('tabindex', '-1');
+          $slickActive.find('.slick-slide[aria-hidden="false"] a, .slick-slide[aria-hidden="false"] button').removeAttr('tabindex');
+        }
+
+        syncSlickAccessibility();
+        $slickActive.on('afterChange setPosition', syncSlickAccessibility);
       });
     }
   }

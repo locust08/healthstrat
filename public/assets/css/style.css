@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
 ## All Color Variable
 ----------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
   --white: #fff;
   --black: #000;
@@ -32,8 +31,8 @@
   --accent: var(--brand-green);
   --gray: var(--background-soft);
   --border: var(--border-soft);
-  --primary-font: "Unna", serif;
-  --secondary-font: "Roboto", sans-serif;
+  --primary-font: Georgia, "Times New Roman", serif;
+  --secondary-font: Arial, Helvetica, sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -6257,6 +6256,8 @@ select.cs_insurance_input {
   padding: 0;
   border: none;
   color: var(--secondary);
+  min-width: 24px;
+  min-height: 38px;
 }
 .cs_header_search_form .cs_header_submit_btn:hover {
   color: var(--accent);

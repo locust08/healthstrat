@@ -2,6 +2,36 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+const siteUrl = 'https://healthstrat.pages.dev';
+
+const pageMeta = {
+  'index.html': {
+    title: 'HealthStrat - Healthcare Strategy & Transformation Consultancy',
+    description:
+      'HealthStrat helps healthcare leaders strengthen strategy, clinical governance, workforce capability, education, and transformation across Singapore and regional health systems.',
+  },
+  'about.html': {
+    title: 'About HealthStrat | Healthcare Transformation Leadership',
+    description:
+      'Learn about HealthStrat and Dr Prema K., a senior healthcare transformation leader supporting hospitals, health systems, community care, education, and workforce development.',
+  },
+  'expertise.html': {
+    title: 'Healthcare Consulting Expertise | HealthStrat',
+    description:
+      'Explore HealthStrat expertise in healthcare strategy, clinical governance, nursing workforce development, innovation, education, operational readiness, and community care.',
+  },
+  'contact.html': {
+    title: 'Contact HealthStrat | Healthcare Strategy Consultancy',
+    description:
+      'Contact HealthStrat to discuss healthcare strategy, clinical leadership, transformation, training, workforce development, and regional healthcare advisory support.',
+  },
+  'insights.html': {
+    title: 'Healthcare Transformation Insights | HealthStrat',
+    description:
+      'Read HealthStrat insights on healthcare transformation, patient safety, workforce capability, digital health, clinical governance, and community care.',
+  },
+};
+
 export function getStaticPaths() {
   const htmlFiles = fs
     .readdirSync(process.cwd())
@@ -20,6 +50,17 @@ export function getStaticPaths() {
 
 const { file } = Astro.props;
 const pagePath = path.join(process.cwd(), file);
+const manifestPath = path.join(process.cwd(), 'public', 'assets', 'image-manifest.json');
+const imageManifest = fs.existsSync(manifestPath)
+  ? JSON.parse(fs.readFileSync(manifestPath, 'utf-8'))
+  : {};
+const meta = pageMeta[file] || {
+  title: 'HealthStrat | Healthcare Strategy & Transformation Consultancy',
+  description:
+    'HealthStrat supports healthcare organisations with strategy, clinical governance, workforce development, education, innovation, and transformation advisory.',
+};
+const pathname = file === 'index.html' ? '/' : `/${file.replace(/\.html$/, '')}/`;
+const canonicalUrl = `${siteUrl}${pathname}`;
 
 let html = fs.readFileSync(pagePath, 'utf-8');
 
@@ -27,6 +68,164 @@ html = html
   .replaceAll('href="assets/', 'href="/assets/')
   .replaceAll('src="assets/', 'src="/assets/')
   .replaceAll('data-src="assets/', 'data-src="/assets/');
----
+
+html = html.replace(/<title>.*?<\/title>/i, `<title>${meta.title}</title>`);
+
+const metaTags = `
+    <meta name="description" content="${meta.description}">
+    <link rel="canonical" href="${canonicalUrl}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="${meta.title}">
+    <meta property="og:description" content="${meta.description}">
+    <meta property="og:url" content="${canonicalUrl}">
+    <meta property="og:image" content="${siteUrl}/assets/img/healthstrat/generated/global-hero-healthcare-transformation.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${meta.title}">
+    <meta name="twitter:description" content="${meta.description}">`;
+
+if (!html.includes('name="description"')) {
+  html = html.replace('</head>', `${metaTags}\n  </head>`);
+}
+
+if (file === 'index.html') {
+  html = html.replace(
+    /<h1([^>]*class="[^"]*cs_section_subtitle[^"]*"[^>]*)>(.*?)<\/h1>/gs,
+    '<p$1>$2</p>',
+  );
+}
+
+html = html.replace('href="javascript:void(0)" aria-haspopup="true"', 'href="expertise.html" aria-haspopup="true"');
+html = html.replace(/<\/header>/i, '</header><main id="main-content">');
+html = html.replace(/<footer\b/i, '</main><footer');
+html = html.replace(/<button class="cs_header_submit_btn">/g, '<button class="cs_header_submit_btn" aria-label="Search">');
+html = html.replace(/aria-label="WhatsApp HealthStrat"/g, 'aria-label="WhatsApp Us"');
+
+const readMoreLabels = {
+  'health-care-strategy-transformation.html': 'healthcare strategy and transformation',
+  'clinical-governance-quality.html': 'clinical governance and quality',
+  'nursing-workforce-development.html': 'nursing and workforce development',
+  'innovation-design-thinking.html': 'innovation and design thinking',
+  'education-training.html': 'education and training',
+};
+
+for (const [href, label] of Object.entries(readMoreLabels)) {
+  html = html.replace(
+    new RegExp(`(<a[^>]+href="${href}"[^>]*>\\s*<span class="cs_image_box_btn_text">)Read More(</span>)`, 'g'),
+    `$1Read More<span class="visually-hidden"> about ${label}</span>$2`,
+  );
+}
+
+html = html.replace(
+  /\s*<div class="[^"]*\bcs_preloader\b[^"]*">\s*<div class="cs_preloader_in">.*?<\/div>\s*<\/div>/s,
+  '',
+);
+
+html = html.replace(/<img\b([^>]*)>/gi, (match, attrs) => {
+  const srcMatch = attrs.match(/\bsrc="([^"]+)"/i);
+  if (!srcMatch) return match;
+
+  const originalSrc = srcMatch[1];
+  const image = imageManifest[originalSrc];
+  let nextAttrs = attrs;
+
+  if (image?.optimized) {
+    nextAttrs = nextAttrs.replace(/\bsrc="[^"]+"/i, `src="${image.optimized}"`);
+  }
+
+  if (image?.width && !/\bwidth="/i.test(nextAttrs)) {
+    nextAttrs += ` width="${image.width}"`;
+  }
+
+  if (image?.height && !/\bheight="/i.test(nextAttrs)) {
+    nextAttrs += ` height="${image.height}"`;
+  }
+
+  if (!/\bdecoding="/i.test(nextAttrs)) {
+    nextAttrs += ' decoding="async"';
+  }
+
+  const isPriorityImage =
+    originalSrc.includes('healthstrat_logo') ||
+    originalSrc.includes('healthstrat_preloader_logo') ||
+    originalSrc.includes('global-case-study-expansion');
+
+  if (!isPriorityImage && !/\bloading="/i.test(nextAttrs)) {
+    nextAttrs += ' loading="lazy"';
+  }
+
+  if (isPriorityImage && !/\bfetchpriority="/i.test(nextAttrs)) {
+    nextAttrs += ' fetchpriority="high"';
+  }
+
+  return `<img${nextAttrs}>`;
+});
+
+html = html.replace(/\bdata-src="([^"]+)"/gi, (match, originalSrc) => {
+  const image = imageManifest[originalSrc];
+  return image?.optimized ? `data-src="${image.optimized}"` : match;
+});
+
+html = html.replace(/^\s*<script[^>]+\/assets\/js\/\.min\.js[^>]*><\/script>\s*$/gim, '');
+
+const optionalAssets = [
+  {
+    used: /\bwow\b|\bdata-wow-|(?:^|\s)(?:fadeIn(?:Up|Down|Left|Right)?|zoomIn|slideIn(?:Up|Down|Left|Right)?)(?:\s|")/i,
+    patterns: [
+      /^\s*<link[^>]+\/assets\/css\/animate\.css[^>]*>\s*$/gim,
+      /^\s*<script[^>]+\/assets\/js\/wow\.min\.js[^>]*><\/script>\s*$/gim,
+    ],
+  },
+  {
+    used: /\bclass="[^"]*\bplayer\b/i,
+    patterns: [/^\s*<script[^>]+\/assets\/js\/YTPlayer\.min\.js[^>]*><\/script>\s*$/gim],
+  },
+  {
+    used: /\bcs_ripple_activate\b/i,
+    patterns: [/^\s*<script[^>]+\/assets\/js\/ripples\.min\.js[^>]*><\/script>\s*$/gim],
+  },
+  {
+    used: /\bclass="[^"]*\bodometer\b/i,
+    patterns: [
+      /^\s*<link[^>]+\/assets\/css\/odometer\.css[^>]*>\s*$/gim,
+      /^\s*<script[^>]+\/assets\/js\/odometer\.js[^>]*><\/script>\s*$/gim,
+    ],
+  },
+  {
+    used: /\bcs_slider\b/i,
+    patterns: [
+      /^\s*<link[^>]+\/assets\/css\/slick\.min\.css[^>]*>\s*$/gim,
+      /^\s*<script[^>]+\/assets\/js\/jquery\.slick\.min\.js[^>]*><\/script>\s*$/gim,
+    ],
+  },
+  {
+    used: /\bcs_fullscreen_|\bcs_parallax_slider\b/i,
+    patterns: [
+      /^\s*<link[^>]+\/assets\/css\/swiper\.min\.css[^>]*>\s*$/gim,
+      /^\s*<script[^>]+\/assets\/js\/swiper\.min\.js[^>]*><\/script>\s*$/gim,
+    ],
+  },
+];
+
+for (const asset of optionalAssets) {
+  if (!asset.used.test(html)) {
+    for (const pattern of asset.patterns) {
+      html = html.replace(pattern, '');
+    }
+  }
+}
+
+const asyncStyles = new Set([
+  '/assets/css/bootstrap.min.css',
+  '/assets/css/fontawesome.min.css',
+  '/assets/css/slick.min.css',
+]);
+
+html = html.replace(/<link([^>]+)rel="stylesheet"([^>]+)href="([^"]+)"([^>]*)>/gi, (match, before, between, href, after) => {
+  if (!asyncStyles.has(href)) return match;
+  return `<link${before}rel="preload"${between}href="${href}"${after} as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript>${match}</noscript>`;
+});
+
+html = html.replace(/(<script\b(?![^>]*\bdefer\b)[^>]*\bsrc="[^"]+"[^>]*)><\/script>/gi, '$1 defer></script>');
+--- 
 
 <Fragment set:html={html} />
