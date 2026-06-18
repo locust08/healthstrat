@@ -114,6 +114,31 @@
     "width": 1254,
     "height": 1254
   },
+  "/assets/img/healthstrat/leadership-lessons/lesson-1-communication.png": {
+    "optimized": "/assets/img/healthstrat/leadership-lessons/lesson-1-communication.webp",
+    "width": 273,
+    "height": 210
+  },
+  "/assets/img/healthstrat/leadership-lessons/lesson-2-engagement.png": {
+    "optimized": "/assets/img/healthstrat/leadership-lessons/lesson-2-engagement.webp",
+    "width": 280,
+    "height": 210
+  },
+  "/assets/img/healthstrat/leadership-lessons/lesson-3-training.png": {
+    "optimized": "/assets/img/healthstrat/leadership-lessons/lesson-3-training.webp",
+    "width": 280,
+    "height": 210
+  },
+  "/assets/img/healthstrat/leadership-lessons/lesson-4-visible-leadership.png": {
+    "optimized": "/assets/img/healthstrat/leadership-lessons/lesson-4-visible-leadership.webp",
+    "width": 270,
+    "height": 210
+  },
+  "/assets/img/healthstrat/leadership-lessons/lesson-5-frontline-advocacy.png": {
+    "optimized": "/assets/img/healthstrat/leadership-lessons/lesson-5-frontline-advocacy.webp",
+    "width": 292,
+    "height": 210
+  },
   "/assets/img/for_ain_extracted_images/03_image3.png": {
     "optimized": "/assets/img/for_ain_extracted_images/03_image3.webp",
     "width": 1536,
@@ -154,11 +179,6 @@
     "width": 1024,
     "height": 1536
   },
-  "/assets/img/healthstrat/generated/global-case-study-expansion.png": {
-    "optimized": "/assets/img/healthstrat/generated/global-case-study-expansion.webp",
-    "width": 1440,
-    "height": 874
-  },
   "/assets/img/for_ain_extracted_images/02_image2.png": {
     "optimized": "/assets/img/for_ain_extracted_images/02_image2.webp",
     "width": 1280,
@@ -183,6 +203,11 @@
     "optimized": "/assets/img/for_ain_extracted_images/01_image1.webp",
     "width": 1280,
     "height": 960
+  },
+  "/assets/img/healthstrat/generated/global-case-study-expansion.png": {
+    "optimized": "/assets/img/healthstrat/generated/global-case-study-expansion.webp",
+    "width": 1440,
+    "height": 874
   },
   "/assets/img/map.png": {
     "optimized": "/assets/img/map.webp",
@@ -328,5 +353,10 @@
     "optimized": "/assets/img/drag.webp",
     "width": 20,
     "height": 23
+  },
+  "/assets/img/for_ain_extracted_images/bali.png": {
+    "optimized": "/assets/img/for_ain_extracted_images/bali.webp",
+    "width": 1448,
+    "height": 1086
   }
 }

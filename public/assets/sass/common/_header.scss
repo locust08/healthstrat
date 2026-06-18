@@ -826,6 +826,9 @@
 
     .cs_service_mega_card {
       display: flex !important;
+      width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
       flex-direction: column;
       justify-content: flex-start;
       gap: 10px;
@@ -846,10 +849,11 @@
 
     .cs_service_mega_title {
       display: block;
-      min-height: 56px;
+      min-height: 120px;
       font-size: 18px;
       font-weight: 600;
       line-height: 1.24em;
+      overflow-wrap: anywhere;
     }
 
     .cs_service_mega_image {
@@ -909,7 +913,7 @@
     gap: 14px;
 
     > li {
-      flex-basis: 196px;
+      flex-basis: 232px;
     }
   }
 
