@@ -147,7 +147,7 @@
   &.cs_expertise_cta {
     overflow: hidden;
     background-position: center right;
-    padding-left: 90px;
+    padding: 88px 0 87px 140px;
     &::before {
       content: "";
       position: absolute;
@@ -162,16 +162,18 @@
       );
     }
     .cs_cta_in {
-      max-width: 460px;
+      max-width: 650px;
     }
-    .cs_cta_title {
-      font-size: 24px;
-      line-height: 1.28em;
+    .cs_section_subtitle {
+      margin-bottom: 12px;
+    }
+    @media (max-width: 1400px) {
+      padding-left: 90px;
     }
     @media (max-width: 1199px) {
-      padding-left: 45px;
+      padding-left: 50px;
       .cs_cta_in {
-        max-width: 430px;
+        max-width: 650px;
       }
     }
     @media (max-width: 991px) {

@@ -579,6 +579,41 @@ label {
     }
   }
 }
+.cs_contact_info_inline {
+  grid-template-columns: max-content max-content max-content;
+  align-items: start;
+  gap: 24px 28px;
+  li {
+    > p {
+      &:first-child {
+        white-space: nowrap;
+      }
+    }
+  }
+  h3 {
+    a {
+      white-space: nowrap;
+    }
+  }
+  @media (max-width: 991px) {
+    grid-template-columns: max-content max-content max-content;
+    gap: 24px;
+    h3 {
+      font-size: 18px;
+      line-height: 1.35;
+    }
+  }
+  @media (max-width: 575px) {
+    grid-template-columns: repeat(1, 1fr);
+    h3 a {
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+  }
+}
+.cs_contact_info_stack {
+  grid-template-columns: 1fr;
+}
 .cs_btn.cs_style_1 {
   border: none;
   border-radius: 1.8em;
@@ -1864,6 +1899,12 @@ label {
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+  }
+  img.cs_object_position_top {
+    object-position: center top;
+  }
+  img.cs_object_position_right {
+    object-position: 72% center;
   }
 }
 .cs_strategy_showcase_card:hover .cs_strategy_showcase_image img {

@@ -2093,6 +2093,9 @@ label {
 .cs_contact_info li > *:last-child {
   margin-bottom: 0;
 }
+.cs_contact_info h3 a {
+  white-space: nowrap;
+}
 .cs_contact_info .cs_social_btns.cs_style_1 {
   font-size: 26px;
   gap: 10px 20px;
@@ -2102,6 +2105,51 @@ label {
   border: none;
   height: initial;
   width: initial;
+}
+.cs_contact_info_inline {
+  grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content;
+  grid-template-columns: max-content max-content max-content;
+  align-items: start;
+  gap: 24px 28px;
+}
+.cs_contact_info_inline li > p:first-child {
+  white-space: nowrap;
+}
+.cs_contact_info_inline h3 a {
+  white-space: nowrap;
+}
+@media (max-width: 991px) {
+  .cs_contact_info_inline {
+    grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content;
+    grid-template-columns: max-content max-content max-content;
+    gap: 24px;
+  }
+  .cs_contact_info_inline h3 {
+    font-size: 18px;
+    line-height: 1.35;
+  }
+}
+@media (max-width: 575px) {
+  .cs_contact_info_inline {
+    grid-template-columns: repeat(1, 1fr);
+  }
+.cs_contact_info_inline h3 a {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+}
+
+.cs_contact_info_stack {
+  grid-template-columns: 1fr;
+}
+
+.cs_regional_presence_title {
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .cs_regional_presence_title {
+    white-space: normal;
+  }
 }
 
 .cs_btn.cs_style_1 {
@@ -2350,20 +2398,15 @@ label {
 .cs_section_heading.cs_style_2 .cs_section_subtitle,
 .cs_section_heading.cs_style_3 .cs_section_subtitle {
   position: relative;
-  padding-left: 17px;
+  padding-left: 0;
   margin-bottom: 12px;
   display: inline-block;
 }
 .cs_section_heading.cs_style_1 .cs_section_subtitle::before,
 .cs_section_heading.cs_style_2 .cs_section_subtitle::before,
 .cs_section_heading.cs_style_3 .cs_section_subtitle::before {
-  content: "";
-  height: 6px;
-  width: 6px;
-  background-color: var(--accent);
-  position: absolute;
-  top: 10px;
-  left: 0;
+  display: none;
+  content: none;
 }
 @media (max-width: 575px) {
   .cs_section_heading.cs_style_1 br,
@@ -3622,6 +3665,14 @@ label {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.cs_strategy_showcase_image img.cs_object_position_top {
+  -o-object-position: center top;
+     object-position: center top;
+}
+.cs_strategy_showcase_image img.cs_object_position_right {
+  -o-object-position: 72% center;
+     object-position: 72% center;
 }
 .cs_strategy_showcase_card:hover .cs_strategy_showcase_image img {
   -webkit-transform: scale(1.04);
@@ -9872,7 +9923,7 @@ select.cs_insurance_input {
 .cs_cta.cs_style_3.cs_expertise_cta {
   overflow: hidden;
   background-position: center right;
-  padding-left: 90px;
+  padding: 88px 0 87px 140px;
 }
 .cs_cta.cs_style_3.cs_expertise_cta::before {
   content: "";
@@ -9883,18 +9934,22 @@ select.cs_insurance_input {
   background: linear-gradient(90deg, rgba(0, 59, 113, 0.82) 0%, rgba(0, 80, 144, 0.58) 48%, rgba(0, 80, 144, 0.1) 72%, rgba(0, 80, 144, 0) 100%);
 }
 .cs_cta.cs_style_3.cs_expertise_cta .cs_cta_in {
-  max-width: 460px;
+  max-width: 650px;
 }
-.cs_cta.cs_style_3.cs_expertise_cta .cs_cta_title {
-  font-size: 32px;
-  line-height: 1.28em;
+.cs_cta.cs_style_3.cs_expertise_cta .cs_section_subtitle {
+  margin-bottom: 12px;
+}
+@media (max-width: 1400px) {
+  .cs_cta.cs_style_3.cs_expertise_cta {
+    padding-left: 90px;
+  }
 }
 @media (max-width: 1199px) {
   .cs_cta.cs_style_3.cs_expertise_cta {
-    padding-left: 45px;
+    padding-left: 50px;
   }
   .cs_cta.cs_style_3.cs_expertise_cta .cs_cta_in {
-    max-width: 430px;
+    max-width: 650px;
   }
 }
 @media (max-width: 991px) {
@@ -11546,6 +11601,16 @@ body.cs_healthstrat_page .cs_footer .cs_text_widget a {
 .cs_leadership_lessons_section {
   padding: 76px 0 90px;
   background: radial-gradient(circle at 82% 12%, rgba(0, 80, 144, 0.12), transparent 30%), linear-gradient(180deg, #f8fcfb 0%, #ffffff 100%);
+}
+.cs_expertise_image_section {
+  padding: 72px 0 0;
+}
+.cs_expertise_image_section .cs_leadership_infographic_panel {
+  padding: 0;
+  background: #fff;
+}
+.cs_expertise_image_section .cs_leadership_reference_image {
+  display: block;
 }
 .cs_leadership_infographic_panel {
   position: relative;
