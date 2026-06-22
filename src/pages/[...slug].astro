@@ -94,7 +94,6 @@ if (file === 'index.html') {
   );
 }
 
-html = html.replace('href="javascript:void(0)" aria-haspopup="true"', 'href="expertise.html" aria-haspopup="true"');
 html = html.replace(/<\/header>/i, '</header><main id="main-content">');
 html = html.replace(/<footer\b/i, '</main><footer');
 html = html.replace(/<button class="cs_header_submit_btn">/g, '<button class="cs_header_submit_btn" aria-label="Search">');

@@ -6519,7 +6519,9 @@ select.cs_insurance_input {
   background-color: var(--primary);
 }
 .cs_site_header.cs_style_1.cs_color_1 .cs_nav_list > li > a,
-.cs_site_header.cs_style_2.cs_color_1 .cs_nav_list > li > a {
+.cs_site_header.cs_style_1.cs_color_1 .cs_nav_list > li > .cs_nav_dropdown_label,
+.cs_site_header.cs_style_2.cs_color_1 .cs_nav_list > li > a,
+.cs_site_header.cs_style_2.cs_color_1 .cs_nav_list > li > .cs_nav_dropdown_label {
   color: #fff;
 }
 .cs_site_header.cs_style_1.cs_color_1 .cs_hamburger_btn,
@@ -6815,6 +6817,17 @@ select.cs_insurance_input {
   }
 }
 
+.cs_nav_dropdown_label {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: default;
+}
+
 .cs_main_header {
   position: relative;
 }
@@ -6883,7 +6896,8 @@ select.cs_insurance_input {
   .cs_nav .cs_nav_list > li:last-child {
     margin-right: 0;
   }
-  .cs_nav .cs_nav_list > li > a {
+  .cs_nav .cs_nav_list > li > a,
+  .cs_nav .cs_nav_list > li > .cs_nav_dropdown_label {
     padding: 10px 0;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -6905,10 +6919,12 @@ select.cs_insurance_input {
     visibility: visible;
     pointer-events: auto;
   }
-  .cs_nav .cs_nav_list > li.menu-item-has-children > a {
+  .cs_nav .cs_nav_list > li.menu-item-has-children > a,
+  .cs_nav .cs_nav_list > li.menu-item-has-children > .cs_nav_dropdown_label {
     position: relative;
   }
-  .cs_nav .cs_nav_list > li.menu-item-has-children > a::after {
+  .cs_nav .cs_nav_list > li.menu-item-has-children > a::after,
+  .cs_nav .cs_nav_list > li.menu-item-has-children > .cs_nav_dropdown_label::after {
     content: "";
     display: inline-block;
     height: 6px;
@@ -7117,7 +7133,8 @@ select.cs_insurance_input {
   .cs_nav .cs_nav_list > li ul:not(.cs_mega_wrapper) .menu-item-has-children > a {
     position: relative;
   }
-  .cs_site_header.cs_style_1.cs_color_1 .cs_nav_list > li > a {
+  .cs_site_header.cs_style_1.cs_color_1 .cs_nav_list > li > a,
+  .cs_site_header.cs_style_1.cs_color_1 .cs_nav_list > li > .cs_nav_dropdown_label {
     color: #fff;
   }
 }
@@ -7263,7 +7280,8 @@ select.cs_insurance_input {
     padding: 12px 15px;
     line-height: 16px;
   }
-  .cs_nav .cs_nav_list > li > a {
+  .cs_nav .cs_nav_list > li > a,
+  .cs_nav .cs_nav_list > li > .cs_nav_dropdown_label {
     font-size: 26px;
     line-height: 22px;
   }
@@ -7361,7 +7379,8 @@ select.cs_insurance_input {
     -webkit-transition-delay: 0s, 0.2s;
             transition-delay: 0s, 0.2s;
   }
-  .cs_nav .cs_nav_list a {
+  .cs_nav .cs_nav_list a,
+  .cs_nav .cs_nav_list .cs_nav_dropdown_label {
     position: relative;
   }
   .cs_site_header.cs_style_1 .cs_main_header_in {
@@ -7576,7 +7595,8 @@ select.cs_insurance_input {
 .cs_hamburger_header .cs_nav_list > li:not(:last-child) {
   margin-bottom: 30px;
 }
-.cs_hamburger_header .cs_nav_list > li > a {
+.cs_hamburger_header .cs_nav_list > li > a,
+.cs_hamburger_header .cs_nav_list > li > .cs_nav_dropdown_label {
   font-size: 38px;
   display: block;
   line-height: 1.2em;
@@ -11457,6 +11477,7 @@ body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_site_branding img {
   width: 220px;
 }
 body.cs_healthstrat_page .cs_nav .cs_nav_list > li > a,
+body.cs_healthstrat_page .cs_nav .cs_nav_list > li > .cs_nav_dropdown_label,
 body.cs_healthstrat_page .cs_header_search_form .cs_header_search_field {
   font-size: 26px;
 }
@@ -11498,7 +11519,8 @@ body.cs_healthstrat_page .cs_header_search_form .cs_header_search_field {
     margin: 0;
     flex: 0 0 auto;
   }
-  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_nav .cs_nav_list > li > a {
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_nav .cs_nav_list > li > a,
+  body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_nav .cs_nav_list > li > .cs_nav_dropdown_label {
     white-space: nowrap;
   }
   body.cs_healthstrat_page .cs_site_header.cs_style_1 .cs_main_header_right {
