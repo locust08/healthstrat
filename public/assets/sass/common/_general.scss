@@ -2869,9 +2869,9 @@ select.cs_insurance_input {
 }
 .cs_page_heading.cs_style_1 {
   padding: 152px 0 145px;
-  &.cs_education_training_hero {
-    background-position: center top;
-  }
+  &.cs_clinical_governance_hero,
+  &.cs_education_training_hero,
+  &.cs_innovation_design_hero,
   &.cs_strategy_transformation_hero {
     position: relative;
     overflow: hidden;
@@ -2880,7 +2880,6 @@ select.cs_insurance_input {
       content: '';
       position: absolute;
       inset: -8px;
-      background-image: url('/assets/img/for_ain_extracted_images/healthstrat_extracted_images/healthcare-strategy-transformation-hero-v2.png');
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
@@ -2893,11 +2892,27 @@ select.cs_insurance_input {
       z-index: 1;
     }
   }
+  &.cs_clinical_governance_hero::before {
+    background-image: url('/assets/img/for_ain_extracted_images/healthstrat_extracted_images/1.png');
+  }
+  &.cs_strategy_transformation_hero {
+    &::before {
+      background-image: url('/assets/img/for_ain_extracted_images/healthstrat_extracted_images/4.png');
+    }
+  }
+  &.cs_innovation_design_hero::before {
+    background-image: url('/assets/img/for_ain_extracted_images/healthstrat_extracted_images/2.png');
+  }
+  &.cs_education_training_hero::before {
+    background-image: url('/assets/img/for_ain_extracted_images/healthstrat_extracted_images/3.png');
+  }
   @media (max-width: 991px) {
     padding: 100px 0;
+    &.cs_clinical_governance_hero,
     &.cs_education_training_hero {
       background-position: center top;
     }
+    &.cs_innovation_design_hero,
     &.cs_strategy_transformation_hero {
       background-position: center top;
     }
