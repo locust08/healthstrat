@@ -348,6 +348,32 @@ hr {
     height: 620px;
     object-fit: cover;
   }
+  .cs_strategy_overview_image_subtitle_align {
+    transform: translateY(-98px);
+  }
+  .cs_strategy_overview_image_subtitle_align_strategy {
+    transform: translateY(-56px);
+  }
+  .cs_strategy_overview_image_subtitle_align_education {
+    transform: translateY(-53px);
+  }
+  .cs_strategy_overview_image_subtitle_align_workforce {
+    transform: translateY(-52px);
+  }
+}
+@media (min-width: 1400px) {
+  .cs_strategy_overview_image_subtitle_align {
+    transform: translateY(-56px);
+  }
+  .cs_strategy_overview_image_subtitle_align_strategy {
+    transform: translateY(-24px);
+  }
+  .cs_strategy_overview_image_subtitle_align_education {
+    transform: translateY(-15px);
+  }
+  .cs_strategy_overview_image_subtitle_align_workforce {
+    transform: translateY(-32px);
+  }
 }
 
 .cs_achievement_box_grid {
