@@ -1849,6 +1849,22 @@ hr {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .cs_strategy_overview_image img.cs_object_position_training_dr {
+    -o-object-position: 68% center;
+       object-position: 68% center;
+  }
+  .cs_strategy_overview_image img.cs_object_position_workforce_training {
+    -o-object-position: center 35%;
+       object-position: center 35%;
+  }
+  .cs_strategy_overview_image img.cs_object_position_clinical_governance {
+    -o-object-position: center center;
+       object-position: center center;
+  }
+  .cs_strategy_overview_image img.cs_object_position_strategy_transformation {
+    -o-object-position: center center;
+       object-position: center center;
+  }
   .cs_strategy_overview_image_subtitle_align {
     -webkit-transform: translateY(-98px);
             transform: translateY(-98px);
@@ -4795,9 +4811,41 @@ select.cs_insurance_input {
 .cs_page_heading.cs_style_1 {
   padding: 152px 0 145px;
 }
+.cs_page_heading.cs_style_1.cs_education_training_hero {
+  background-position: center top;
+}
+.cs_page_heading.cs_style_1.cs_strategy_transformation_hero {
+  position: relative;
+  overflow: hidden;
+  background-position: center top;
+}
+.cs_page_heading.cs_style_1.cs_strategy_transformation_hero::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  background-image: url("/assets/img/for_ain_extracted_images/healthstrat_extracted_images/healthcare-strategy-transformation-hero-v2.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  pointer-events: none;
+}
+.cs_page_heading.cs_style_1.cs_strategy_transformation_hero > .container {
+  position: relative;
+  z-index: 1;
+}
 @media (max-width: 991px) {
   .cs_page_heading.cs_style_1 {
     padding: 100px 0;
+  }
+  .cs_page_heading.cs_style_1.cs_education_training_hero {
+    background-position: center top;
+  }
+  .cs_page_heading.cs_style_1.cs_strategy_transformation_hero {
+    background-position: center top;
   }
 }
 
@@ -5164,6 +5212,22 @@ select.cs_insurance_input {
     height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .cs_service_details_features .cs_pr_70 img.cs_object_position_training_dr {
+    -o-object-position: 68% center;
+       object-position: 68% center;
+  }
+  .cs_service_details_features .cs_pr_70 img.cs_object_position_workforce_training {
+    -o-object-position: center 35%;
+       object-position: center 35%;
+  }
+  .cs_service_details_features .cs_pr_70 img.cs_object_position_clinical_governance {
+    -o-object-position: center center;
+       object-position: center center;
+  }
+  .cs_service_details_features .cs_pr_70 img.cs_object_position_strategy_transformation {
+    -o-object-position: center center;
+       object-position: center center;
   }
 }
 
@@ -6334,6 +6398,9 @@ select.cs_insurance_input {
 .cs_header_search_form .cs_header_search_field:focus {
   width: 120px;
 }
+.cs_header_search_form.cs_search_active .cs_header_search_field {
+  width: 160px;
+}
 .cs_header_search_form .cs_header_submit_btn {
   background-color: transparent;
   position: absolute;
@@ -7445,7 +7512,7 @@ select.cs_insurance_input {
   .cs_site_header.cs_style_1 {
     top: 0;
   }
-  .cs_has_main_nav {
+  .cs_side_header.cs_has_main_nav {
     display: none;
   }
   .cs_site_header.cs_style_2 .cs_main_header_right {
@@ -7516,7 +7583,74 @@ select.cs_insurance_input {
     display: block;
   }
   .cs_site_header.cs_style_1 .cs_main_header_right {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    height: auto;
+    padding-right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 102;
+  }
+  .cs_site_header.cs_style_1 .cs_toolbox {
+    gap: 0;
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form {
+    width: 34px;
+    height: 34px;
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form .cs_header_search_field {
+    width: 34px;
+    height: 34px;
+    padding-left: 34px;
+    color: transparent;
+    cursor: pointer;
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form .cs_header_search_field::-webkit-input-placeholder {
+    color: transparent;
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form .cs_header_search_field::-moz-placeholder {
+    color: transparent;
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form .cs_header_search_field:-ms-input-placeholder {
+    color: transparent;
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form .cs_header_search_field::-ms-input-placeholder {
+    color: transparent;
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form .cs_header_search_field::placeholder {
+    color: transparent;
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form .cs_header_submit_btn {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form.cs_search_active {
+    width: min(190px, calc(100vw - 132px));
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form.cs_search_active .cs_header_search_field {
+    width: 100%;
+    color: inherit;
+    cursor: text;
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form.cs_search_active .cs_header_search_field::-webkit-input-placeholder {
+    color: var(--secondary);
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form.cs_search_active .cs_header_search_field::-moz-placeholder {
+    color: var(--secondary);
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form.cs_search_active .cs_header_search_field:-ms-input-placeholder {
+    color: var(--secondary);
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form.cs_search_active .cs_header_search_field::-ms-input-placeholder {
+    color: var(--secondary);
+  }
+  .cs_site_header.cs_style_1 .cs_header_search_form.cs_search_active .cs_header_search_field::placeholder {
+    color: var(--secondary);
   }
   .cs_site_header.cs_style_1 .cs_menu_toggle {
     right: 0;
@@ -11679,6 +11813,9 @@ body.cs_healthstrat_page .cs_footer .cs_text_widget a {
 }
 .cs_expertise_image_section .cs_leadership_reference_image {
   display: block;
+  height: auto;
+  object-fit: contain;
+  object-position: center center;
 }
 .cs_leadership_infographic_panel {
   position: relative;

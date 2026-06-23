@@ -348,6 +348,18 @@ hr {
     height: 620px;
     object-fit: cover;
   }
+  .cs_strategy_overview_image img.cs_object_position_training_dr {
+    object-position: 68% center;
+  }
+  .cs_strategy_overview_image img.cs_object_position_workforce_training {
+    object-position: center 35%;
+  }
+  .cs_strategy_overview_image img.cs_object_position_clinical_governance {
+    object-position: center center;
+  }
+  .cs_strategy_overview_image img.cs_object_position_strategy_transformation {
+    object-position: center center;
+  }
   .cs_strategy_overview_image_subtitle_align {
     transform: translateY(-98px);
   }
@@ -2857,8 +2869,38 @@ select.cs_insurance_input {
 }
 .cs_page_heading.cs_style_1 {
   padding: 152px 0 145px;
+  &.cs_education_training_hero {
+    background-position: center top;
+  }
+  &.cs_strategy_transformation_hero {
+    position: relative;
+    overflow: hidden;
+    background-position: center top;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      background-image: url('/assets/img/for_ain_extracted_images/healthstrat_extracted_images/healthcare-strategy-transformation-hero-v2.png');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      filter: blur(4px);
+      transform: scale(1.02);
+      pointer-events: none;
+    }
+    > .container {
+      position: relative;
+      z-index: 1;
+    }
+  }
   @media (max-width: 991px) {
     padding: 100px 0;
+    &.cs_education_training_hero {
+      background-position: center top;
+    }
+    &.cs_strategy_transformation_hero {
+      background-position: center top;
+    }
   }
 }
 .cs_error {
@@ -3177,6 +3219,18 @@ select.cs_insurance_input {
       img {
         height: 500px;
         object-fit: cover;
+      }
+      img.cs_object_position_training_dr {
+        object-position: 68% center;
+      }
+      img.cs_object_position_workforce_training {
+        object-position: center 35%;
+      }
+      img.cs_object_position_clinical_governance {
+        object-position: center center;
+      }
+      img.cs_object_position_strategy_transformation {
+        object-position: center center;
       }
     }
   }

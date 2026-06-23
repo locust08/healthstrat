@@ -794,7 +794,46 @@
           display: block;
         }
         .cs_site_header.cs_style_1 .cs_main_header_right {
-          display: none;
+          display: flex;
+          position: absolute;
+          right: 48px;
+          top: 50%;
+          height: auto;
+          padding-right: 0;
+          transform: translateY(-50%);
+          z-index: 102;
+        }
+        .cs_site_header.cs_style_1 .cs_toolbox {
+          gap: 0;
+        }
+        .cs_site_header.cs_style_1 .cs_header_search_form {
+          width: 34px;
+          height: 34px;
+        }
+        .cs_site_header.cs_style_1 .cs_header_search_form .cs_header_search_field {
+          width: 34px;
+          height: 34px;
+          padding-left: 34px;
+          color: transparent;
+          cursor: pointer;
+        }
+        .cs_site_header.cs_style_1 .cs_header_search_form .cs_header_search_field::placeholder {
+          color: transparent;
+        }
+        .cs_site_header.cs_style_1 .cs_header_search_form .cs_header_submit_btn {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .cs_site_header.cs_style_1 .cs_header_search_form.cs_search_active {
+          width: min(190px, calc(100vw - 132px));
+        }
+        .cs_site_header.cs_style_1 .cs_header_search_form.cs_search_active .cs_header_search_field {
+          width: 100%;
+          color: inherit;
+          cursor: text;
+        }
+        .cs_site_header.cs_style_1 .cs_header_search_form.cs_search_active .cs_header_search_field::placeholder {
+          color: var(--secondary);
         }
         .cs_site_header.cs_style_1 .cs_menu_toggle {
           right: 0;
@@ -888,36 +927,35 @@
                       <li>
                         <a class="cs_service_mega_card" href="health-care-strategy-transformation.html">
                           <span class="cs_service_mega_title">Health Care Strategy &amp; Transformation</span>
-                          <span class="cs_service_mega_image"><img class="cs_service_mega_img_strategy" src="assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_18_image_01_xref_94_card_16x9.jpeg" alt="Health Care Strategy and Transformation"></span>
+                          <span class="cs_service_mega_image"><img class="cs_service_mega_img_strategy" src="/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_11_image_01_xref_66.jpeg" alt="Health Care Strategy and Transformation"></span>
                         </a>
                       </li>
                       <li>
                         <a class="cs_service_mega_card" href="clinical-governance-quality.html">
                           <span class="cs_service_mega_title">Clinical Governance &amp; Quality</span>
-                          <span class="cs_service_mega_image"><img class="cs_service_mega_img_clinical" src="assets/img/for_ain_extracted_images/23.jpeg" alt="Clinical Governance and Quality"></span>
+                          <span class="cs_service_mega_image"><img class="cs_service_mega_img_clinical" src="/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_06_image_01_xref_41.webp" alt="Clinical Governance and Quality"></span>
                         </a>
                       </li>
                       <li>
                         <a class="cs_service_mega_card" href="nursing-workforce-development.html">
                           <span class="cs_service_mega_title">Nursing &amp; Workforce Development</span>
-                          <span class="cs_service_mega_image"><img class="cs_service_mega_img_workforce" src="assets/img/healthstrat/generated/slot-home-service-workforce.png" alt="Nursing and Workforce Development"></span>
+                          <span class="cs_service_mega_image"><img class="cs_service_mega_img_workforce" src="/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_15_image_02_xref_84.jpeg" alt="Nursing and Workforce Development"></span>
                         </a>
                       </li>
                       <li>
                         <a class="cs_service_mega_card" href="innovation-design-thinking.html">
                           <span class="cs_service_mega_title">Innovation &amp; Design Thinking</span>
-                          <span class="cs_service_mega_image"><img class="cs_service_mega_img_innovation" src="assets/img/healthstrat/generated/slot-home-service-innovation.png" alt="Innovation and Design Thinking"></span>
+                          <span class="cs_service_mega_image"><img class="cs_service_mega_img_innovation" src="/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_07_image_01_xref_46.webp" alt="Innovation and Design Thinking"></span>
                         </a>
                       </li>
                       <li>
                         <a class="cs_service_mega_card" href="education-training.html">
                           <span class="cs_service_mega_title">Education &amp; Training</span>
-                          <span class="cs_service_mega_image"><img class="cs_service_mega_img_education" src="assets/img/for_ain_extracted_images/01_image1.png" alt="Education and Training"></span>
+                          <span class="cs_service_mega_image"><img class="cs_service_mega_img_education" src="/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_12_image_02_xref_71.webp" alt="Education and Training"></span>
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li><a href="insights.html">Insights</a></li>
                   <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </div>
@@ -985,7 +1023,6 @@
             <a href="nursing-workforce-development.html">Nursing &amp; Workforce Development</a>
             <a href="innovation-design-thinking.html">Innovation &amp; Design Thinking</a>
             <a href="education-training.html">Education &amp; Training</a>
-            <a href="insights.html">Insights</a>
             <a href="contact.html">Contact Us</a>
           </div>
         </div>
@@ -1060,7 +1097,7 @@
             <div class="cs_image_box cs_style_1">
               <div class="cs_image_box_number cs_white_color cs_primary_font cs_fs_53">01.</div>
               <a href="health-care-strategy-transformation.html" class="cs_image_box_img overflow-hidden">
-                <img class="cs_home_strategy_card_img" src="assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_18_image_01_xref_94_card_16x9.jpeg" alt="Healthcare Strategy and Transformation">
+                <img class="cs_home_strategy_card_img" src="/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_11_image_01_xref_66.jpeg" alt="Healthcare Strategy and Transformation">
               </a>
               <div class="cs_image_box_info position-relative">
                 <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="health-care-strategy-transformation.html">Healthcare Strategy & Transformation</a></h2>
@@ -1075,7 +1112,7 @@
             <div class="cs_image_box cs_style_1">
               <div class="cs_image_box_number cs_white_color cs_primary_font cs_fs_53">02.</div>
               <a href="clinical-governance-quality.html" class="cs_image_box_img overflow-hidden">
-                <img class="cs_service_mega_img_clinical" src="assets/img/for_ain_extracted_images/23.jpeg" alt="Clinical Governance and Quality">
+                <img class="cs_service_mega_img_clinical" src="/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_06_image_01_xref_41.webp" alt="Clinical Governance and Quality">
               </a>
               <div class="cs_image_box_info position-relative">
                 <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="clinical-governance-quality.html">Clinical Governance & Patient Safety</a></h2>
@@ -1090,7 +1127,7 @@
             <div class="cs_image_box cs_style_1">
               <div class="cs_image_box_number cs_white_color cs_primary_font cs_fs_53">03.</div>
               <a href="nursing-workforce-development.html" class="cs_image_box_img overflow-hidden">
-                <img class="cs_service_mega_img_workforce" src="assets/img/healthstrat/generated/slot-home-service-workforce.png" alt="Nursing and Workforce Development">
+                <img class="cs_service_mega_img_workforce" src="/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_15_image_02_xref_84.jpeg" alt="Nursing and Workforce Development">
               </a>
               <div class="cs_image_box_info position-relative">
                 <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="nursing-workforce-development.html">Workforce Optimisation</a></h2>
@@ -1105,7 +1142,7 @@
             <div class="cs_image_box cs_style_1">
               <div class="cs_image_box_number cs_white_color cs_primary_font cs_fs_53">04.</div>
               <a href="innovation-design-thinking.html" class="cs_image_box_img overflow-hidden">
-                <img class="cs_service_mega_img_innovation" src="assets/img/healthstrat/generated/slot-home-service-innovation.png" alt="Innovation and Design Thinking">
+                <img class="cs_service_mega_img_innovation" src="/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_07_image_01_xref_46.webp" alt="Innovation and Design Thinking">
               </a>
               <div class="cs_image_box_info position-relative">
                 <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="innovation-design-thinking.html">Innovation & Design Thinking</a></h2>
@@ -1120,7 +1157,7 @@
             <div class="cs_image_box cs_style_1">
               <div class="cs_image_box_number cs_white_color cs_primary_font cs_fs_53">05.</div>
               <a href="education-training.html" class="cs_image_box_img overflow-hidden">
-                <img class="cs_service_mega_img_education" src="assets/img/for_ain_extracted_images/01_image1.png" alt="Education and Training">
+                <img class="cs_service_mega_img_education" src="/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_12_image_02_xref_71.webp" alt="Education and Training">
               </a>
               <div class="cs_image_box_info position-relative">
                 <h2 class="cs_image_box_title cs_fs_30 cs_normal cs_white_color"><a href="education-training.html">Education &amp; Training</a></h2>
@@ -1463,24 +1500,6 @@
             </div>
           </div>
         </div>
-        <div class="cs_height_60 cs_height_lg_35"></div>
-        <div class="text-center wow fadeInDown" data-wow-duration="0.9s" data-wow-delay="0.25s">
-          <a href="insights.html" class="cs_btn cs_style_1 cs_type_2 cs_primary_bg cs_white_color cs_w_100_sm">
-            Explore Insights
-            <span>
-              <i>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </i>
-              <i>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </i>
-            </span>
-          </a>
-        </div>
       </div>
       <div class="cs_height_70 cs_height_lg_45"></div>
     </section>
@@ -1543,7 +1562,6 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About Us</a></li>
                   <li><a href="expertise.html">Our Expertise</a></li>
-                  <li><a href="insights.html">Insights</a></li>
                 </ul>
               </div>
             </div>

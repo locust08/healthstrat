@@ -14,8 +14,6 @@ const pages = [
   { file: 'nursing-workforce-development.html', url: '/nursing-workforce-development', priority: '0.80' },
   { file: 'innovation-design-thinking.html', url: '/innovation-design-thinking', priority: '0.80' },
   { file: 'education-training.html', url: '/education-training', priority: '0.80' },
-  { file: 'insights.html', url: '/insights', priority: '0.70' },
-  { file: 'insight-detail.html', url: '/insight-detail', priority: '0.60' },
   { file: 'contact.html', url: '/contact', priority: '0.70' },
 ];
 

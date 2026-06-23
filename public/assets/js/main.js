@@ -105,10 +105,6 @@
       .parents('body')
       .find('.cs_side_header')
       .addClass('cs_has_main_nav');
-    $('.cs_menu_toggle')
-      .parents('body')
-      .find('.cs_toolbox')
-      .addClass('cs_has_main_nav');
     $('.cs_munu_dropdown_toggle').on('click', function () {
       $(this).toggleClass('active').siblings('ul').slideToggle();
       $(this).parent().toggleClass('active');
@@ -196,15 +192,20 @@
       { title: 'Nursing & Workforce Development', url: 'nursing-workforce-development.html', keywords: 'nursing workforce development capability training leadership' },
       { title: 'Innovation & Design Thinking', url: 'innovation-design-thinking.html', keywords: 'innovation design thinking service redesign healthcare' },
       { title: 'Education & Training', url: 'education-training.html', keywords: 'education training workshops learning healthcare professionals' },
-      { title: 'Insights', url: 'insights.html', keywords: 'insights articles blog healthcare strategy governance training' },
       { title: 'Contact Us', url: 'contact.html', keywords: 'contact email whatsapp linkedin enquiry consultation' },
     ];
 
     $('.cs_header_search_form').each(function () {
       var $form = $(this);
       var $field = $form.find('.cs_header_search_field');
+      var $button = $form.find('.cs_header_submit_btn');
       var $results = $('<div class="cs_header_search_results" aria-live="polite"></div>');
       $form.append($results);
+
+      function focusSearch() {
+        $form.addClass('cs_search_active');
+        $field.trigger('focus');
+      }
 
       function getMatches(query) {
         var terms = query.toLowerCase().split(/\s+/).filter(Boolean);
@@ -242,7 +243,7 @@
         }
         if (!matches.length) {
           $results
-            .append('<div class="cs_header_search_empty">No matches found</div>')
+            .append('<div class="cs_header_search_empty">No results found</div>')
             .addClass('active');
           return;
         }
@@ -256,8 +257,16 @@
       }
 
       $field.on('input focus', function () {
+        $form.addClass('cs_search_active');
         var query = $.trim($field.val());
         renderResults(getMatches(query), query);
+      });
+
+      $button.on('click', function (e) {
+        if (!$.trim($field.val())) {
+          e.preventDefault();
+          focusSearch();
+        }
       });
 
       $field.on('keydown', function (e) {
@@ -287,6 +296,7 @@
     $(document).on('click', function (e) {
       if (!$(e.target).closest('.cs_header_search_form').length) {
         $('.cs_header_search_results').removeClass('active');
+        $('.cs_header_search_form').removeClass('cs_search_active');
       }
     });
   }
