@@ -39,20 +39,10 @@
     "width": 1920,
     "height": 520
   },
-  "/assets/img/healthstrat/generated/expertise-angle-clinical-governance.png": {
-    "optimized": "/assets/img/healthstrat/generated/expertise-angle-clinical-governance.webp",
-    "width": 1440,
-    "height": 960
-  },
   "/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_13_image_01_xref_74.jpeg": {
     "optimized": "/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_13_image_01_xref_74.webp",
     "width": 1536,
     "height": 1025
-  },
-  "/assets/img/healthstrat/generated/advisory-policy-practice-implementation.png": {
-    "optimized": "/assets/img/healthstrat/generated/advisory-policy-practice-implementation.webp",
-    "width": 1440,
-    "height": 960
   },
   "/assets/img/healthstrat/generated/expertise-angle-hospital-readiness.png": {
     "optimized": "/assets/img/healthstrat/generated/expertise-angle-hospital-readiness.webp",
@@ -129,16 +119,6 @@
     "width": 1920,
     "height": 520
   },
-  "/assets/img/healthstrat/generated/advisory-care-model-redesign.png": {
-    "optimized": "/assets/img/healthstrat/generated/advisory-care-model-redesign.webp",
-    "width": 1440,
-    "height": 960
-  },
-  "/assets/img/healthstrat/generated/advisory-organisational-transformation.png": {
-    "optimized": "/assets/img/healthstrat/generated/advisory-organisational-transformation.webp",
-    "width": 1440,
-    "height": 701
-  },
   "/assets/img/healthstrat/generated/expertise-angle-community-ageing-care.png": {
     "optimized": "/assets/img/healthstrat/generated/expertise-angle-community-ageing-care.webp",
     "width": 1440,
@@ -153,31 +133,6 @@
     "optimized": "/assets/img/for_ain_extracted_images/healthstrat_extracted_images/page_04_image_02_xref_33.webp",
     "width": 1404,
     "height": 1125
-  },
-  "/assets/img/map.png": {
-    "optimized": "/assets/img/map.webp",
-    "width": 1600,
-    "height": 900
-  },
-  "/assets/img/singapore.png": {
-    "optimized": "/assets/img/singapore.webp",
-    "width": 1018,
-    "height": 1034
-  },
-  "/assets/img/india.png": {
-    "optimized": "/assets/img/india.webp",
-    "width": 1061,
-    "height": 1086
-  },
-  "/assets/img/indonesia.png": {
-    "optimized": "/assets/img/indonesia.webp",
-    "width": 1114,
-    "height": 1144
-  },
-  "/assets/img/china.png": {
-    "optimized": "/assets/img/china.webp",
-    "width": 931,
-    "height": 948
   },
   "/assets/img/healthstrat/generated/audience-nohuman-hospitals-systems.png": {
     "optimized": "/assets/img/healthstrat/generated/audience-nohuman-hospitals-systems.webp",
@@ -209,23 +164,38 @@
     "width": 1440,
     "height": 960
   },
+  "/assets/img/map.png": {
+    "optimized": "/assets/img/map.webp",
+    "width": 1600,
+    "height": 900
+  },
+  "/assets/img/singapore.png": {
+    "optimized": "/assets/img/singapore.webp",
+    "width": 1018,
+    "height": 1034
+  },
+  "/assets/img/india.png": {
+    "optimized": "/assets/img/india.webp",
+    "width": 1061,
+    "height": 1086
+  },
+  "/assets/img/indonesia.png": {
+    "optimized": "/assets/img/indonesia.webp",
+    "width": 1114,
+    "height": 1144
+  },
+  "/assets/img/china.png": {
+    "optimized": "/assets/img/china.webp",
+    "width": 931,
+    "height": 948
+  },
   "/assets/img/for_ain_extracted_images/healthstrat_extracted_images/2.png": {
     "optimized": "/assets/img/for_ain_extracted_images/healthstrat_extracted_images/2.webp",
     "width": 1920,
     "height": 520
   },
-  "/assets/img/healthstrat/generated/global-insight-digital-health.png": {
-    "optimized": "/assets/img/healthstrat/generated/global-insight-digital-health.webp",
-    "width": 1440,
-    "height": 960
-  },
-  "/assets/img/healthstrat/generated/service-innovation-design-thinking.png": {
-    "optimized": "/assets/img/healthstrat/generated/service-innovation-design-thinking.webp",
-    "width": 1440,
-    "height": 720
-  },
-  "/assets/img/healthstrat/generated/global-service-innovation-design-thinking.png": {
-    "optimized": "/assets/img/healthstrat/generated/global-service-innovation-design-thinking.webp",
+  "/assets/img/healthstrat/generated/advisory-care-model-redesign.png": {
+    "optimized": "/assets/img/healthstrat/generated/advisory-care-model-redesign.webp",
     "width": 1440,
     "height": 960
   },
@@ -254,11 +224,6 @@
     "width": 764,
     "height": 832
   },
-  "/assets/img/healthstrat/generated/expertise-angle-workforce-optimisation.png": {
-    "optimized": "/assets/img/healthstrat/generated/expertise-angle-workforce-optimisation.webp",
-    "width": 1440,
-    "height": 960
-  },
   "/assets/img/healthstrat/generated/expertise-angle-healthcare-education.png": {
     "optimized": "/assets/img/healthstrat/generated/expertise-angle-healthcare-education.webp",
     "width": 1440,
@@ -268,6 +233,11 @@
     "optimized": "/assets/img/healthstrat/generated/global-team-healthcare-advisors.webp",
     "width": 1440,
     "height": 787
+  },
+  "/assets/img/healthstrat/generated/advisory-organisational-transformation.png": {
+    "optimized": "/assets/img/healthstrat/generated/advisory-organisational-transformation.webp",
+    "width": 1440,
+    "height": 701
   },
   "/assets/img/healthstrat/generated/regional-integrated-care-training.png": {
     "optimized": "/assets/img/healthstrat/generated/regional-integrated-care-training.webp",
