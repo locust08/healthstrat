@@ -7210,7 +7210,7 @@ select.cs_insurance_input {
   }
   .cs_nav .cs_nav_list .cs_service_mega_title {
     display: block;
-    min-height: 68px;
+    min-height: 3.48em;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.16em;
@@ -7220,13 +7220,19 @@ select.cs_insurance_input {
   }
   .cs_nav .cs_nav_list .cs_service_mega_image {
     display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 140px;
+            flex: 0 0 140px;
+    width: 100%;
+    height: 140px;
     overflow: hidden;
-    border-radius: 4px 24px 4px 4px;
-    height: clamp(132px, 10vw, 150px);
+    border-radius: 0 28px 12px 12px;
   }
   .cs_nav .cs_nav_list .cs_service_mega_image img {
+    display: block;
     width: 100%;
     height: 100%;
+    max-width: none;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center center;
@@ -7393,8 +7399,9 @@ select.cs_insurance_input {
     font-size: 24px;
   }
   .cs_nav .cs_nav_list .cs_service_mega_image {
-    height: auto;
-    aspect-ratio: 16/9;
+    -ms-flex-preferred-size: 140px;
+        flex-basis: 140px;
+    height: 140px;
   }
   .cs_nav .cs_nav_list a {
     display: block;
