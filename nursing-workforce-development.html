@@ -32,27 +32,32 @@
       .cs_nursing_final_cta {
         overflow: hidden;
         background: #fff;
-        text-align: center;
-        padding: 78px 0 88px;
+        padding: 72px 0 78px;
       }
       .cs_nursing_final_cta .container {
         position: relative;
         z-index: 1;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 32px 58px;
       }
       .cs_nursing_final_cta_title {
-        max-width: 920px;
-        margin: 0 auto;
+        max-width: 760px;
+        margin: 0;
         color: #003b71;
-        font-size: clamp(32px, 4vw, 52px);
-        line-height: 1.14em;
+        font-size: clamp(24px, 2.35vw, 34px);
+        line-height: 1.28em;
+        text-align: left;
       }
       .cs_nursing_final_cta_actions {
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        justify-content: flex-end;
+        flex-direction: column;
         gap: 14px;
-        margin-top: 34px;
+        margin-top: 0;
+        justify-self: end;
       }
       .cs_nursing_final_cta_btn {
         min-height: 46px;
@@ -62,7 +67,7 @@
         gap: 10px;
         border-radius: 999px;
         color: #fff;
-        font-size: 23px;
+        font-size: 18px;
         font-weight: 700;
         line-height: 1.2;
       }
@@ -79,7 +84,7 @@
         background: linear-gradient(135deg, #002f5d 0%, #00477f 100%);
       }
       .cs_nursing_final_cta_contact {
-        min-width: 210px;
+        min-width: 282px;
         padding: 0 22px;
         background: #fff;
         color: #003b71;
@@ -119,6 +124,12 @@
         .cs_nursing_final_cta {
           padding: 64px 0 72px;
         }
+        .cs_nursing_final_cta .container {
+          gap: 28px;
+        }
+        .cs_nursing_final_cta_title {
+          font-size: clamp(23px, 3vw, 30px);
+        }
         .cs_nursing_final_cta_shape {
           opacity: 0.55;
           bottom: -42px;
@@ -131,16 +142,26 @@
           right: -116px;
         }
       }
+      @media (max-width: 767px) {
+        .cs_nursing_final_cta .container {
+          grid-template-columns: 1fr;
+        }
+        .cs_nursing_final_cta_actions {
+          justify-self: stretch;
+          justify-content: flex-start;
+        }
+      }
       @media (max-width: 575px) {
         .cs_nursing_final_cta_title {
-          font-size: 30px;
+          font-size: 24px;
         }
         .cs_nursing_final_cta_actions {
           align-items: stretch;
+          flex-direction: column;
         }
         .cs_nursing_final_cta_btn {
           width: 100%;
-          font-size: 21px;
+          font-size: 18px;
         }
         .cs_nursing_final_cta_primary {
           padding-left: 18px;

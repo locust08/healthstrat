@@ -17,6 +17,149 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/odometer.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      .cs_service_final_cta {
+        overflow: hidden;
+        background: #fff;
+        padding: 72px 0 78px;
+      }
+      .cs_service_final_cta .container {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 32px 58px;
+      }
+      .cs_service_final_cta_title {
+        max-width: 760px;
+        margin: 0;
+        color: #003b71;
+        font-size: clamp(24px, 2.35vw, 34px);
+        line-height: 1.28em;
+        text-align: left;
+      }
+      .cs_service_final_cta_actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 0;
+        justify-self: end;
+      }
+      .cs_service_final_cta_btn {
+        min-height: 46px;
+        min-width: 282px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 999px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      .cs_service_final_cta_btn:hover {
+        color: #fff;
+        transform: translateY(-2px);
+      }
+      .cs_service_final_cta_primary {
+        padding: 0 0 0 22px;
+        background: linear-gradient(135deg, #003b71 0%, #005090 100%);
+      }
+      .cs_service_final_cta_primary:hover {
+        background: linear-gradient(135deg, #002f5d 0%, #00477f 100%);
+      }
+      .cs_service_final_cta_contact {
+        padding: 0 22px;
+        background: #fff;
+        color: #003b71;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+      }
+      .cs_service_final_cta_contact:hover {
+        background: #f7fbff;
+        color: #003b71;
+      }
+      .cs_service_final_cta_icon {
+        font-size: 28px;
+        line-height: 1;
+      }
+      .cs_service_final_cta_arrow {
+        min-height: 46px;
+        width: 46px;
+        margin-left: 2px;
+        border-left: 1px solid rgba(255, 255, 255, 0.18);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .cs_service_final_cta_shape {
+        color: #60a030;
+        bottom: 34px;
+        z-index: 0;
+        pointer-events: none;
+        opacity: 1;
+      }
+      .cs_service_final_cta_shape_left {
+        left: -72px;
+      }
+      .cs_service_final_cta_shape_right {
+        right: -72px;
+      }
+      @media (max-width: 991px) {
+        .cs_service_final_cta {
+          padding: 64px 0 72px;
+        }
+        .cs_service_final_cta .container {
+          gap: 28px;
+        }
+        .cs_service_final_cta_title {
+          font-size: clamp(23px, 3vw, 30px);
+        }
+        .cs_service_final_cta_shape {
+          opacity: 0.55;
+          bottom: -42px;
+          transform: scale(0.72);
+        }
+        .cs_service_final_cta_shape_left {
+          left: -116px;
+        }
+        .cs_service_final_cta_shape_right {
+          right: -116px;
+        }
+      }
+      @media (max-width: 767px) {
+        .cs_service_final_cta .container {
+          grid-template-columns: 1fr;
+        }
+        .cs_service_final_cta_actions {
+          justify-self: stretch;
+          justify-content: flex-start;
+        }
+      }
+      @media (max-width: 575px) {
+        .cs_service_final_cta_title {
+          font-size: 24px;
+        }
+        .cs_service_final_cta_actions {
+          align-items: stretch;
+          flex-direction: column;
+        }
+        .cs_service_final_cta_btn {
+          width: 100%;
+          font-size: 18px;
+        }
+        .cs_service_final_cta_primary {
+          padding-left: 18px;
+        }
+        .cs_service_final_cta_shape {
+          opacity: 0.32;
+          bottom: -86px;
+        }
+      }
+    </style>
   </head>
   <body class="cs_healthstrat_page">
     <div class="cs_preloader cs_accent_color">
@@ -455,44 +598,36 @@
     </section>
     <!-- End Strategic Outcomes -->
     <!-- Start CTA Section -->
-    <div class="container">
-      <div class="cs_cta cs_style_3 cs_strategy_cta position-relative cs_bg_filed" data-src="assets/img/healthstrat/generated/slot-cta-partnership-banner.png">
-        <div class="cs_cta_in position-relative">
-          <h2 class="cs_cta_title cs_fs_30 cs_normal cs_white_color">Whether you are redesigning care models, implementing transformation initiatives, or strengthening healthcare system capability, HealthStrat partners with you to deliver practical, future-ready solutions, leveraging Singapore’s experience in healthcare transformation and quality excellence.</h2>
-          <a href="contact.html" class="cs_btn cs_style_1 cs_type_2 cs_primary_bg cs_white_color cs_w_100_sm">
-            Schedule a Consultation
-            <span>
-              <i>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>                      
-              </i>
-              <i>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>                      
-              </i>
-            </span>
+    <section class="cs_service_final_cta position-relative">
+      <div class="cs_service_final_cta_shape cs_service_final_cta_shape_left position-absolute">
+        <svg width="219" height="475" viewBox="0 0 219 475" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="186.468" y="187.382" width="451" height="42" transform="rotate(140.444 186.468 187.382)" fill="currentColor"/>
+          <rect x="203.468" y="109.382" width="451" height="42" transform="rotate(140.444 203.468 109.382)" fill="currentColor"/>
+          <rect x="218.468" y="32.3823" width="451" height="42" transform="rotate(140.444 218.468 32.3823)" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="cs_service_final_cta_shape cs_service_final_cta_shape_right position-absolute">
+        <svg width="219" height="475" viewBox="0 0 219 475" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="32" y="287.213" width="451" height="42" transform="rotate(-39.5563 32 287.213)" fill="currentColor"/>
+          <rect x="15" y="365.213" width="451" height="42" transform="rotate(-39.5563 15 365.213)" fill="currentColor"/>
+          <rect y="442.213" width="451" height="42" transform="rotate(-39.5563 0 442.213)" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="container">
+        <h2 class="cs_service_final_cta_title cs_normal">Whether you are redesigning care models, implementing transformation initiatives, or strengthening healthcare system capability, HealthStrat partners with you to deliver practical, future-ready solutions, leveraging Singapore’s experience in healthcare transformation and quality excellence.</h2>
+        <div class="cs_service_final_cta_actions">
+          <a href="contact.html" class="cs_service_final_cta_btn cs_service_final_cta_primary" aria-label="Schedule a Consultation">
+            <i class="fa-regular fa-calendar-days cs_service_final_cta_icon" aria-hidden="true"></i>
+            <span>Schedule a Consultation</span>
+            <i class="fa-solid fa-arrow-right cs_service_final_cta_arrow" aria-hidden="true"></i>
           </a>
-          <a href="contact.html" class="cs_btn cs_style_1 cs_type_2 cs_white_bg cs_primary_color cs_w_100_sm">
-            Contact Us
-            <span>
-              <i>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </i>
-              <i>
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 10L10 1M10 1L1 1M10 1L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </i>
-            </span>
+          <a href="contact.html" class="cs_service_final_cta_btn cs_service_final_cta_contact" aria-label="Contact Us">
+            <span>Contact Us</span>
+            <i class="fa-solid fa-arrow-right cs_service_final_cta_icon" aria-hidden="true"></i>
           </a>
         </div>
       </div>
-      <div class="cs_height_150 cs_height_lg_80"></div>
-    </div>
+    </section>
     <!-- End CTA Section -->
     <!-- Start Footer -->
             <footer class="cs_footer cs_primary_bg cs_ternary_color">
