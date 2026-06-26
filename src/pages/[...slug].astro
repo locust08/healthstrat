@@ -56,6 +56,234 @@ const meta = pageMeta[file] || {
 };
 const pathname = file === 'index.html' ? '/' : `/${file.replace(/\.html$/, '')}/`;
 const canonicalUrl = `${siteUrl}${pathname}`;
+const ctaButtonPages = new Set([
+  'about.html',
+  'expertise.html',
+  'health-care-strategy-transformation.html',
+  'clinical-governance-quality.html',
+  'nursing-workforce-development.html',
+  'innovation-design-thinking.html',
+  'education-training.html',
+]);
+const serviceCtaButtonPages = new Set([
+  'health-care-strategy-transformation.html',
+  'clinical-governance-quality.html',
+  'nursing-workforce-development.html',
+  'innovation-design-thinking.html',
+  'education-training.html',
+]);
+const expertiseCtaButtonPages = new Set(['expertise.html']);
+
+const sharedCtaButtons = `          <div class="cs_healthstrat_cta_actions">
+            <a href="contact.html" class="cs_healthstrat_final_cta_btn cs_healthstrat_final_cta_primary cs_w_100_sm" aria-label="Book a Strategy Discussion">
+              <i class="fa-regular fa-calendar-days cs_healthstrat_final_cta_icon" aria-hidden="true"></i>
+              <span>Book a Strategy Discussion</span>
+              <i class="fa-solid fa-arrow-right cs_healthstrat_final_cta_arrow" aria-hidden="true"></i>
+            </a>
+            <a href="https://wa.me/6591176220" class="cs_healthstrat_final_cta_btn cs_healthstrat_final_cta_whatsapp cs_w_100_sm" aria-label="WhatsApp HealthStrat">
+              <i class="fa-brands fa-whatsapp cs_healthstrat_final_cta_icon" aria-hidden="true"></i>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>`;
+
+const expertiseCtaButtons = `          <div class="cs_healthstrat_cta_actions cs_healthstrat_expertise_cta_actions">
+            <a href="contact.html" class="cs_healthstrat_expertise_cta_btn cs_healthstrat_expertise_cta_primary" aria-label="Book a Strategy Discussion">
+              <i class="fa-regular fa-calendar-days cs_healthstrat_expertise_cta_icon" aria-hidden="true"></i>
+              <span>Book a Strategy Discussion</span>
+              <i class="fa-solid fa-arrow-right cs_healthstrat_expertise_cta_arrow" aria-hidden="true"></i>
+            </a>
+            <a href="https://wa.me/6591176220" class="cs_healthstrat_expertise_cta_btn cs_healthstrat_expertise_cta_secondary" aria-label="WhatsApp HealthStrat">
+              <i class="fa-brands fa-whatsapp cs_healthstrat_expertise_cta_icon" aria-hidden="true"></i>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>`;
+
+const sharedCtaButtonStyles = `    <style id="healthstrat-shared-cta-buttons">
+      .cs_healthstrat_cta_actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      .cs_healthstrat_final_cta_btn {
+        min-height: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 999px;
+        color: #fff;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 1.2;
+        box-shadow: none;
+      }
+      .cs_healthstrat_final_cta_btn:hover {
+        color: #fff;
+        transform: translateY(-2px);
+      }
+      .cs_healthstrat_final_cta_primary {
+        min-width: 282px;
+        padding: 0 0 0 22px;
+        background: linear-gradient(135deg, #003b71 0%, #005090 100%);
+      }
+      .cs_healthstrat_final_cta_primary:hover {
+        background: linear-gradient(135deg, #002f5d 0%, #00477f 100%);
+      }
+      .cs_healthstrat_final_cta_whatsapp {
+        min-width: 150px;
+        padding: 0 20px;
+        background: linear-gradient(135deg, #2f9f44 0%, #60a030 100%);
+        box-shadow: none;
+      }
+      .cs_healthstrat_final_cta_whatsapp:hover {
+        background: linear-gradient(135deg, #238936 0%, #4f9228 100%);
+      }
+      .cs_healthstrat_final_cta_icon {
+        font-size: 28px;
+        line-height: 1;
+      }
+      .cs_healthstrat_final_cta_arrow {
+        min-height: 46px;
+        width: 46px;
+        margin-left: 2px;
+        border-left: 1px solid rgba(255, 255, 255, 0.18);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+      }
+      @media (max-width: 575px) {
+        .cs_healthstrat_cta_actions .cs_btn,
+        .cs_healthstrat_final_cta_btn {
+          width: 100%;
+        }
+        .cs_healthstrat_final_cta_btn {
+          min-width: 0;
+          min-height: 60px;
+          font-size: 25px;
+          gap: 12px;
+        }
+        .cs_healthstrat_final_cta_primary {
+          padding-left: 24px;
+        }
+        .cs_healthstrat_final_cta_arrow {
+          min-height: 60px;
+          width: 62px;
+          margin-left: auto;
+        }
+      }
+    </style>`;
+
+const serviceCtaButtonStyles = `    <style id="healthstrat-service-cta-buttons">
+      .cs_healthstrat_service_cta_actions {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-self: end;
+        align-self: center;
+        min-width: 320px;
+        transform: translateX(-22px);
+      }
+      .cs_healthstrat_service_cta_actions .cs_healthstrat_final_cta_primary {
+        width: 100%;
+        min-width: 0;
+      }
+      .cs_healthstrat_service_cta_actions .cs_healthstrat_final_cta_whatsapp {
+        width: auto;
+        min-width: 0;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      .cs_healthstrat_service_cta_actions .cs_healthstrat_final_cta_primary {
+        padding-left: 22px;
+      }
+      @media (max-width: 767px) {
+        .cs_healthstrat_service_cta_actions {
+          justify-self: stretch;
+          align-items: stretch;
+          min-width: 0;
+          transform: none;
+        }
+        .cs_healthstrat_service_cta_actions .cs_healthstrat_final_cta_whatsapp {
+          width: 100%;
+        }
+      }
+    </style>`;
+
+const expertiseCtaButtonStyles = `    <style id="healthstrat-expertise-cta-buttons">
+      .cs_cta.cs_style_3.cs_expertise_cta::before {
+        background: linear-gradient(90deg, rgba(0, 59, 113, 0.68) 0%, rgba(0, 80, 144, 0.42) 48%, rgba(0, 80, 144, 0.08) 72%, rgba(0, 80, 144, 0) 100%);
+      }
+      .cs_healthstrat_expertise_cta_actions {
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 16px;
+        margin-top: 28px;
+      }
+      .cs_healthstrat_expertise_cta_btn {
+        min-height: 56px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        border-radius: 999px;
+        padding: 0 24px;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 1.2;
+        white-space: nowrap;
+        box-shadow: none;
+      }
+      .cs_healthstrat_expertise_cta_btn:hover {
+        transform: translateY(-2px);
+      }
+      .cs_healthstrat_expertise_cta_primary {
+        min-width: 320px;
+        background: #fff;
+        color: #003b71;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+      }
+      .cs_healthstrat_expertise_cta_primary:hover {
+        background: #f7fbff;
+        color: #003b71;
+      }
+      .cs_healthstrat_expertise_cta_secondary {
+        min-width: 190px;
+        background: #2f9f44;
+        color: #fff;
+      }
+      .cs_healthstrat_expertise_cta_secondary:hover {
+        background: #238936;
+        color: #fff;
+      }
+      .cs_healthstrat_expertise_cta_arrow {
+        color: #60a030;
+        font-size: 16px;
+        line-height: 1;
+      }
+      .cs_healthstrat_expertise_cta_icon {
+        font-size: 24px;
+        line-height: 1;
+      }
+      @media (max-width: 575px) {
+        .cs_healthstrat_expertise_cta_actions {
+          flex-direction: column;
+          align-items: stretch;
+          flex-wrap: nowrap;
+          gap: 12px;
+          margin-top: 24px;
+        }
+        .cs_healthstrat_expertise_cta_btn {
+          width: 100%;
+          min-width: 0;
+          min-height: 60px;
+          font-size: 25px;
+        }
+      }
+    </style>`;
 
 let html = fs.readFileSync(pagePath, 'utf-8');
 
@@ -93,6 +321,34 @@ html = html.replace(/<\/header>/i, '</header><main id="main-content">');
 html = html.replace(/<footer\b/i, '</main><footer');
 html = html.replace(/<button class="cs_header_submit_btn">/g, '<button class="cs_header_submit_btn" aria-label="Search">');
 html = html.replace(/aria-label="WhatsApp HealthStrat"/g, 'aria-label="WhatsApp Us"');
+
+if (ctaButtonPages.has(file)) {
+  const ctaButtons = serviceCtaButtonPages.has(file)
+    ? sharedCtaButtons.replace(
+        'class="cs_healthstrat_cta_actions"',
+        'class="cs_healthstrat_cta_actions cs_healthstrat_service_cta_actions"',
+      )
+    : expertiseCtaButtonPages.has(file)
+      ? expertiseCtaButtons
+    : sharedCtaButtons;
+
+  html = html.replace(
+    /<div class="(?:cs_about_partner_actions|cs_cta_actions|cs_service_final_cta_actions|cs_nursing_final_cta_actions)">[\s\S]*?<\/div>(?=\s*<\/(?:div|section)>)/,
+    ctaButtons,
+  );
+
+  if (!html.includes('id="healthstrat-shared-cta-buttons"')) {
+    html = html.replace('</head>', `${sharedCtaButtonStyles}\n  </head>`);
+  }
+
+  if (serviceCtaButtonPages.has(file) && !html.includes('id="healthstrat-service-cta-buttons"')) {
+    html = html.replace('</head>', `${serviceCtaButtonStyles}\n  </head>`);
+  }
+
+  if (expertiseCtaButtonPages.has(file) && !html.includes('id="healthstrat-expertise-cta-buttons"')) {
+    html = html.replace('</head>', `${expertiseCtaButtonStyles}\n  </head>`);
+  }
+}
 
 const readMoreLabels = {
   'health-care-strategy-transformation.html': 'healthcare strategy and transformation',
